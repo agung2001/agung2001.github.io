@@ -1,5 +1,8 @@
 # My Github Page
 
+## Installation
+- Install node package `npm i`
+
 ## Built with
 - Animate.css
-- TailwindCSS
+- [TailwindCSS](https://tailwindcss.com/)

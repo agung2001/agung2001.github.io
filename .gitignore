@@ -1,3 +1,9 @@
+# IDEs
 /.idea
+
+# Vendords
 /vendors
 /node_modules
+
+# Extras
+package-lock.json
