@@ -7,6 +7,7 @@
 
     <!-- Library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
     <!-- Assets -->
     <link href="assets/build/css/tailwind.min.css" rel="stylesheet">
@@ -26,8 +27,8 @@
                 <div class="my-4">
                     <h2 class="mb-2 text-lg border-b border-gray-200">Social</h2>
                     <ul class="space-y-2">
-                        <li>
-                            <a href="https://goodreads.com/agungsundoro" class="flex items-center py-2 px-6 bg-yellow-600 rounded-lg" target="_blank">
+                        <li class="social-buttons">
+                            <a href="https://goodreads.com/agungsundoro" class="animate__animated flex items-center py-2 px-6 bg-yellow-600 rounded-lg" target="_blank">
                                 <i class="fas fa-book text-white"></i>
                                 <div class="ml-4">
                                     <h5 class="text-white font-bold">Goodreads</h5>
@@ -35,8 +36,8 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://instagram.com/agung2001" class="flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #ff008c;">
+                        <li class="social-buttons">
+                            <a href="https://instagram.com/agung2001" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #ff008c;">
                                 <i class="fab fa-instagram text-white"></i>
                                 <div class="ml-4">
                                     <h5 class="text-white font-bold">Instagram</h5>
@@ -44,8 +45,8 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://twitter.com/agung2001" class="flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #1d9bf0;">
+                        <li class="social-buttons">
+                            <a href="https://twitter.com/agung2001" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #1d9bf0;">
                                 <i class="fab fa-twitter text-white"></i>
                                 <div class="ml-4">
                                     <h5 class="text-white font-bold">Twitter</h5>
@@ -53,8 +54,8 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/agungsundoro" class="flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #0a66c2;">
+                        <li class="social-buttons">
+                            <a href="https://www.linkedin.com/in/agungsundoro" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #0a66c2;">
                                 <i class="fab fa-linkedin text-white"></i>
                                 <div class="ml-4">
                                     <h5 class="text-white font-bold">Linkedin</h5>
@@ -67,8 +68,8 @@
                 <div class="my-4">
                     <h2 class="mb-2 text-lg border-b border-gray-200">Contact</h2>
                     <ul class="space-y-2">
-                        <li>
-                            <a href="https://wa.me/6287738846518" class="flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #56d263;">
+                        <li class="social-buttons">
+                            <a href="https://wa.me/6287738846518" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #56d263;">
                                 <i class="fab fa-whatsapp text-white"></i>
                                 <div class="ml-4">
                                     <h5 class="text-white font-bold">WhatsApp</h5>
@@ -76,8 +77,8 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://t.me/agungsundoro" class="flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #1b89d4;">
+                        <li class="social-buttons">
+                            <a href="https://t.me/agungsundoro" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #1b89d4;">
                                 <i class="fab fa-telegram text-white"></i>
                                 <div class="ml-4">
                                     <h5 class="text-white font-bold">Telegram</h5>
@@ -85,8 +86,8 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://join.skype.com/invite/cZ64qk7eAZfK" class="flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #00aff0;">
+                        <li class="social-buttons">
+                            <a href="https://join.skype.com/invite/cZ64qk7eAZfK" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #00aff0;">
                                 <i class="fab fa-skype text-white"></i>
                                 <div class="ml-4">
                                     <h5 class="text-white font-bold">Skype</h5>
@@ -102,7 +103,20 @@
             </div>
     </div>
 </div>
+</div>
 
+<div class="hidden"></div>
+
+<script type="text/javascript">
+    const socialButtons = document.querySelectorAll('.social-buttons');
+    socialButtons.forEach(f => f.addEventListener('mouseenter', function() {
+        socialButtons.forEach(e => {
+            var div = e.querySelector('a');
+            div.classList.remove('animate__tada');
+        })
+        this.querySelector('a').classList.add('animate__tada');
+    }));
+</script>
 
 </body>
 </html>
