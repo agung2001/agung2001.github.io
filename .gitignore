@@ -1,3 +1,12 @@
+# IDEs
 /.idea
+
+# Vendords
 /vendors
 /node_modules
+
+# Extras
+package-lock.json
+
+# Should be ignored in other repo
+#assets/build
