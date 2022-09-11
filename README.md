@@ -1,5 +1,5 @@
-# Agung Sundoro Github Page
+# My Github Page
 
-Built with : 
+## Built with
 - Animate.css
 - TailwindCSS
