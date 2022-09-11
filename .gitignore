@@ -7,3 +7,6 @@
 
 # Extras
 package-lock.json
+
+# Should be ignored in other repo
+#assets/build
