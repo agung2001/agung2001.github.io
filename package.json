@@ -1,4 +1,9 @@
 {
+  "name": "agung2001.github.io",
+  "description": "Agung Sundoro Github Public Page",
+  "main": "Gruntfile.js",
+  "author": "Agung Sundoro",
+  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.1.8"
   }
