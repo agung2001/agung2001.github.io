@@ -31,7 +31,7 @@ module.exports = function(grunt) {
                 files: [
                     'assets/css/**/*.scss',
                     'assets/css/**/*.css',
-                    'src/View/**/*.php'
+                    'index.html'
                 ],
                 tasks: ['build-css']
             },
