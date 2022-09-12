@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot.png)
 
-Free and open source alternative to [linktr.ee](https://linktr.ee/) [View Demo](https://agung2001.github.io)
+Free and open source alternative to [linktr.ee](https://linktr.ee/). [View Demo](https://agung2001.github.io)
 
 ## Installation
 - Install node package `npm i`
@@ -12,4 +12,5 @@ Free and open source alternative to [linktr.ee](https://linktr.ee/) [View Demo](
 ## Built with
 - [Animate.style](https://animate.style/)
 - [Fontawesome](https://fontawesome.com/)
+- [Grunt JS](https://gruntjs.com/)
 - [TailwindCSS](https://tailwindcss.com/)
