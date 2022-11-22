@@ -1,5 +1,6 @@
 # IDEs
 /.idea
+/.vscode
 
 # Vendords
 /vendors
@@ -7,6 +8,3 @@
 
 # Extras
 package-lock.json
-
-# Should be ignored in other repo
-#assets/build
