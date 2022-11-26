@@ -57,11 +57,59 @@
 					"animate": false,
 				},
 				{
+					"label": "WordPress",
+					"caption": "Just another WordPress Profile",
+					"link": "https://profiles.wordpress.org/agung2001/",
+					"icon": "fab fa-wordpress",
+					"color": "#23282d",
+					"animate": false,
+				},
+				{
 					"label": "Linkedin",
-					"caption": "Just another boring stuff",
+					"caption": "Find a job, Make Money, Repeat",
 					"link": "https://www.linkedin.com/in/agungsundoro",
 					"icon": "fab fa-linkedin",
 					"color": "#0a66c2",
+					"animate": false,
+				},
+				{
+					"label": "YouTube",
+					"caption": "Having fun doing music and research",
+					"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
+					"icon": "fab fa-youtube",
+					"color": "#fe0000",
+					"animate": false,
+				},
+				{
+					"label": "Blogspot",
+					"caption": "Old collection of articles",
+					"link": "https://agungsundoro.blogspot.com/",
+					"icon": "fab fa-blogger",
+					"color": "#f06a35",
+					"animate": false,
+				},
+				{
+					"label": "Dribbble",
+					"caption": "Design work",
+					"link": "https://dribbble.com/agung2001",
+					"icon": "fab fa-dribbble",
+					"color": "#ea4c89",
+					"animate": false,
+				},
+				{
+					"label": "Github",
+					"caption": "Contribute to open source",
+					"link": "https://github.com/agung2001",
+					"icon": "fab fa-github",
+					"color": "#24292f",
+					"animate": false,
+				},
+				{
+					"label": "Facebook",
+					"caption": "Meet the community",
+					"link": "https://www.facebook.com/cotothepong/",
+					"icon": "fab fa-facebook",
+					"color": "#1977f3",
 					"animate": false,
 				},
 			]
@@ -72,7 +120,7 @@
 
 <div class="p-6">
 	{#each socialButtons as buttonGroup}
-		<div class="my-4">
+		<div class="mb-4">
 			<h2 class="mb-2 text-lg border-b border-gray-200">{ buttonGroup.label }</h2>
 			<div class="grid sm:grid-rows-1 md:grid-cols-3 gap-2">
 				{#each buttonGroup.buttons as button}
