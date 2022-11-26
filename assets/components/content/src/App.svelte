@@ -5,7 +5,7 @@
 			"caption": "Reading a book together",
 			"link": "https://goodreads.com/agungsundoro",
 			"icon": "fas fa-book",
-			"color": "#824707"
+			"color": "#7d5024"
 		},
 		{
 			"label": "Instagram",
@@ -34,19 +34,19 @@
 <div class="p-6">
 	<div class="my-4">
 		<h2 class="mb-2 text-lg border-b border-gray-200">Social</h2>
-		<ul class="space-y-2">
+		<div class="grid sm:grid-rows-1 md:grid-cols-3 gap-2">
 			{#each socialButtons as button}
-				<li class="social-buttons">
-					<a href="{ button.link }" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: {button.color};">
+				<div class="social-buttons">
+					<a href="{ button.link }" class="animate__animated flex items-center py-2 px-4" target="_blank" style="background-color: {button.color};">
 						<i class="{ button.icon } text-white"></i>
 						<div class="ml-4">
 							<h5 class="text-white font-bold">{ button.label }</h5>
 							<p class="whitespace-nowrap text-xs text-gray-100">{ button.caption }</p>
 						</div>
 					</a>
-				</li>
+				</div>
 			{/each}
-		</ul>
+		</div>
 	</div>
 	<div class="my-4">
 		<h2 class="mb-2 text-lg border-b border-gray-200">Contact</h2>
