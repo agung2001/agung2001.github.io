@@ -8,8 +8,13 @@ My GitHub profile page. See the [demo][website]
   - Watch `grunt watch`
 
 ## 🔥 Development
-- Rename `.env-sample` to `.env`, then change accordingly
+- Rename `.env-sample` to `.env`
+- Change `.env` according to your environment
 - Docker `docker-compose up --build`
+
+## 🗞️ Deployment
+- Build Image `docker build -t agung2001/agung2001.github.io:1.0.0 .`
+- Push Image `docker push agung2001/agung2001.github.io:1.0.0`
 
 ## ⚒️ Built with
 - [Animate.style](https://animate.style/)
@@ -18,6 +23,10 @@ My GitHub profile page. See the [demo][website]
 - [Svelte JS](https://svelte.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)
+
+## 📚 Resources
+- [Github](https://github.com/agung2001/agung2001.github.io)
+- [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
 
 ## ⭐️ Support
 Help support me by give a stars or [donate][website]
