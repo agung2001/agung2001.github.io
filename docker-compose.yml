@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  agung2001.github.io:
+    container_name: agung2001.github.io
+    image: agung2001/agung2001.github.io:1.0
+    build: .
+    restart: always
+    ports:
+      - 8000:80

@@ -7,6 +7,9 @@ My GitHub profile page. See the [demo][website]
 - Build asset `grunt build`
   - Watch `grunt watch`
 
+## 🔥 Development
+- Docker `docker-compose up --build`
+
 ## ⚒️ Built with
 - [Animate.style](https://animate.style/)
 - [Fontawesome](https://fontawesome.com/)
