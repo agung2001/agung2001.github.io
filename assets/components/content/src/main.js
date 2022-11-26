@@ -5,6 +5,8 @@ import App from './App.svelte';
 	await fetch('./config.json')
 		.then((response) => response.json())
 		.then((config) => {
+			let { name } = config;
+			document.title = name;
 			const app = new App({
 				target: document.querySelector('#content'),
 				props: { config }

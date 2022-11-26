@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  agung2001.github.io:
+    container_name: agung2001.github.io
+    image: nginx:latest
+    restart: always
+    ports:
+      - ${SERVER_PORT-80}:80
+    volumes:
+      - ${PWD}:/usr/share/nginx/html
