@@ -1,43 +1,51 @@
+<script>
+	let socialButtons = [
+		{
+			"label": "Goodreads",
+			"caption": "Reading a book together",
+			"link": "https://goodreads.com/agungsundoro",
+			"icon": "fas fa-book",
+			"color": "#824707"
+		},
+		{
+			"label": "Instagram",
+			"caption": "Become an each other fans",
+			"link": "https://instagram.com/agung2001",
+			"icon": "fab fa-instagram",
+			"color": "#ff008c"
+		},
+		{
+			"label": "Twitter",
+			"caption": "Any new tweet from elon musk?",
+			"link": "https://twitter.com/agung2001",
+			"icon": "fab fa-twitter",
+			"color": "#1d9bf0"
+		},
+		{
+			"label": "Linkedin",
+			"caption": "Just another boring stuff",
+			"link": "https://www.linkedin.com/in/agungsundoro",
+			"icon": "fab fa-linkedin",
+			"color": "#0a66c2"
+		},
+	];
+</script>
+
 <div class="p-6">
 	<div class="my-4">
 		<h2 class="mb-2 text-lg border-b border-gray-200">Social</h2>
 		<ul class="space-y-2">
-			<li class="social-buttons">
-				<a href="https://goodreads.com/agungsundoro" class="animate__animated flex items-center py-2 px-6 bg-yellow-600 rounded-lg" target="_blank">
-					<i class="fas fa-book text-white"></i>
-					<div class="ml-4">
-						<h5 class="text-white font-bold">Goodreads</h5>
-						<p class="whitespace-nowrap text-xs text-gray-100">Reading a book together</p>
-					</div>
-				</a>
-			</li>
-			<li class="social-buttons">
-				<a href="https://instagram.com/agung2001" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #ff008c;">
-					<i class="fab fa-instagram text-white"></i>
-					<div class="ml-4">
-						<h5 class="text-white font-bold">Instagram</h5>
-						<p class="whitespace-nowrap text-xs text-gray-100">Become an each other fans</p>
-					</div>
-				</a>
-			</li>
-			<li class="social-buttons">
-				<a href="https://twitter.com/agung2001" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #1d9bf0;">
-					<i class="fab fa-twitter text-white"></i>
-					<div class="ml-4">
-						<h5 class="text-white font-bold">Twitter</h5>
-						<p class="whitespace-nowrap text-xs text-gray-100">Any new tweet from elon musk?</p>
-					</div>
-				</a>
-			</li>
-			<li class="social-buttons">
-				<a href="https://www.linkedin.com/in/agungsundoro" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: #0a66c2;">
-					<i class="fab fa-linkedin text-white"></i>
-					<div class="ml-4">
-						<h5 class="text-white font-bold">Linkedin</h5>
-						<p class="whitespace-nowrap text-xs text-gray-100">Just another boring stuff</p>
-					</div>
-				</a>
-			</li>
+			{#each socialButtons as button}
+				<li class="social-buttons">
+					<a href="{ button.link }" class="animate__animated flex items-center py-2 px-6 rounded-lg" target="_blank" style="background-color: {button.color};">
+						<i class="{ button.icon } text-white"></i>
+						<div class="ml-4">
+							<h5 class="text-white font-bold">{ button.label }</h5>
+							<p class="whitespace-nowrap text-xs text-gray-100">{ button.caption }</p>
+						</div>
+					</a>
+				</li>
+			{/each}
 		</ul>
 	</div>
 	<div class="my-4">
