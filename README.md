@@ -3,6 +3,15 @@
 My GitHub profile page. See the [demo][website]
 
 ## 🤖 Installation
+### via docker run
+`
+docker run -d -p 80:80 
+  --name agung2001.github.io
+  -v /path/to/config.json:/usr/share/nginx/html/config.json
+  agung2001/agung2001.github.io:1.0.0
+`
+
+### via manual build 
 - Install node package `npm i`
 - Build asset `grunt build`
   - Watch `grunt watch`
