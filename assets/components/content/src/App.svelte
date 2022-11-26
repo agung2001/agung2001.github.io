@@ -5,39 +5,60 @@
 			"caption": "Reading a book together",
 			"link": "https://goodreads.com/agungsundoro",
 			"icon": "fas fa-book",
-			"color": "#7d5024"
+			"color": "#7d5024",
+			"animate": false,
 		},
 		{
 			"label": "Instagram",
 			"caption": "Become an each other fans",
 			"link": "https://instagram.com/agung2001",
 			"icon": "fab fa-instagram",
-			"color": "#ff008c"
+			"color": "#ff008c",
+			"animate": false,
 		},
 		{
 			"label": "Twitter",
 			"caption": "Any new tweet from elon musk?",
 			"link": "https://twitter.com/agung2001",
 			"icon": "fab fa-twitter",
-			"color": "#1d9bf0"
+			"color": "#1d9bf0",
+			"animate": false,
 		},
 		{
 			"label": "Linkedin",
 			"caption": "Just another boring stuff",
 			"link": "https://www.linkedin.com/in/agungsundoro",
 			"icon": "fab fa-linkedin",
-			"color": "#0a66c2"
+			"color": "#0a66c2",
+			"animate": false,
 		},
 	];
+
+	/** Social Buttons On Hover */
+	function socialButtonsOver(i){
+		socialButtons[i].animate = true;
+	}
+
+	/** Social Buttons On Out */
+	function socialButtonsOut(i){
+		socialButtons[i].animate = false;
+	}
 </script>
 
 <div class="p-6">
 	<div class="my-4">
 		<h2 class="mb-2 text-lg border-b border-gray-200">Social</h2>
 		<div class="grid sm:grid-rows-1 md:grid-cols-3 gap-2">
-			{#each socialButtons as button}
-				<div class="social-buttons">
-					<a href="{ button.link }" class="animate__animated flex items-center py-2 px-4" target="_blank" style="background-color: {button.color};">
+			{#each socialButtons as button, i}
+				<div on:mouseenter={() => { socialButtons[i].animate = true; }} on:mouseleave={() => { socialButtons[i].animate = false; }} >
+					<a
+						href="{ button.link }"
+						class="animate__animated flex items-center py-2 px-4"
+						target="_blank"
+						rel="noreferrer"
+						class:animate__tada={ button.animate }
+						style="background-color: {button.color};"
+					>
 						<i class="{ button.icon } text-white"></i>
 						<div class="ml-4">
 							<h5 class="text-white font-bold">{ button.label }</h5>
