@@ -4,8 +4,8 @@
 
     /** Draw Repo */
     async function draw(){
-        let { githubPublicAPIUrl } = config;
-        let response = await fetch(githubPublicAPIUrl);
+        let { username } = config;
+        let response = await fetch(`https://api.github.com/users/${username}/repos`);
         let data;
         if(response.ok){
             data = await response.json();

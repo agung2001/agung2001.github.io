@@ -1,7 +1,8 @@
 {
   "name" : "Agung Sundoro",
+  "tagline": "Let's connect and change the world!",
+  "username": "agung2001",
   "production" : false,
-  "githubPublicAPIUrl": "https://api.github.com/users/agung2001/repos",
   "socialButtons": [
     {
       "label": "Contact",
