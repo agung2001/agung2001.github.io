@@ -26,7 +26,7 @@
                         <tr>
                             <td>{environment.label}</td>
                             <td class="grid grid-cols-6">
-                                {#each environment.tools as tool}<img height="20" src="{tool}">{/each}
+                                {#each environment.tools as tool}<img height="20" src="{tool}" alt="{environment.label}">{/each}
                             </td>
                         </tr>
                     {/each}
