@@ -1,5 +1,7 @@
 <script>
-	import Contact from '../tabs/Contact.svelte';
+	import Contact from '../sections/Contact.svelte';
+	import VisJS from '../sections/VisJS.svelte';
 </script>
 
+<VisJS />
 <Contact />
