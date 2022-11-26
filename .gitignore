@@ -8,3 +8,6 @@
 
 # Extras
 package-lock.json
+
+# Builds
+*.js.map
