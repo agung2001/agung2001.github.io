@@ -42,7 +42,7 @@
         },
         {
           "label": "Instagram",
-          "caption": "Become an each other fans",
+          "caption": "Follow me or I call a police",
           "link": "https://instagram.com/agung2001",
           "icon": "fab fa-instagram",
           "color": "#ff008c"
@@ -53,13 +53,6 @@
           "link": "https://twitter.com/agung2001",
           "icon": "fab fa-twitter",
           "color": "#1d9bf0"
-        },
-        {
-          "label": "WordPress",
-          "caption": "Just another WordPress Profile",
-          "link": "https://profiles.wordpress.org/agung2001/",
-          "icon": "fab fa-wordpress",
-          "color": "#23282d"
         },
         {
           "label": "Linkedin",
@@ -76,6 +69,34 @@
           "color": "#fe0000"
         },
         {
+          "label": "Spotify",
+          "caption": "Heavy metal never die",
+          "link": "https://open.spotify.com/user/21yip2zhtynpaalfr53tonr5a",
+          "icon": "fab fa-spotify",
+          "color": "#1ab26b"
+        },
+        {
+          "label": "WordPress",
+          "caption": "Just another WordPress Profile",
+          "link": "https://profiles.wordpress.org/agung2001/",
+          "icon": "fab fa-wordpress",
+          "color": "#23282d"
+        },
+        {
+          "label": "Docker",
+          "caption": "Living inside a container",
+          "link": "https://hub.docker.com/u/agung2001",
+          "icon": "fab fa-docker",
+          "color": "#309cef"
+        },
+        {
+          "label": "Github",
+          "caption": "Contribute to open source",
+          "link": "https://github.com/agung2001",
+          "icon": "fab fa-github",
+          "color": "#24292f"
+        },
+        {
           "label": "Blogspot",
           "caption": "Old collection of articles",
           "link": "https://agungsundoro.blogspot.com/",
@@ -89,26 +110,13 @@
           "icon": "fab fa-dribbble",
           "color": "#ea4c89"
         },
-        {
-          "label": "Github",
-          "caption": "Contribute to open source",
-          "link": "https://github.com/agung2001",
-          "icon": "fab fa-github",
-          "color": "#24292f"
-        },
+
         {
           "label": "Facebook",
           "caption": "Meet the community",
           "link": "https://www.facebook.com/cotothepong/",
           "icon": "fab fa-facebook",
           "color": "#1977f3"
-        },
-        {
-          "label": "Spotify",
-          "caption": "Heavy metal never die",
-          "link": "https://open.spotify.com/user/21yip2zhtynpaalfr53tonr5a",
-          "icon": "fab fa-spotify",
-          "color": "#1ab26b"
         }
       ]
     },
