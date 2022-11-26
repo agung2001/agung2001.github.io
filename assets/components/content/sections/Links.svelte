@@ -22,15 +22,16 @@
                             <a
                                 href="{ button.link }"
                                 class="animate__animated flex items-center py-2 px-4 rounded"
+                                class:text-white={!button.textColor}
                                 target="_blank"
                                 rel="noreferrer"
                                 class:animate__tada={ button.animate }
-                                style="background-color: {button.color};"
+                                style="background-color: {button.color}; {(button.textColor) ? `color: ${button.textColor};` : ''}"
                             >
-                                <i class="{ button.icon } text-white"></i>
+                                <i class="{ button.icon }"></i>
                                 <div class="ml-4">
-                                    <h5 class="text-white font-bold">{ button.label }</h5>
-                                    <p class="whitespace-nowrap text-xs text-gray-100">{ button.caption }</p>
+                                    <h5 class="font-bold">{ button.label }</h5>
+                                    <p class="whitespace-nowrap text-xs">{ button.caption }</p>
                                 </div>
                             </a>
                         </div>

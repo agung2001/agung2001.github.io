@@ -111,6 +111,26 @@
           "color": "#1ab26b"
         }
       ]
+    },
+    {
+      "label": "Support",
+      "buttons": [
+        {
+          "label": "Buy Me a Coffee",
+          "caption": "Enough to keep me awake",
+          "link": "https://www.buymeacoffee.com/agung2001",
+          "icon": "fa-solid fa-mug-saucer",
+          "color": "#ffdd00",
+          "textColor": "#000"
+        },
+        {
+          "label": "Paypal",
+          "caption": "Thanks for donating",
+          "link": "https://www.paypal.com/paypalme/agungsundoro",
+          "icon": "fab fa-paypal",
+          "color": "#0070e0"
+        }
+      ]
     }
   ],
   "codeEnvironment": [

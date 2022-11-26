@@ -1,6 +1,6 @@
 <script>
     export let config;
-	import Contact from '../sections/Contact.svelte';
+	import Links from '../sections/Links.svelte';
 	import Profile from '../sections/Profile.svelte';
 	import VisJS from '../sections/VisJS.svelte';
 </script>
@@ -11,6 +11,6 @@
     </div>
     <div class="md:col-span-4">
         <VisJS {config} />
-        <Contact {config} />
+        <Links {config} />
     </div>
 </div>
