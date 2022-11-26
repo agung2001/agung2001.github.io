@@ -1,6 +1,7 @@
 ![Screenshot](screenshot.png)
 
-My GitHub profile page. See the [demo][website]
+My GitHub profile page. You can change the configuration of the page by changing [config.json](config.json) file and run the install. 
+See the [demo][website]
 
 ## 🤖 Installation
 ### via docker run
@@ -10,6 +11,7 @@ docker run -d -p 80:80
   -v /path/to/config.json:/usr/share/nginx/html/config.json
   agung2001/agung2001.github.io:1.0.0
 `
+- NOTE: Don't forget to change the `/path/to/config.json` accordingly
 
 ### via manual build 
 - Install node package `npm i`
@@ -20,10 +22,6 @@ docker run -d -p 80:80
 - Rename `.env-sample` to `.env`
 - Change `.env` according to your environment
 - Docker `docker-compose up --build`
-
-## 🗞️ Deployment
-- Build Image `docker build -t agung2001/agung2001.github.io:1.0.0 .`
-- Push Image `docker push agung2001/agung2001.github.io:1.0.0`
 
 ## ⚒️ Built with
 - [Animate.style](https://animate.style/)
@@ -36,6 +34,7 @@ docker run -d -p 80:80
 ## 📚 Resources
 - [Github](https://github.com/agung2001/agung2001.github.io)
 - [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
+- [Wiki](https://github.com/agung2001/agung2001.github.io/wiki/)
 
 ## ⭐️ Support
 Help support me by giving a star or [donate][website]
