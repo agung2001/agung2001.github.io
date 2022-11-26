@@ -1,10 +1,11 @@
 <script>
+    export let config;
     let errorMessage = '';
 
     /** Draw Repo */
     async function draw(){
-        let endpoint = `https://api.github.com/users/agung2001/repos`;
-        let response = await fetch(endpoint);
+        let { githubPublicAPIUrl } = config;
+        let response = await fetch(githubPublicAPIUrl);
         let data;
         if(response.ok){
             data = await response.json();

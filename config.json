@@ -1,6 +1,7 @@
 {
   "name" : "Agung Sundoro",
   "production" : false,
+  "githubPublicAPIUrl": "https://api.github.com/users/agung2001/repos",
   "socialButtons": [
     {
       "label": "Contact",
