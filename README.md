@@ -29,6 +29,6 @@ My GitHub profile page. See the [demo][website]
 - [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
 
 ## ⭐️ Support
-Help support me by give a stars or [donate][website]
+Help support me by giving a star or [donate][website]
 
 [website]: https://agung2001.github.io
