@@ -8,6 +8,7 @@ My GitHub profile page. See the [demo][website]
   - Watch `grunt watch`
 
 ## 🔥 Development
+- Change `.env` accordingly
 - Docker `docker-compose up --build`
 
 ## ⚒️ Built with
