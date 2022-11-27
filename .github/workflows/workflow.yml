@@ -1,11 +1,12 @@
 name: Create and publish a Docker image
 
-push:
-  branches:
-    - master
-    - feature/packages
-  tags:
-    - '*'
+on:
+  push:
+    branches:
+      - master
+      - feature/packages
+    tags:
+      - '*'
 
 env:
   GITHUB_GITHUB_REGISTRY: ghcr.io
