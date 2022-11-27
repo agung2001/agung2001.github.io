@@ -11,7 +11,7 @@ docker run -d -p 80:80 \
   -v /path/to/config.json:/usr/share/nginx/html/config.json \
   -v /path/to/avatar.jpg:/usr/share/nginx/html/assets/img/avatar.jpg \
   -v /path/to/cover.jpg:/usr/share/nginx/html/assets/img/cover.jpg \
-  agung2001/agung2001.github.io:latest
+  agung2001/agung2001.github.io:master
 ```
 - NOTE: Don't forget to change the `/path/to/` accordingly
 
@@ -35,8 +35,9 @@ docker run -d -p 80:80 \
 
 ## 📚 Resources
 - [Github](https://github.com/agung2001/agung2001.github.io)
-- [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
-- [Wiki](https://github.com/agung2001/agung2001.github.io/wiki/)
+- Registry
+  - [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
+  - [GHCR](https://github.com/agung2001/agung2001.github.io/pkgs/container/agung2001.github.io) 
 
 ## ⭐️ Support
 Help support me by giving a star or [donate][website]
