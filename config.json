@@ -189,16 +189,20 @@
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/subversion/subversion-original.svg"
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/subversion/subversion-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
       ]
     },
     {
-      "label": "Build",
+      "label": "Infrastructure",
       "tools": [
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
       ]
     }
   ]
