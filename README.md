@@ -10,7 +10,7 @@ See the [demo][website].
 ![Version](https://img.shields.io/docker/v/agung2001/agung2001.github.io)
 
 ## 🤖 Installation
-### via docker run
+### via docker run 
 ```
 docker run -d -p 80:80 \
   --name agung2001.github.io \
