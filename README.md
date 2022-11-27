@@ -1,7 +1,13 @@
 ![Screenshot](screenshot.png)
 
 My GitHub profile page. You can change the configuration of the page by changing [config.json](config.json) file and run the install. 
-See the [demo][website]
+See the [demo][website].
+
+![Stars](https://img.shields.io/github/stars/agung2001/agung2001.github.io?style=social)
+![Size](https://img.shields.io/github/repo-size/agung2001/agung2001.github.io)
+![Pulls](https://img.shields.io/docker/pulls/agung2001/agung2001.github.io)
+![Image Size](https://img.shields.io/docker/image-size/agung2001/agung2001.github.io)
+![Version](https://img.shields.io/docker/v/agung2001/agung2001.github.io)
 
 ## 🤖 Installation
 ### via docker run
