@@ -27,6 +27,7 @@ docker run -d -p 80:80 \
   - Watch `grunt watch`
 
 ## 🔥 Development
+Running the nginx server
 - Rename `.env-sample` to `.env`
 - Change `.env` according to your environment
 - Docker `docker-compose up`
