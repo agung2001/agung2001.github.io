@@ -5,32 +5,6 @@
   "production" : false,
   "socialButtons": [
     {
-      "label": "Contact",
-      "buttons": [
-        {
-          "label": "WhatsApp",
-          "caption": "Share your latest meme",
-          "link": "https://wa.me/6287738846518",
-          "icon": "fab fa-whatsapp",
-          "color": "#56d263"
-        },
-        {
-          "label": "Telegram",
-          "caption": "Share a story about your ex",
-          "link": "https://t.me/agungsundoro",
-          "icon": "fab fa-telegram",
-          "color": "#1b89d4"
-        },
-        {
-          "label": "Skype",
-          "caption": "Inquiry and Professional Work",
-          "link": "https://join.skype.com/invite/cZ64qk7eAZfK",
-          "icon": "fab fa-skype",
-          "color": "#00aff0"
-        }
-      ]
-    },
-    {
       "label": "Social",
       "buttons": [
         {
@@ -116,6 +90,25 @@
           "link": "https://www.facebook.com/cotothepong/",
           "icon": "fab fa-facebook",
           "color": "#1977f3"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "buttons": [
+        {
+          "label": "Skype",
+          "caption": "Inquiry and Professional Work",
+          "link": "https://join.skype.com/invite/cZ64qk7eAZfK",
+          "icon": "fab fa-skype",
+          "color": "#00aff0"
+        },
+        {
+          "label": "Telegram",
+          "caption": "Share a story about your ex",
+          "link": "https://t.me/agungsundoro",
+          "icon": "fab fa-telegram",
+          "color": "#1b89d4"
         }
       ]
     },
