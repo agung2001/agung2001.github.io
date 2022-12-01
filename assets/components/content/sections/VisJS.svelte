@@ -1,6 +1,9 @@
 <script>
+    import App from "../src/App.svelte";
+
     export let config;
     let errorMessage = 'Loading...';
+    let rateLimit = false;
 
     /** Generate Edges and Nodes */
     async function GenerateEdgesandNodes(endpoint, nodes, edges){
@@ -29,19 +32,33 @@
 
     /** Draw Repo */
     async function draw(){
-        let { username, organizations } = config;
+        let { username, organizations, production } = config;
         try {
-            /** Graph for Username */
-            let endpoint = `https://api.github.com/users/${username}/repos`;
-            let { nodes, edges } = await GenerateEdgesandNodes(endpoint, [{ id: 0, label: username, group: 1}], []);
+            let nodes, edges;
+            if(production){
+                await fetch('./nodes.json')
+                    .then((response) => response.json())
+                    .then((data) => { nodes = data; });
+                await fetch('./edges.json')
+                    .then((response) => response.json())
+                    .then((data) => { edges = data; });
+            } else {
+                /** Graph for Username */
+                let endpoint = `https://api.github.com/users/${username}/repos`;
+                let data = await GenerateEdgesandNodes(endpoint, [{ id: 0, label: username, group: 1}], []);
+                nodes = data.nodes; edges = data.edges;
 
-            /** Graph for Organization */
-            await organizations.map(async (organization) => {
-                let endpoint = `https://api.github.com/users/${organization}/repos`;
-                let data = await GenerateEdgesandNodes(endpoint, [{ id: nodes.length, label: organization, group: nodes.length}], []);
-                edges.push({ from: 0, to: nodes.length });
-                nodes.push(...data.nodes); edges.push(...data.edges);
-            });
+                /** Graph for Organization */
+                await organizations.map(async (organization) => {
+                    let endpoint = `https://api.github.com/users/${organization}/repos`;
+                    let data = await GenerateEdgesandNodes(endpoint, [{ id: nodes.length, label: organization, group: nodes.length}], []);
+                    edges.push({ from: 0, to: nodes.length });
+                    nodes.push(...data.nodes); edges.push(...data.edges);
+                });
+
+                console.log(nodes);
+                console.log(edges);
+            }
 
             setTimeout(function(){
                 // create a network
@@ -70,9 +87,7 @@
 
                 var network = new vis.Network(container, data, options);
             }, 500);
-        } catch(e) {
-            errorMessage = ``;
-        }
+        } catch(e) { errorMessage = 'Rate Limit Reached!'; rateLimit = true; }
     }
     document.onload = draw();
 </script>
