@@ -1,9 +1,6 @@
 <script>
-    import App from "../src/App.svelte";
-
     export let config;
     let errorMessage = 'Loading...';
-    let rateLimit = false;
 
     /** Generate Edges and Nodes */
     async function GenerateEdgesandNodes(endpoint, nodes, edges){
@@ -44,7 +41,6 @@
                     .then((response) => response.json())
                     .then((data) => { edges = data; });
             } else {
-                // console.log('MASUK');
                 /** Graph for Username */
                 let endpoint = `https://api.github.com/users/${username}/repos`;
                 let data = await GenerateEdgesandNodes(endpoint, [{ id: 0, label: username, group: 1}], []);
@@ -97,7 +93,7 @@
                     }
                 });
             }, 500);
-        } catch(e) { errorMessage = 'Rate Limit Reached!'; rateLimit = true; }
+        } catch(e) { errorMessage = 'Rate Limit Reached!'; }
     }
     document.onload = draw();
 </script>
