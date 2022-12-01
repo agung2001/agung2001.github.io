@@ -18,6 +18,7 @@
                 id: counter,
                 label: v.name,
                 value: v.stargazers_count,
+                url: v.html_url,
                 group: counter,
             })
             counter++;
@@ -43,6 +44,7 @@
                     .then((response) => response.json())
                     .then((data) => { edges = data; });
             } else {
+                // console.log('MASUK');
                 /** Graph for Username */
                 let endpoint = `https://api.github.com/users/${username}/repos`;
                 let data = await GenerateEdgesandNodes(endpoint, [{ id: 0, label: username, group: 1}], []);
@@ -86,6 +88,14 @@
                 };
 
                 var network = new vis.Network(container, data, options);
+                network.on("click", function (params) {
+                    if (params.nodes.length === 1) {
+                        let node = nodes[ params.nodes[0] ];
+                        if(node.url != null) {
+                            window.open(node.url, '_blank');
+                        }
+                    }
+                });
             }, 500);
         } catch(e) { errorMessage = 'Rate Limit Reached!'; rateLimit = true; }
     }
