@@ -1,31 +1,66 @@
 <script>
+    import App from "../src/App.svelte";
+
     export let config;
-    let errorMessage = '';
+    let errorMessage = 'Loading...';
+    let rateLimit = false;
+
+    /** Generate Edges and Nodes */
+    async function GenerateEdgesandNodes(endpoint, nodes, edges){
+        let response = await fetch(endpoint);
+        let data = await response.json();
+        let root = nodes[0];
+
+        /** Nodes */
+        let counter = root.id + 1;
+        data.map((v) => {
+            nodes.push({
+                id: counter,
+                label: v.name,
+                value: v.stargazers_count,
+                url: v.html_url,
+                group: counter,
+            })
+            counter++;
+        });
+
+        /** Edges */
+        edges = nodes.map((v) => ({ from: v.id, to: root.id }));
+        edges.splice(0, 1);
+
+        return { nodes, edges };
+    }
 
     /** Draw Repo */
     async function draw(){
-        let { username } = config;
-        let response = await fetch(`https://api.github.com/users/${username}/repos`);
-        let data;
-        if(response.ok){
-            data = await response.json();
+        let { username, organizations, production } = config;
+        try {
+            let nodes, edges;
+            if(production){
+                await fetch('./nodes.json')
+                    .then((response) => response.json())
+                    .then((data) => { nodes = data; });
+                await fetch('./edges.json')
+                    .then((response) => response.json())
+                    .then((data) => { edges = data; });
+            } else {
+                // console.log('MASUK');
+                /** Graph for Username */
+                let endpoint = `https://api.github.com/users/${username}/repos`;
+                let data = await GenerateEdgesandNodes(endpoint, [{ id: 0, label: username, group: 1}], []);
+                nodes = data.nodes; edges = data.edges;
 
-            /** Nodes */
-            let nodes = [{ id: 0, label: "agung2001", group: 1 }];
-            data.map((v) => {
-                nodes.push({
-                    id: nodes.length,
-                    label: v.name,
-                    value: v.stargazers_count,
-                    group: nodes.length,
-                })
-            });
+                /** Graph for Organization */
+                await organizations.map(async (organization) => {
+                    let endpoint = `https://api.github.com/users/${organization}/repos`;
+                    let data = await GenerateEdgesandNodes(endpoint, [{ id: nodes.length, label: organization, group: nodes.length}], []);
+                    edges.push({ from: 0, to: nodes.length });
+                    nodes.push(...data.nodes); edges.push(...data.edges);
+                });
 
-            /** Edges */
-            let edges = nodes.map((v) => {
-                return { from: v.id, to: 0 };
-            });
-            edges.shift();
+                console.log(nodes);
+                console.log(edges);
+            }
 
             setTimeout(function(){
                 // create a network
@@ -53,8 +88,16 @@
                 };
 
                 var network = new vis.Network(container, data, options);
+                network.on("click", function (params) {
+                    if (params.nodes.length === 1) {
+                        let node = nodes[ params.nodes[0] ];
+                        if(node.url != null) {
+                            window.open(node.url, '_blank');
+                        }
+                    }
+                });
             }, 500);
-        } else { errorMessage = `Failed to reach endpoint!`; }
+        } catch(e) { errorMessage = 'Rate Limit Reached!'; rateLimit = true; }
     }
     document.onload = draw();
 </script>
