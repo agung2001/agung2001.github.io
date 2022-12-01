@@ -2,7 +2,8 @@
   "name" : "Agung Sundoro",
   "tagline": "Let's connect and change the world!",
   "username": "agung2001",
-  "production" : false,
+  "organizations": ["artistudioxyz"],
+  "production": true,
   "socialButtons": [
     {
       "label": "Social",

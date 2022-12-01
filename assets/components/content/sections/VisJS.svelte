@@ -1,31 +1,47 @@
 <script>
     export let config;
-    let errorMessage = '';
+    let errorMessage = 'Loading...';
+
+    /** Generate Edges and Nodes */
+    async function GenerateEdgesandNodes(endpoint, nodes, edges){
+        let response = await fetch(endpoint);
+        let data = await response.json();
+        let root = nodes[0];
+
+        /** Nodes */
+        let counter = root.id + 1;
+        data.map((v) => {
+            nodes.push({
+                id: counter,
+                label: v.name,
+                value: v.stargazers_count,
+                group: counter,
+            })
+            counter++;
+        });
+
+        /** Edges */
+        edges = nodes.map((v) => ({ from: v.id, to: root.id }));
+        edges.splice(0, 1);
+
+        return { nodes, edges };
+    }
 
     /** Draw Repo */
     async function draw(){
-        let { username } = config;
-        let response = await fetch(`https://api.github.com/users/${username}/repos`);
-        let data;
-        if(response.ok){
-            data = await response.json();
+        let { username, organizations } = config;
+        try {
+            /** Graph for Username */
+            let endpoint = `https://api.github.com/users/${username}/repos`;
+            let { nodes, edges } = await GenerateEdgesandNodes(endpoint, [{ id: 0, label: username, group: 1}], []);
 
-            /** Nodes */
-            let nodes = [{ id: 0, label: "agung2001", group: 1 }];
-            data.map((v) => {
-                nodes.push({
-                    id: nodes.length,
-                    label: v.name,
-                    value: v.stargazers_count,
-                    group: nodes.length,
-                })
+            /** Graph for Organization */
+            await organizations.map(async (organization) => {
+                let endpoint = `https://api.github.com/users/${organization}/repos`;
+                let data = await GenerateEdgesandNodes(endpoint, [{ id: nodes.length, label: organization, group: nodes.length}], []);
+                edges.push({ from: 0, to: nodes.length });
+                nodes.push(...data.nodes); edges.push(...data.edges);
             });
-
-            /** Edges */
-            let edges = nodes.map((v) => {
-                return { from: v.id, to: 0 };
-            });
-            edges.shift();
 
             setTimeout(function(){
                 // create a network
@@ -54,7 +70,9 @@
 
                 var network = new vis.Network(container, data, options);
             }, 500);
-        } else { errorMessage = `Failed to reach endpoint!`; }
+        } catch(e) {
+            errorMessage = ``;
+        }
     }
     document.onload = draw();
 </script>
