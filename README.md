@@ -38,6 +38,9 @@ This repo uses GitHub public rest API to generate the graph network.
 To buffer the data from the API please set `production` to `false` in `config.json`
 Then store the object information into [nodes.json](nodes.json) & [edges.json](edges.json)
 
+### Live Reload
+This repo comes with livereload module, to learn more please goto [gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch/blob/main/docs/watch-examples.md#enabling-live-reload-in-your-html)
+
 ## 🔥 Development
 Running the nginx server
 - Rename `.env-sample` to `.env`
