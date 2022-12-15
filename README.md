@@ -22,7 +22,7 @@ docker run -d -p 80:80 \
   -v /path/to/config.json:/usr/share/nginx/html/config.json \
   -v /path/to/avatar.jpg:/usr/share/nginx/html/assets/img/avatar.jpg \
   -v /path/to/cover.jpg:/usr/share/nginx/html/assets/img/cover.jpg \
-  agung2001/agung2001.github.io:master
+  agung2001/agung2001.github.io:latest
 ```
 - NOTE: Don't forget to change the `/path/to/` accordingly
 
