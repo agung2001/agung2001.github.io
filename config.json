@@ -66,7 +66,7 @@
         },
         {
           "label": "Github",
-          "caption": "Contribute to open source",
+          "caption": "Any idea on how to become a GitHub stars?",
           "link": "https://github.com/agung2001",
           "icon": "fab fa-github",
           "color": "#24292f"
@@ -91,6 +91,25 @@
           "link": "https://www.facebook.com/cotothepong/",
           "icon": "fab fa-facebook",
           "color": "#1977f3"
+        }
+      ]
+    },
+    {
+      "label": "Artistudio",
+      "buttons": [
+        {
+          "label": "Go Packages",
+          "caption": "Collection of go packages",
+          "link": "https://pkg.go.dev/search?q=artistudioxyz&m=package",
+          "icon": "fa-brands fa-golang",
+          "color": "#007d9c"
+        },
+        {
+          "label": "GitHub Packages",
+          "caption": "Collection of container and images",
+          "link": "https://github.com/orgs/artistudioxyz/packages",
+          "icon": "fab fa-github",
+          "color": "#24292f"
         }
       ]
     },
