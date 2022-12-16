@@ -56,6 +56,7 @@ Running the nginx server
 ## ⚒️ Built with
 - [Animate.style](https://animate.style/)
 - [Axios](https://axios-http.com/)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Fontawesome](https://fontawesome.com/)
 - [Grunt JS](https://gruntjs.com/)
 - [Svelte JS](https://svelte.dev/)
