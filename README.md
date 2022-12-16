@@ -31,7 +31,7 @@ docker run -d -p 80:80 \
 - Build asset `grunt build`
   - Watch `grunt watch`
 
-## 📚 Notes
+## 📝 Notes
 
 ### Handle GitHub API Rate Limit
 This repo uses GitHub public rest API to generate the graph network.
@@ -47,19 +47,20 @@ Running the nginx server
 - Change `.env` according to your environment
 - Docker `docker-compose up`
 
+## 📚 Resources
+- [Official Repo](https://github.com/agung2001/agung2001.github.io)
+- [GitHub REST API Docs](https://docs.github.com/en/rest)
+- [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
+- [GHCR](https://github.com/agung2001/agung2001.github.io/pkgs/container/agung2001.github.io)
+
 ## ⚒️ Built with
 - [Animate.style](https://animate.style/)
+- [Axios](https://axios-http.com/)
 - [Fontawesome](https://fontawesome.com/)
 - [Grunt JS](https://gruntjs.com/)
 - [Svelte JS](https://svelte.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)
-
-## 📚 Resources
-- [Official Repo](https://github.com/agung2001/agung2001.github.io)
-- [GitHub REST API Docs](https://docs.github.com/en/rest)
-- [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
-- [GHCR](https://github.com/agung2001/agung2001.github.io/pkgs/container/agung2001.github.io) 
 
 ## ⭐️ Support
 Help support me by giving a star or [donate][website]
