@@ -242,5 +242,10 @@
         "https://cdn.worldvectorlogo.com/logos/teamwork-2.svg"
       ]
     }
-  ]
+  ],
+  "contributions": {
+    "EddieHubCommunity": [
+      "hacktoberfest-practice"
+    ]
+  }
 }

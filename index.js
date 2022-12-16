@@ -33,8 +33,8 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the
         return { nodes, edges }
     }
 
-    /** Graph for User */
-    const GraphforUser = async () => {
+    /** User Graph */
+    const UserGraph = async () => {
         let nodes, edges;
         let { username } = config;
         let { data } = await octokit.request('GET /users/{username}/repos', { username });
@@ -44,10 +44,10 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the
     }
 
     /**
-     * Graph for Organization
+     * Organization Graph
      * @param data Consists of nodes and edges data from user
      * */
-    const GraphforOrganizations = async (data) => {
+    const OrganizationsGraph = async (data) => {
         let { nodes, edges } = data;
         let { organizations } = config;
         for (let i = 0; i < organizations.length; i ++) {
@@ -60,9 +60,26 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the
         return { nodes, edges }
     }
 
+    /** Contribution Graph */
+    const ContributionsGraph = async (data) => {
+        let { nodes, edges } = data;
+        let { contributions } = config;
+        for(const [owner, repos] of Object.entries(contributions)){
+            for (let i = 0; i < repos.length; i ++) {
+                let repo = repos[i];
+                let { data } = await octokit.request('GET /repos/{owner}/{repo}', { owner, repo })
+                data = GenerateEdgesandNodes([data], [{ id: nodes.length, label: owner, group: nodes.length}], []);
+                edges.push({ from: 0, to: nodes.length });
+                nodes.push(...data.nodes); edges.push(...data.edges);
+            }
+        }
+        return { nodes, edges }
+    }
+
     /** Generate Data */
-    let data = await GraphforUser()
-    data = await GraphforOrganizations(data);
+    let data = await UserGraph()
+    data = await OrganizationsGraph(data);
+    data = await ContributionsGraph(data);
 
     /** Write to File */
     try {
