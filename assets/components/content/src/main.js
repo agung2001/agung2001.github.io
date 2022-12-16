@@ -8,7 +8,7 @@ import App from './App.svelte';
 			let { name } = config;
 
 			/** Welcome Terminal ASCII */
-			console.log(`༼ つ ◕_◕ ༽つ Welcome to ${name} profile`);
+			console.log(`༼ つ ◕_◕ ༽つ Welcome to ${name} profile page`);
 
 			/** Display Component */
 			document.title = name;
