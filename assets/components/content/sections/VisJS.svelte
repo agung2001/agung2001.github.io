@@ -1,9 +1,6 @@
 <script>
-    import App from "../src/App.svelte";
-
     export let config;
     let errorMessage = 'Loading...';
-    let rateLimit = false;
 
     /** Generate Edges and Nodes */
     async function GenerateEdgesandNodes(endpoint, nodes, edges){
@@ -33,34 +30,26 @@
 
     /** Draw Repo */
     async function draw(){
-        let { username, organizations, production } = config;
+        let { production } = config;
         try {
             let nodes, edges;
-            if(production){
-                await fetch('./nodes.json')
-                    .then((response) => response.json())
-                    .then((data) => { nodes = data; });
-                await fetch('./edges.json')
-                    .then((response) => response.json())
-                    .then((data) => { edges = data; });
-            } else {
-                // console.log('MASUK');
-                /** Graph for Username */
-                let endpoint = `https://api.github.com/users/${username}/repos`;
-                let data = await GenerateEdgesandNodes(endpoint, [{ id: 0, label: username, group: 1}], []);
-                nodes = data.nodes; edges = data.edges;
+            await fetch('./nodes.json')
+                .then((response) => response.json())
+                .then((data) => { nodes = data; });
+            await fetch('./edges.json')
+                .then((response) => response.json())
+                .then((data) => { edges = data; });
 
-                /** Graph for Organization */
-                await organizations.map(async (organization) => {
-                    let endpoint = `https://api.github.com/users/${organization}/repos`;
-                    let data = await GenerateEdgesandNodes(endpoint, [{ id: nodes.length, label: organization, group: nodes.length}], []);
-                    edges.push({ from: 0, to: nodes.length });
-                    nodes.push(...data.nodes); edges.push(...data.edges);
-                });
-
-                console.log(nodes);
-                console.log(edges);
+            /** DEPRECATED - PUBLIC GITHUB API */
+            if(!production){
+                let INFO = `
+                    (◔_◔) This method has been obsolete in the latest version of the website!
+                    Please refers to : https://github.com/agung2001/agung2001.github.io/releases/tag/1.0.2 if you still want to use it.
+                    The newer version has support GitHub tokens to bypass rate limit, to learn more please refer to https://github.com/agung2001/agung2001.github.io
+                `.replace(/  +/g, '');
+                console.log(INFO);
             }
+            /** DEPRECATED - PUBLIC GITHUB API */
 
             setTimeout(function(){
                 // create a network
@@ -96,8 +85,8 @@
                         }
                     }
                 });
-            }, 500);
-        } catch(e) { errorMessage = 'Rate Limit Reached!'; rateLimit = true; }
+            }, 100);
+        } catch(e) { errorMessage = 'Rate Limit Reached!'; }
     }
     document.onload = draw();
 </script>

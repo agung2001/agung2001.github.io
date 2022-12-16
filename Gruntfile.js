@@ -58,6 +58,9 @@ module.exports = function(grunt) {
 
         /** Configure watch task */
         watch: {
+            options: {
+                livereload: true,
+            },
             config: {
                 files: [
                     'config.json'
