@@ -11,7 +11,7 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the
 /** Generate Data (nodes.json and edges.json) */
 (async function(){
     /** GenerateEdgesandNodes Function */
-    const GenerateEdgesandNodes = async (data, nodes, edges) => {
+    const GenerateEdgesandNodes = (data, nodes, edges) => {
         let root = nodes[0];
 
         /** Nodes */
@@ -30,34 +30,45 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the
         /** Edges */
         edges = nodes.map((v) => ({ from: v.id, to: root.id }));
         edges.splice(0, 1);
-        return { nodes, edges };
+        return { nodes, edges }
     }
 
-    /** Graph for Username */
-    const GraphforUsername = async (nodes, edges) => {
+    /** Graph for User */
+    const GraphforUser = async () => {
+        let nodes, edges;
         let { username } = config;
         let { data } = await octokit.request('GET /users/{username}/repos', { username });
-        data = await GenerateEdgesandNodes(data, [{ id: 0, label: config.username, group: 1}], []);
+        data = GenerateEdgesandNodes(data, [{ id: 0, label: config.username, group: 1}], []);
         nodes = data.nodes; edges = data.edges;
         return { nodes, edges }
     }
 
-    /** Graph for Organization */
-    const GraphforOrganizations = async (nodes, edges) => {
+    /**
+     * Graph for Organization
+     * @param data Consists of nodes and edges data from user
+     * */
+    const GraphforOrganizations = async (data) => {
+        let { nodes, edges } = data;
         let { organizations } = config;
-        organizations.map(async (org) => {
+        for (let i = 0; i < organizations.length; i ++) {
+            let org = organizations[i];
             let { data } = await octokit.request('GET /orgs/{org}/repos', { org })
-            data = await GenerateEdgesandNodes(data, [{ id: nodes.length, label: org, group: nodes.length}], []);
-            console.log(data);
+            data = GenerateEdgesandNodes(data, [{ id: nodes.length, label: org, group: nodes.length}], []);
             edges.push({ from: 0, to: nodes.length });
             nodes.push(...data.nodes); edges.push(...data.edges);
-        });
+        }
         return { nodes, edges }
     }
 
-    let data = await GraphforUsername([], [])
-    data = await GraphforOrganizations(data.nodes, data.edges);
+    /** Generate Data */
+    let data = await GraphforUser()
+    data = await GraphforOrganizations(data);
 
-    // console.log(data);
-    // console.log(edges);
+    /** Write to File */
+    try {
+        fs.writeFileSync('nodes.json', JSON.stringify(data.nodes));
+        fs.writeFileSync('edges.json', JSON.stringify(data.edges));
+        console.log('✅ The file has been saved!');
+    } catch (e) { console.log(e); }
+
 })()
