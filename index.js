@@ -14,7 +14,7 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the
     const GenerateEdgesandNodes = (data, nodes, edges) => {
         let root = nodes[0];
 
-        /** Nodes */
+         /** Nodes */
         let counter = root.id + 1;
         data.map((v) => {
             nodes.push({
@@ -65,13 +65,15 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the
         let { nodes, edges } = data;
         let { contributions } = config;
         for(const [owner, repos] of Object.entries(contributions)){
+            let RepoData = [];
             for (let i = 0; i < repos.length; i ++) {
                 let repo = repos[i];
                 let { data } = await octokit.request('GET /repos/{owner}/{repo}', { owner, repo })
-                data = GenerateEdgesandNodes([data], [{ id: nodes.length, label: owner, group: nodes.length}], []);
-                edges.push({ from: 0, to: nodes.length });
-                nodes.push(...data.nodes); edges.push(...data.edges);
+                RepoData.push(data);
             }
+            edges.push({ from: 0, to: nodes.length });
+            let EdgesandNodes = GenerateEdgesandNodes(RepoData, [{ id: nodes.length, label: owner, group: nodes.length}], []);
+            nodes.push(...EdgesandNodes.nodes); edges.push(...EdgesandNodes.edges);
         }
         return { nodes, edges }
     }
