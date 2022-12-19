@@ -17,6 +17,9 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
+      - name: Print github secret
+        run: echo GITHUB_TOKEN=${{ secrets.REST_API_TOKEN }} > .env
+
       - name: Build 🔧
         run: |
           npm ci
