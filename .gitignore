@@ -1,0 +1,13 @@
+# IDEs
+/.idea
+/.vscode
+
+# Vendords
+/vendors
+/node_modules
+
+# Extras
+.env
+
+# Builds
+*.js.map
