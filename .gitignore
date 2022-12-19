@@ -10,4 +10,4 @@
 .env
 
 # Builds
-*.js.map
+assets/build
