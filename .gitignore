@@ -11,3 +11,5 @@
 
 # Builds
 assets/build
+edges.json
+nodes.json
