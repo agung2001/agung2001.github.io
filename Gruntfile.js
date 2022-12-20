@@ -37,6 +37,7 @@ module.exports = function(grunt) {
         /** Compile TailwindCSS - Cross Platform */
         shell: {
             ...getShellComponents(),
+            nodesandedges: { command: 'node index.js'},
             npm_tailwind: { command:
                 `npx tailwindcss build assets/css/tailwind/style.css -o assets/build/css/tailwind.min.css --silent && ` +
                 `node tailwindcsssupport.js`
@@ -92,9 +93,9 @@ module.exports = function(grunt) {
     });
 
     /** Register Tasks */
-    grunt.registerTask('default', ['watch', 'shell:npm_tailwind']);
     grunt.registerTask('build-css', ['shell:npm_tailwind', 'cssmin']);
     grunt.registerTask('build-js', [ ...componentsID ]);
     grunt.registerTask('build', ['build-css', 'build-js']);
+    grunt.registerTask('default', ['build-css', 'build-js', 'shell:nodesandedges']);
 
 };

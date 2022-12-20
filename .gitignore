@@ -8,7 +8,8 @@
 
 # Extras
 .env
-package-lock.json
 
 # Builds
-*.js.map
+assets/build
+edges.json
+nodes.json
