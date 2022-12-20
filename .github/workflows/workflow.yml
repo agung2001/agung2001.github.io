@@ -24,7 +24,7 @@ jobs:
       - name: Build 🔧
         run: |
           npm ci
-          npx grunt build
+          npx grunt
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
