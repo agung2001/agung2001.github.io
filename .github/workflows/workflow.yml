@@ -5,6 +5,8 @@ on:
     branches:
       - master
       - feature/packages
+    tags:
+      - '*'
 
 env:
   IMAGE_NAME: ${{ github.repository }}
