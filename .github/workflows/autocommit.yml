@@ -1,0 +1,34 @@
+name: Auto commit
+
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+env:
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
+      - name: Print github secret ☢️
+        run: echo "GITHUB_TOKEN=${{ secrets.REST_API_TOKEN }}" > .env
+
+      - name: Build 🔧
+        run: |
+          npm ci
+          npx grunt
+          
+      - name: Remove secret ❌
+        run: rm -f .env
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
