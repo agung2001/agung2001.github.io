@@ -6,7 +6,6 @@ require('dotenv').config();
 /** Config and Environment Variables */
 const config = JSON.parse( fs.readFileSync('config.json') );
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-console.log(GITHUB_TOKEN)
 const octokit = new Octokit({ auth: GITHUB_TOKEN }); // Official clients for the GitHub API
 
 /** Generate Data (nodes.json and edges.json) */
