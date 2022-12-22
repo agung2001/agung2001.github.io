@@ -1,6 +1,8 @@
 ![Screenshot](screenshot.png)
 
-😎 a Fantasitc developer profile website using GitHub pages, SvelteJS, VisJS and Tailwind CSS. See the [demo][website].
+😎 a Fantasitc developer profile website using GitHub pages, SvelteJS, VisJS and Tailwind CSS. 
+
+See the live [🌐 website][website].
 
 ![Stars](https://img.shields.io/github/stars/agung2001/agung2001.github.io?style=social)
 ![Size](https://img.shields.io/github/repo-size/agung2001/agung2001.github.io)
