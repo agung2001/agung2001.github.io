@@ -37,10 +37,7 @@ docker run -d -p 80:80 \
 ```
 - NOTE: Don't forget to change the `/path/to/` accordingly
 
-## 📝 Notes
-
-### Contribution
-Please refer to [CONTRIBUTING](CONTRIBUTING.md) file to see a way to contribute to this repot 
+## 📝 Notes 
 
 ### Distro
 I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo. 
@@ -74,7 +71,8 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)
 
-## ⭐️ Support
+## ⭐️ Support & Contribution
 Help support me by giving a star or [donate][website]
+Please refer to [CONTRIBUTING](CONTRIBUTING.md) to see a way to contribute to this repo
 
 [website]: https://agung2001.github.io
