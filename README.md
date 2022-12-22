@@ -1,7 +1,6 @@
 ![Screenshot](screenshot.png)
 
-My GitHub profile page. You can change the configuration of the page by changing [config.json](config.json) file and run the install. 
-See the [demo][website].
+😎 a Fantasitc developer profile website using GitHub pages, SvelteJS, VisJS and Tailwind CSS. See the [demo][website].
 
 ![Stars](https://img.shields.io/github/stars/agung2001/agung2001.github.io?style=social)
 ![Size](https://img.shields.io/github/repo-size/agung2001/agung2001.github.io)
@@ -38,18 +37,24 @@ docker run -d -p 80:80 \
 
 ## 📝 Notes
 
-### How to Generate GitHub Tokens
-Please refer to [GitHub Docs - Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create personal access token.
-Please set the expiration to `no expiration` and enable : `Repo` and `User` scope to see the [screenshot](assets/img/scopes.jpg). 
+### Contribution
+Please refer to [CONTRIBUTING](CONTRIBUTING.md) file to see a way to contribute to this repot 
 
-### Live Reload
-This repo comes with livereload module, to learn more please goto [gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch/blob/main/docs/watch-examples.md#enabling-live-reload-in-your-html)
+### Distro
+I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo. 
 
 ## 🔥 Development
 - Install node package `npm install`
   - Generate `nodes.json` and `edges.json` by running `node index.js`
 - Build asset `grunt build`
     - Watch `grunt watch`
+
+### How to Generate GitHub Tokens
+Please refer to [GitHub Docs - Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create personal access token.
+Please set the expiration to `no expiration` and enable : `Repo` and `User`
+
+### Live Reload
+This repo comes with livereload module, to learn more please goto [gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch/blob/main/docs/watch-examples.md#enabling-live-reload-in-your-html)
 
 ## 📚 Resources
 - [Official Repo](https://github.com/agung2001/agung2001.github.io)
