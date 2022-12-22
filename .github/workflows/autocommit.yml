@@ -15,7 +15,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
-          ref: master
+          ref: develop
 
       - name: Print github secret ☢️
         run: echo "GITHUB_TOKEN=${{ secrets.REST_API_TOKEN }}" > .env

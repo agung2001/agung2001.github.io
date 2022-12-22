@@ -1,7 +1,8 @@
 ![Screenshot](screenshot.png)
 
-My GitHub profile page. You can change the configuration of the page by changing [config.json](config.json) file and run the install. 
-See the [demo][website].
+😎 a Fantasitc developer profile website using GitHub pages, SvelteJS, VisJS and Tailwind CSS. 
+
+See the live [🌐 website][website].
 
 ![Stars](https://img.shields.io/github/stars/agung2001/agung2001.github.io?style=social)
 ![Size](https://img.shields.io/github/repo-size/agung2001/agung2001.github.io)
@@ -36,20 +37,27 @@ docker run -d -p 80:80 \
 ```
 - NOTE: Don't forget to change the `/path/to/` accordingly
 
-## 📝 Notes
+## 📝 Notes 
 
-### How to Generate GitHub Tokens
-Please refer to [GitHub Docs - Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create personal access token.
-Please set the expiration to `no expiration` and enable : `Repo` and `User` scope to see the [screenshot](assets/img/scopes.jpg). 
+### Distro
+I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo. 
 
-### Live Reload
-This repo comes with livereload module, to learn more please goto [gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch/blob/main/docs/watch-examples.md#enabling-live-reload-in-your-html)
+### Google Analytics
+To easily track visitors I use Google Analytics and put the code inside [index.html](index.html)
+You can change the code with your own, if you also want to track the visitors coming to the website.
 
 ## 🔥 Development
 - Install node package `npm install`
   - Generate `nodes.json` and `edges.json` by running `node index.js`
 - Build asset `grunt build`
     - Watch `grunt watch`
+
+### How to Generate GitHub Tokens
+Please refer to [GitHub Docs - Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create personal access token.
+Please set the expiration to `no expiration` and enable : `Repo` and `User`
+
+### Live Reload
+This repo comes with livereload module, to learn more please goto [gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch/blob/main/docs/watch-examples.md#enabling-live-reload-in-your-html)
 
 ## 📚 Resources
 - [Official Repo](https://github.com/agung2001/agung2001.github.io)
@@ -61,13 +69,16 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [Animate.style](https://animate.style/)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Fontawesome](https://fontawesome.com/)
+- [GitHub Action - JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+- [GitHub Action - docker/build-push-action](https://github.com/docker/build-push-action)
 - [Grunt JS](https://gruntjs.com/)
 - [Octokit.js](https://github.com/octokit/octokit.js)
 - [Svelte JS](https://svelte.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)
 
-## ⭐️ Support
-Help support me by giving a star or [donate][website]
+## ⭐️ Support & Contribution
+- Help support me by giving a star or [donate][website]
+- Please refer to [CONTRIBUTING](CONTRIBUTING.md) to see a way to contribute to this repo
 
 [website]: https://agung2001.github.io
