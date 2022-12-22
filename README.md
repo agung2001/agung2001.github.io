@@ -42,6 +42,10 @@ docker run -d -p 80:80 \
 ### Distro
 I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo. 
 
+### Google Analytics
+To easily track visitors I use Google Analytics and put the code inside [index.html](index.html)
+You can change the code with your own, if you also want to track the visitors coming to the website.
+
 ## 🔥 Development
 - Install node package `npm install`
   - Generate `nodes.json` and `edges.json` by running `node index.js`
