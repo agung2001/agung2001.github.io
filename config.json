@@ -95,21 +95,28 @@
       ]
     },
     {
-      "label": "Artistudio",
+      "label": "ArtiStudio | My Personal Consulting Company",
       "buttons": [
+        {
+          "label": "Website",
+          "caption": "WordPress Plugin & Theme Developer Expert",
+          "link": "https://github.com/orgs/artistudioxyz",
+          "icon": "fa-solid fa-browser",
+          "color": "#000"
+        },
+        {
+          "label": "GitHub",
+          "caption": "Collection of open source code",
+          "link": "https://github.com/orgs/artistudioxyz",
+          "icon": "fab fa-github",
+          "color": "#24292f"
+        },
         {
           "label": "Go Packages",
           "caption": "Collection of go packages",
           "link": "https://pkg.go.dev/search?q=artistudioxyz&m=package",
           "icon": "fa-brands fa-golang",
           "color": "#007d9c"
-        },
-        {
-          "label": "GitHub Packages",
-          "caption": "Collection of container and images",
-          "link": "https://github.com/orgs/artistudioxyz/packages",
-          "icon": "fab fa-github",
-          "color": "#24292f"
         }
       ]
     },
