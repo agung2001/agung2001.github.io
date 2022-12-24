@@ -77,11 +77,13 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 
 ## ⚒️ Built with
 - [Animate.style](https://animate.style/)
+- [Commitlint](https://commitlint.js.org)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Fontawesome](https://fontawesome.com/)
 - [GitHub Action - JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
 - [GitHub Action - docker/build-push-action](https://github.com/docker/build-push-action)
 - [Grunt JS](https://gruntjs.com/)
+- [Husky](https://typicode.github.io/husky)
 - [Octokit.js](https://github.com/octokit/octokit.js)
 - [Svelte JS](https://svelte.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
