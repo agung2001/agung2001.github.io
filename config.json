@@ -101,7 +101,7 @@
           "label": "Website",
           "caption": "WordPress Plugin & Theme Developer Expert",
           "link": "https://github.com/orgs/artistudioxyz",
-          "icon": "fa-solid fa-browser",
+          "icon": "fa-solid fa-globe",
           "color": "#000"
         },
         {
@@ -117,6 +117,13 @@
           "link": "https://pkg.go.dev/search?q=artistudioxyz&m=package",
           "icon": "fa-brands fa-golang",
           "color": "#007d9c"
+        },
+        {
+          "label": "Composer Packages",
+          "caption": "Collection of composer packages",
+          "link": "https://packagist.org/packages/artistudioxyz",
+          "icon": "fa-solid fa-box",
+          "color": "#f28d1a"
         }
       ]
     },
