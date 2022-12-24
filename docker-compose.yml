@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  webserver:
+    container_name: agung2001.github.io
+    image: agung2001/agung2001.github.io:latest
+    build: .
+    restart: always
+    volumes:
+      - ./.env:/usr/share/nginx/html/.env
+      - ./package.json:/usr/share/nginx/html/package.json
+      - ./config.json:/usr/share/nginx/html/config.json
+      - ./assets/img/avatar.jpg:/usr/share/nginx/html/assets/img/avatar.jpg
+      - ./assets/img/cover.jpg:/usr/share/nginx/html/assets/img/cover.jpg
+      - ./nodes.json:/usr/share/nginx/html/nodes.json
+      - ./edges.json:/usr/share/nginx/html/edges.json
+    ports:
+      - 80:80
