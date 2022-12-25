@@ -91,6 +91,7 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [Grunt JS](https://gruntjs.com/)
 - [Husky](https://typicode.github.io/husky)
 - [Octokit.js](https://github.com/octokit/octokit.js)
+- [Prettier](https://prettier.io/)
 - [Svelte JS](https://svelte.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)

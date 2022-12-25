@@ -1,5 +1,5 @@
 <script>
-  import vis from "vis-network";
+  import vis from 'vis-network'
   export let config
   let errorMessage = 'Loading...'
 
@@ -74,7 +74,7 @@
 
 <div class="bg-white shadow-xl rounded-lg mb-4">
   <div class="p-6">
-    <h2 class="mb-2 text-lg border-b border-gray-200">Github Repository</h2>
+    <h2 class="mb-2 text-lg border-b border-gray-200">Github Repositories</h2>
   </div>
   <div id="github-network">{errorMessage}</div>
 </div>

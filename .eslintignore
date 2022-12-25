@@ -1,1 +1,4 @@
+assets/build/**/*.js
+assets/vendor/**/*.js
+assets/components/**/main.js
 assets/components/**/rollup.config.js
