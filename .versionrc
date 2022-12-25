@@ -1,0 +1,12 @@
+{
+  "bumpFiles": [
+    {
+      "filename": "CHANGELOG.md",
+      "type": "plain-text"
+    },
+    {
+      "filename": "package.json",
+      "type": "json"
+    }
+  ]
+}
