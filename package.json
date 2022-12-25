@@ -5,15 +5,20 @@
   "author": "Agung Sundoro",
   "license": "ISC",
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "eslint": "^8.30.0",
+    "eslint-plugin-svelte3": "^4.0.0",
     "grunt": "^1.5.3",
     "grunt-contrib-cssmin": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-shell": "^4.0.0",
     "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "prettier-plugin-svelte": "^2.9.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
@@ -25,6 +30,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "octokit": "^2.0.10"
+    "octokit": "^2.0.10",
+    "vis-network": "^9.1.2"
   }
 }
