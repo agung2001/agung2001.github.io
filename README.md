@@ -94,7 +94,9 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [Octokit.js](https://github.com/octokit/octokit.js)
 - [Prettier](https://prettier.io/)
 - [Svelte JS](https://svelte.dev/)
-- [Standard Version](https://www.npmjs.com/package/standard-version)
+- [Release-It](https://www.npmjs.com/package/release-it)
+  - [Bumper](https://github.com/release-it/bumper)
+  - [Conventional Changelog](https://github.com/release-it/conventional-changelog)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)
 
