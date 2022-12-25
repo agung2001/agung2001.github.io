@@ -1,8 +1,10 @@
 name: Releases
 on:
   push:
+    branches:
+      - feature/release
     tags:
-      - '*'
+      - 'v*'
 
 jobs:
   changelog:
