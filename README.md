@@ -55,25 +55,31 @@ docker run -d -p 80:80 \
 
 ## 📝 Notes 
 
+### Conventional Commits
+- This project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0) to create a clean commit.
+- If one of your commit is failing please try committing by using this type of commit message :
+  - `feat: creating awesome feature for this repo`
+
 ### Distro
 I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo. 
 
 ### Google Analytics
-To easily track visitors I use Google Analytics and put the code inside [index.html](index.html)
+To easily track visitors I use Google Analytics and put the code inside [index.html](index.html).
 You can change the code with your own, if you also want to track the visitors coming to the website.
 
 ### How to Generate GitHub Tokens
-Please refer to [GitHub Docs - Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create personal access token.
-Please set the expiration to `no expiration` and enable : `Repo` and `User`
+- Please refer to [GitHub Docs - Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create personal access token.
+- Please set the expiration to `no expiration` and enable : `Repo` and `User`
 
 ### Live Reload
 This repo comes with livereload module, to learn more please goto [gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch/blob/main/docs/watch-examples.md#enabling-live-reload-in-your-html)
 
 ## 📚 Resources
-- [Official Repo](https://github.com/agung2001/agung2001.github.io)
-- [GitHub REST API Docs](https://docs.github.com/en/rest)
+- [🌟 Official Repo](https://github.com/agung2001/agung2001.github.io)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0)
 - [Docker Hub](https://hub.docker.com/r/agung2001/agung2001.github.io)
 - [GHCR](https://github.com/agung2001/agung2001.github.io/pkgs/container/agung2001.github.io)
+- [GitHub REST API Docs](https://docs.github.com/en/rest)
 
 ## ⚒️ Built with
 - [Animate.style](https://animate.style/)
@@ -90,7 +96,7 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [Vis JS](https://visjs.org/)
 
 ## ⭐️ Support & Contribution
-- Help support me by giving a star or [donate][website]
+- Help support me by giving a 🌟 or [donate][website]
 - Please refer to [CONTRIBUTING](CONTRIBUTING.md) to see a way to contribute to this repo
 
 [website]: https://agung2001.github.io
