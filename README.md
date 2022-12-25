@@ -85,6 +85,7 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [Animate.style](https://animate.style/)
 - [Commitlint](https://commitlint.js.org)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Eslint](https://eslint.org/)
 - [Fontawesome](https://fontawesome.com/)
 - [GitHub Action - JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
 - [GitHub Action - docker/build-push-action](https://github.com/docker/build-push-action)
