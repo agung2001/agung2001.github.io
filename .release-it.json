@@ -18,7 +18,18 @@
       "header": "# 📟 Changelog",
       "infile": "CHANGELOG.md",
       "preset": {
-        "name": "conventionalcommits"
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {}
+        ]
       }
     }
   }
