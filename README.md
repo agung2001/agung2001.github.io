@@ -74,6 +74,10 @@ You can change the code with your own, if you also want to track the visitors co
 ### Live Reload
 This repo comes with livereload module, to learn more please goto [gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch/blob/main/docs/watch-examples.md#enabling-live-reload-in-your-html)
 
+## 🚀 Release note
+- Change `package.json` version
+- Do release
+
 ## 📚 Resources
 - [🌟 Official Repo](https://github.com/agung2001/agung2001.github.io)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0)
@@ -87,8 +91,10 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Eslint](https://eslint.org/)
 - [Fontawesome](https://fontawesome.com/)
-- [GitHub Action - JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+- [GitHub Action - actions/create-release](https://github.com/actions/create-release)
 - [GitHub Action - docker/build-push-action](https://github.com/docker/build-push-action)
+- [GitHub Action - JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+- [GitHub Action - TriPSs/conventional-changelog-action](https://github.com/TriPSs/conventional-changelog-action)
 - [Grunt JS](https://gruntjs.com/)
 - [Husky](https://typicode.github.io/husky)
 - [Octokit.js](https://github.com/octokit/octokit.js)
