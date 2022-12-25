@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - feature/release
+    tags:
+      - 'v*'
 
 jobs:
   changelog:
@@ -17,7 +19,6 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
-          version-file: "./package.json"
           output-file: "false"
 
       - name: 🎉 create release
