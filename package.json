@@ -5,9 +5,6 @@
   "author": "Agung Sundoro",
   "license": "ISC",
   "version": "1.2.2",
-  "scripts": {
-    "release": "standard-version"
-  },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@commitlint/cli": "^17.3.0",
