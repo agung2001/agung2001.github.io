@@ -6,7 +6,7 @@
   "license": "ISC",
   "version": "1.3.2",
   "scripts": {
-    "release": "dotenv release-it --"
+    "release": "dotenv release-it -- --no-git.requireUpstream"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
@@ -42,7 +42,7 @@
     "vis-network": "^9.1.2"
   },
   "lint-staged": {
-    "assets/components/**/*.{js,svelte}": "prettier --write",
+    "assets/components/**/*.{js,svelte}": "eslint --fix && prettier --write",
     "assets/css/**/*.{css,scss}": "prettier --write"
   }
 }
