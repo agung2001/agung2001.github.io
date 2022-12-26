@@ -54,27 +54,6 @@
           "color": "#1ab26b"
         },
         {
-          "label": "WordPress",
-          "caption": "Just another WordPress Profile",
-          "link": "https://profiles.wordpress.org/agung2001/",
-          "icon": "fab fa-wordpress",
-          "color": "#23282d"
-        },
-        {
-          "label": "Docker",
-          "caption": "Living inside a container",
-          "link": "https://hub.docker.com/u/agung2001",
-          "icon": "fab fa-docker",
-          "color": "#309cef"
-        },
-        {
-          "label": "Github",
-          "caption": "We all love open source",
-          "link": "https://github.com/agung2001",
-          "icon": "fab fa-github",
-          "color": "#24292f"
-        },
-        {
           "label": "Blogspot",
           "caption": "Old collection of articles",
           "link": "https://agungsundoro.blogspot.com/",
@@ -94,6 +73,27 @@
           "link": "https://www.facebook.com/cotothepong/",
           "icon": "fab fa-facebook",
           "color": "#1977f3"
+        },
+        {
+          "label": "WordPress",
+          "caption": "Just another WordPress Profile",
+          "link": "https://profiles.wordpress.org/agung2001/",
+          "icon": "fab fa-wordpress",
+          "color": "#23282d"
+        },
+        {
+          "label": "Docker",
+          "caption": "Living inside a container",
+          "link": "https://hub.docker.com/u/agung2001",
+          "icon": "fab fa-docker",
+          "color": "#309cef"
+        },
+        {
+          "label": "Github",
+          "caption": "We all love open source",
+          "link": "https://github.com/agung2001",
+          "icon": "fab fa-github",
+          "color": "#24292f"
         }
       ]
     },
