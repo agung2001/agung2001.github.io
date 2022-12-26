@@ -6,7 +6,7 @@
   "license": "ISC",
   "version": "1.3.2",
   "scripts": {
-    "release": "dotenv release-it -- --no-git.requireUpstream"
+    "release": "dotenv release-it --"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
