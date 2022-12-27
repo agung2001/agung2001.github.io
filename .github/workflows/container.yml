@@ -12,7 +12,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  docker-hub:
+  build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -33,6 +33,7 @@ jobs:
       - name: Remove secret ❌
         run: rm -f .env
 
+      # Deploy to Docker Hub
       - name: Login to Docker Hub 🐳
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v2
@@ -54,27 +55,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-  github-package:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-
-      - name: Print github secret ☢️
-        run: echo "GITHUB_TOKEN=${{ secrets.REST_API_TOKEN }}" > .env
-
-      - name: Build 🔧
-        run: |
-          npm ci
-          npx grunt
-
-      - name: Remove secret ❌
-        run: rm -f .env
-
+      # Deploy to GHCR.io
       - name: Log in to the Container registry 🐳
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v2
