@@ -1,6 +1,6 @@
 ![Screenshot](screenshot.png)
 
-😎 a Fantasitc developer profile website using GitHub pages, SvelteJS, VisJS and Tailwind CSS. 
+😎 a Fantasitc developer profile website using GitHub pages, SvelteJS, VisJS and Tailwind CSS.
 
 See the live [🌐 website][website].
 
@@ -53,7 +53,7 @@ docker run -d -p 80:80 \
 ```
 - NOTE: Don't forget to change the `/path/to/` accordingly
 
-## 📝 Notes 
+## 📝 Notes
 
 ### Conventional Commits
 - This project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0) to create a clean commit.
@@ -61,7 +61,7 @@ docker run -d -p 80:80 \
   - `feat: creating awesome feature for this repo`
 
 ### Distro
-I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo. 
+I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo.
 
 ### Google Analytics
 To easily track visitors I use Google Analytics and put the code inside [index.html](index.html).
@@ -85,6 +85,7 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - [Animate.style](https://animate.style/)
 - [Commitlint](https://commitlint.js.org)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
+- [EditorConfig](https://editorconfig.org/)
 - [Eslint](https://eslint.org/)
 - [Fontawesome](https://fontawesome.com/)
 - [GitHub Action - docker/build-push-action](https://github.com/docker/build-push-action)
