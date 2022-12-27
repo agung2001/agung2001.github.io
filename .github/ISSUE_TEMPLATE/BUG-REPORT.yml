@@ -66,15 +66,3 @@ body:
         - Opera
     validations:
       required: false
-  - type: dropdown
-    id: os
-    attributes:
-      label: "OS"
-      description: What is the impacted environment ?
-      multiple: true
-      options:
-        - Windows
-        - Linux
-        - Mac
-    validations:
-      required: false
