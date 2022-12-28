@@ -4,7 +4,7 @@
   "main": "Gruntfile.js",
   "author": "Agung Sundoro",
   "license": "ISC",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "scripts": {
     "release": "dotenv release-it --"
   },
