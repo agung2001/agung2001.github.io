@@ -62,7 +62,7 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
       let { data } = await octokit.request('GET /orgs/{org}/repos', { org })
       data = GenerateEdgesandNodes(
         data,
-        [{ id: nodes.length, label: org, group: nodes.length }],
+        [{ id: nodes.length, label: org, url: `https://github.com/${org}`, group: nodes.length }],
         []
       )
       edges.push({ from: 0, to: nodes.length })
@@ -89,7 +89,7 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
       edges.push({ from: 0, to: nodes.length })
       let EdgesandNodes = GenerateEdgesandNodes(
         RepoData,
-        [{ id: nodes.length, label: owner, group: nodes.length }],
+        [{ id: nodes.length, label: owner, url: `https://github.com/${owner}`, group: nodes.length }],
         []
       )
       nodes.push(...EdgesandNodes.nodes)

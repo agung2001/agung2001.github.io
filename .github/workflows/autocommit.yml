@@ -4,9 +4,6 @@ on:
   schedule:
   - cron: "0 0 * * *"
 
-env:
-  IMAGE_NAME: ${{ github.repository }}
-
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
@@ -24,7 +21,7 @@ jobs:
         run: |
           npm ci
           npx grunt
-          
+
       - name: Remove secret ❌
         run: rm -f .env
 
