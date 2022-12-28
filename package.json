@@ -42,7 +42,10 @@
     "vis-network": "^9.1.2"
   },
   "lint-staged": {
-    "assets/components/**/*.{js,svelte}": "eslint --fix && prettier --write",
+    "assets/components/**/*.{js,svelte}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
     "assets/css/**/*.{css,scss}": "prettier --write"
   }
 }

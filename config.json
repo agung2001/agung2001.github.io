@@ -2,11 +2,11 @@
   "name": "Agung Sundoro",
   "tagline": "Let's connect and change the world!",
   "username": "agung2001",
+  "production": true,
+  "version": "1.3.2",
   "organizations": [
     "artistudioxyz"
   ],
-  "production": true,
-  "version": "1.3.2",
   "socialButtons": [
     {
       "label": "Social",
@@ -122,10 +122,10 @@
           "color": "#007d9c"
         },
         {
-          "label": "Composer Packages",
-          "caption": "Collection of composer packages",
+          "label": "Packagist",
+          "caption": "Collection of composer package",
           "link": "https://packagist.org/packages/artistudioxyz",
-          "icon": "fa-solid fa-box",
+          "icon": "https://packagist.org/img/logo-small.png",
           "color": "#f28d1a"
         }
       ]
@@ -266,5 +266,230 @@
       "hacktoberfest-practice",
       "LinkFree"
     ]
-  }
+  },
+  "experiences": [
+    {
+      "organization": "ApplebyDesign",
+      "url": "https://applebydesign.com.au",
+      "portfolio": [
+        {
+          "name": "Adenda",
+          "url": "http://adenda.com.au/"
+        },
+        {
+          "name": "Advanced System Engineering & Design (ASED)",
+          "url": "https://as-ed.com.au/"
+        },
+        {
+          "name": "Adsonthemove",
+          "url": "https://adsonthemove.com.au/"
+        },
+        {
+          "name": "Atdelectrical",
+          "url": "https://atdelectrical.com.au/"
+        },
+        {
+          "name": "Australian Coins",
+          "url": "https://www.australiancoins.com.au/"
+        },
+        {
+          "name": "Australian Bank Notes",
+          "url": "https://www.australianbanknotes.com.au/"
+        },
+        {
+          "name": "BeautifulMandala",
+          "url": "https://www.beautifulmandala.com.au/"
+        },
+        {
+          "name": "DiSigns",
+          "url": "http://disigns.com.au/"
+        },
+        {
+          "name": "Divinecreatures",
+          "url": "http://divinecreatures.com.au/"
+        },
+        {
+          "name": "EC Sustainable",
+          "url": "https://www.ecsustainable.com/"
+        },
+        {
+          "name": "Engadine Australia",
+          "url": "https://engadinepreschool.org.au/"
+        },
+        {
+          "name": "Epilepsyproject",
+          "url": "https://epilepsyproject.org.au/"
+        },
+        {
+          "name": "FarmFreshtoDoor",
+          "url": "https://farmfreshtodoor.com.au/"
+        },
+        {
+          "name": "Fablesonthemountain",
+          "url": "https://fablesonthemountain.com.au/"
+        },
+        {
+          "name": "Foxxiegal",
+          "url": "http://foxxiegal.com.au/about-us"
+        },
+        {
+          "name": "Foodieculture",
+          "url": "https://foodieculture.com.au/"
+        },
+        {
+          "name": "FrecnchForTuesday",
+          "url": "http://frenchfortuesday.com.au"
+        },
+        {
+          "name": "GlobalInstructorVillage",
+          "url": "https://www.globalinstructorvillage.com/"
+        },
+        {
+          "name": "Goldringstylus",
+          "url": "http://goldringstylus.com.au/"
+        },
+        {
+          "name": "Home Search Solution",
+          "url": "http://www.homesearchsolutions.com.au"
+        },
+        {
+          "name": "Illawarra Advocacy",
+          "url": "https://www.illawarraadvocacy.org.au/"
+        },
+        {
+          "name": "Jacaranda Preschool Caringabah",
+          "url": "https://www.jacarandapreschoolcaringbah.com.au/"
+        },
+        {
+          "name": "Kidsatlittleschool",
+          "url": "https://kidsatlittleschool.com.au/"
+        },
+        {
+          "name": "Lancasterlaw Law & Meditation",
+          "url": "https://lancasterlaw.com.au/"
+        },
+        {
+          "name": "Lunchmag",
+          "url": "https://www.lunchmag.com/"
+        },
+        {
+          "name": "Masterfishermen",
+          "url": "http://masterfishermen.oceanwatch.org.au/"
+        },
+        {
+          "name": "MostlyMassage",
+          "url": "https://www.mostlymassage.com/"
+        },
+        {
+          "name": "Navigatortips",
+          "url": "http://navigatortips.com.au/"
+        },
+        {
+          "name": "Neboknives",
+          "url": "https://www.neboknives.com.au/"
+        },
+        {
+          "name": "NextGenerationHair",
+          "url": "http://www.nextgenerationhair.com.au/"
+        },
+        {
+          "name": "Oceanwatch Australia",
+          "url": "http://oceanwatch.org.au/"
+        },
+        {
+          "name": "Oceanwatch Masterfisherman",
+          "url": "https://oceanwatchmasterfisherman.org.au/"
+        },
+        {
+          "name": "OMHS",
+          "url": "http://www.omhs.com.au/"
+        },
+        {
+          "name": "Project organic",
+          "url": "https://projectorganic.com.au/"
+        },
+        {
+          "name": "Salt Australia",
+          "url": "https://saltaustralia.org.au/"
+        },
+        {
+          "name": "Sculpture on the farm",
+          "url": "https://sculptureonthefarm.com.au/"
+        },
+        {
+          "name": "Shandorpsychicmedium",
+          "url": "https://shandorpsychicmedium.com.au/"
+        },
+        {
+          "name": "Sydney Eye Hospital Foundation",
+          "url": "https://sydneyeyehospitalfoundation.org.au/"
+        },
+        {
+          "name": "Sydney Pet Boarding",
+          "url": "http://sydneypetboarding.com/"
+        },
+        {
+          "name": "The Right Note",
+          "url": "https://www.therightnote.com.au"
+        },
+        {
+          "name": "Tigerlight",
+          "url": "https://www.tigerlight.com.au/"
+        },
+        {
+          "name": "The Master Fish Merchants Association of Australia",
+          "url": "http://www.mfma.com.au/"
+        },
+        {
+          "name": "Thermohub",
+          "url": "https://www.thermohub.com/?"
+        },
+        {
+          "name": "TierraMar",
+          "url": "https://tierramar.com.au/"
+        },
+        {
+          "name": "TumblingTeddy",
+          "url": "http://tumblingteddyscottage.com.au/"
+        },
+        {
+          "name": "WEA Illawarra",
+          "url": "https://www.weaillawarra.com.au/"
+        },
+        {
+          "name": "WorldCueSports",
+          "url": "http://www.worldcuesports.com.au/"
+        }
+      ]
+    },
+    {
+      "organization": "DBO (PT. Depoguna Bangunan Online)",
+      "url": "https://dbo.id",
+      "portfolio": []
+    },
+    {
+      "organization": "Lightstyle",
+      "url": "https://lightstyle.co.nz",
+      "portfolio": [
+        {
+          "name": "Empire Property",
+          "url": "https://empireproperty.com.au/"
+        },
+        {
+          "name": "K Real Estate",
+          "url": "https://www.krealestate.co.nz/"
+        }
+      ]
+    },
+    {
+      "organization": "Relasio",
+      "url": "https://relasio.com",
+      "portfolio": []
+    },
+    {
+      "organization": "SatuMedis",
+      "url": "https://satumedis.com",
+      "portfolio": []
+    }
+  ]
 }
