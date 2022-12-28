@@ -2,11 +2,11 @@
   "name": "Agung Sundoro",
   "tagline": "Let's connect and change the world!",
   "username": "agung2001",
+  "production": true,
+  "version": "1.3.2",
   "organizations": [
     "artistudioxyz"
   ],
-  "production": true,
-  "version": "1.3.2",
   "socialButtons": [
     {
       "label": "Social",
@@ -122,10 +122,10 @@
           "color": "#007d9c"
         },
         {
-          "label": "Composer Packages",
-          "caption": "Collection of composer packages",
+          "label": "Packagist",
+          "caption": "Collection of composer package",
           "link": "https://packagist.org/packages/artistudioxyz",
-          "icon": "fa-solid fa-box",
+          "icon": "https://packagist.org/img/logo-small.png",
           "color": "#f28d1a"
         }
       ]
@@ -266,5 +266,36 @@
       "hacktoberfest-practice",
       "LinkFree"
     ]
-  }
+  },
+  "experiences": [
+    {
+      "organization": "DBO (PT. Depoguna Bangunan Online)",
+      "url": "https://dbo.id",
+      "portfolio": []
+    },
+    {
+      "organization": "Lightstyle",
+      "url": "https://lightstyle.co.nz",
+      "portfolio": [
+        {
+          "name": "Empire Property",
+          "url": "https://empireproperty.com.au/"
+        },
+        {
+          "name": "K Real Estate",
+          "url": "https://www.krealestate.co.nz/"
+        }
+      ]
+    },
+    {
+      "organization": "Relasio",
+      "url": "https://relasio.com",
+      "portfolio": []
+    },
+    {
+      "organization": "SatuMedis",
+      "url": "https://satumedis.com",
+      "portfolio": []
+    }
+  ]
 }

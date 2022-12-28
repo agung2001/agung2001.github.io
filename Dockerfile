@@ -19,7 +19,7 @@ WORKDIR /usr/share/nginx/html
 
 # NPM Install
 RUN npm i --force
-RUN node index.js
+RUN node generator.js
 RUN npx grunt
 
 EXPOSE 80

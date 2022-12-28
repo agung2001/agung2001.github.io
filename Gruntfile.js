@@ -35,7 +35,7 @@ module.exports = function (grunt) {
     /** Compile TailwindCSS - Cross Platform */
     shell: {
       ...getShellComponents(),
-      nodesandedges: { command: 'node index.js' },
+      nodesandedges: { command: 'node generator.js' },
       npm_tailwind: {
         command:
           `npx tailwindcss build assets/css/tailwind/style.css -o assets/build/css/tailwind.min.css --silent && ` +
