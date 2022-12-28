@@ -33,6 +33,12 @@ jobs:
       - name: Remove secret ❌
         run: rm -f .env
 
+      - name: Extract metadata (tags, labels) for Docker 🐳
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          images: ${{ env.IMAGE_NAME }}
+
       # Deploy to Docker Hub
       - name: Login to Docker Hub 🐳
         if: github.event_name != 'pull_request'
@@ -40,12 +46,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-
-      - name: Extract metadata (tags, labels) for Docker 🐳
-        id: meta
-        uses: docker/metadata-action@v4
-        with:
-          images: ${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image 🐳
         uses: docker/build-push-action@v3
@@ -63,12 +63,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Extract metadata (tags, labels) for Docker 🐳
-        id: meta
-        uses: docker/metadata-action@v4
-        with:
-          images: ghcr.io/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image 🐳
         uses: docker/build-push-action@v3
