@@ -1,5 +1,23 @@
 # 📟 Changelog
 
+## [1.4.0](https://github.com/agung2001/agung2001.github.io/compare/v1.3.2...v1.4.0) (2022-12-28)
+
+
+### Features
+
+* add .editorconfig file ([3510bee](https://github.com/agung2001/agung2001.github.io/commit/3510beefad837f44e294ad02660ed0997bfc699c))
+* finish ExperienceGraph function ([068c030](https://github.com/agung2001/agung2001.github.io/commit/068c030f5326c36274f5071b9970265b7bece87a))
+
+
+### Bug Fixes
+
+* add --no-git.requireUpstream to release script package.json ([df314ae](https://github.com/agung2001/agung2001.github.io/commit/df314ae843dd463b4a956ea0ac1f3dd6d2f913ee))
+* eslint lint-staged missing package.json ([fff6a82](https://github.com/agung2001/agung2001.github.io/commit/fff6a826644c65238b2d8ea76d582709bf44cb7f))
+* eslint lint-staged missing package.json as single line ([15b96bb](https://github.com/agung2001/agung2001.github.io/commit/15b96bbc89d2e287debbe2e73b6b227358b5f15f))
+* merge registry build and deploy action into single step ([2c62635](https://github.com/agung2001/agung2001.github.io/commit/2c626352898a2e6251d23c29c0f9cd2e5df16fc2))
+* organization and contribution parent node cant be clicked ([9e00833](https://github.com/agung2001/agung2001.github.io/commit/9e008331ba910afe076bf30b2d9b06423a1d49cf))
+* remove --no-git.requireUpstream from release script package.json ([75d8187](https://github.com/agung2001/agung2001.github.io/commit/75d81878b85ac9daf06f08cb80cf6ff231f5677a))
+
 ## [1.3.2](https://github.com/agung2001/agung2001.github.io/compare/v1.3.1...v1.3.2) (2022-12-25)
 
 
