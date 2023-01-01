@@ -265,6 +265,9 @@
       "awesome-github-profiles",
       "hacktoberfest-practice",
       "LinkFree"
+    ],
+    "mazipan": [
+      "auto-commit"
     ]
   },
   "experiences": [
@@ -272,20 +275,6 @@
       "organization": "DBO (PT. Depoguna Bangunan Online)",
       "url": "https://dbo.id",
       "portfolio": []
-    },
-    {
-      "organization": "Lightstyle",
-      "url": "https://lightstyle.co.nz",
-      "portfolio": [
-        {
-          "name": "Empire Property",
-          "url": "https://empireproperty.com.au/"
-        },
-        {
-          "name": "K Real Estate",
-          "url": "https://www.krealestate.co.nz/"
-        }
-      ]
     },
     {
       "organization": "Relasio",
