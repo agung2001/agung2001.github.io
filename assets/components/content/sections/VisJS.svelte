@@ -76,10 +76,7 @@
 
 <div class="bg-white shadow-xl rounded-lg mb-4">
 	<div class="flex justify-between p-4 border-b border-gray-200">
-		<h2 class="text-lg">
-			<i class="fa-brands fa-codepen pt-1 md:pr-2" />
-			Experience Graph
-		</h2>
+		<h2 class="text-lg">Experience Graph</h2>
 	</div>
 	<div id="github-network">{errorMessage}</div>
 </div>
