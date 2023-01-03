@@ -20,7 +20,7 @@ jobs:
       - name: Build 🔧
         run: |
           npm ci
-          npx grunt
+          npx grunt build
 
       - name: Remove secret ❌
         run: rm -f .env
