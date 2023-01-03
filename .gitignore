@@ -10,6 +10,6 @@
 .env
 
 # Builds
-assets/build
+/assets/build
 edges.json
 nodes.json
