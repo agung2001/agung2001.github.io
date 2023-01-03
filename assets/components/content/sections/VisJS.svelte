@@ -10,12 +10,16 @@
 		let { production } = config
 		try {
 			let nodes, edges
-			await fetch('./nodes.json')
+			await fetch(
+				'https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@gh-pages/nodes.json'
+			)
 				.then((response) => response.json())
 				.then((data) => {
 					nodes = data
 				})
-			await fetch('./edges.json')
+			await fetch(
+				'https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@gh-pages/edges.json'
+			)
 				.then((response) => response.json())
 				.then((data) => {
 					edges = data
