@@ -94,6 +94,14 @@
           "link": "https://github.com/agung2001",
           "icon": "fab fa-github",
           "color": "#24292f"
+        },
+        {
+          "label": "NPM",
+          "caption": "Node Package Manager",
+          "link": "https://www.npmjs.com/~agung2001",
+          "icon": "https://github.com/npm/logos/raw/master/npm%20logo/classic/npm-2009.png",
+          "color": "#333333",
+          "textColor": "#fff"
         }
       ]
     },
@@ -127,6 +135,14 @@
           "link": "https://packagist.org/packages/artistudioxyz",
           "icon": "https://packagist.org/img/logo-small.png",
           "color": "#f28d1a"
+        },
+        {
+          "label": "NPM",
+          "caption": "Node Package Manager",
+          "link": "https://www.npmjs.com/org/artistudioxyz",
+          "icon": "https://github.com/npm/logos/raw/master/npm%20logo/classic/npm-2009.png",
+          "color": "#333333",
+          "textColor": "#fff"
         }
       ]
     },
@@ -271,6 +287,9 @@
     ],
     "Scattercatt": [
       "Slippi-stats"
+    ],
+    "VectorChi": [
+      "worldpresidents"
     ]
   },
   "experiences": [

@@ -35,12 +35,14 @@
 								target="_blank"
 								rel="noreferrer"
 								class:animate__tada={button.animate}
-								style="background-color: {button.color}; {button.textColor
-									? `color: ${button.textColor};`
-									: ''}"
+								style="
+									background-color: {button.color};
+									{button.textColor ? `color: ${button.textColor};` : ''}
+									{button.borderColor ? `border: 1px solid ${button.borderColor};` : ''}
+								"
 							>
 								{#if button.icon.includes('http')}
-									<img src={button.icon} class="w-6 h-6" alt={button.label} />
+									<img src={button.icon} class="w-6" alt={button.label} />
 								{:else}
 									<i class={button.icon} />
 								{/if}
