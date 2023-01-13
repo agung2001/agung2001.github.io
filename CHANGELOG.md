@@ -1,5 +1,13 @@
 # 📟 Changelog
 
+## [1.5.1](https://github.com/agung2001/agung2001.github.io/compare/v1.5.0...v1.5.1) (2023-01-13)
+
+
+### Bug Fixes
+
+* docker-compose.yml integrate build assets ([ec8f3a2](https://github.com/agung2001/agung2001.github.io/commit/ec8f3a27a5e7b039e5ec1cc509c8453f242e1f3f))
+* github stats wrong url ([8fd1dfe](https://github.com/agung2001/agung2001.github.io/commit/8fd1dfe1517bd62aa3a87d888927e5125cac6421))
+
 ## [1.5.0](https://github.com/agung2001/agung2001.github.io/compare/v1.4.1...v1.5.0) (2023-01-13)
 
 
