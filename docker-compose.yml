@@ -12,7 +12,5 @@ services:
       - ./config.json:/usr/share/nginx/html/config.json
       - ./assets/img/avatar.jpg:/usr/share/nginx/html/assets/img/avatar.jpg
       - ./assets/img/cover.jpg:/usr/share/nginx/html/assets/img/cover.jpg
-      - ./nodes.json:/usr/share/nginx/html/nodes.json
-      - ./edges.json:/usr/share/nginx/html/edges.json
     ports:
       - ${WEBSERVER_PORT-80}:80
