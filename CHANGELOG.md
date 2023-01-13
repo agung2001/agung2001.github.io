@@ -1,5 +1,21 @@
 # 📟 Changelog
 
+## [1.5.0](https://github.com/agung2001/agung2001.github.io/compare/v1.4.1...v1.5.0) (2023-01-13)
+
+
+### Features
+
+* route all assets to load via jsdeliver ([efad0cc](https://github.com/agung2001/agung2001.github.io/commit/efad0ccddd3ffcb1579a35054c0aed7492d8a19f))
+
+
+### Bug Fixes
+
+* add link to readme-stats profile ([2059b36](https://github.com/agung2001/agung2001.github.io/commit/2059b36be32f2f8413960f210f7079968e91a1f5))
+* github stats image ([a680819](https://github.com/agung2001/agung2001.github.io/commit/a680819572983e515b713a7a432620cfc5d22352))
+* remove nodes.json and edges.json from docker-compose.yml ([1472b8e](https://github.com/agung2001/agung2001.github.io/commit/1472b8ebe74388edc113e37117fb97cc3c435059))
+* revert nodes.json and edges.json to load locally for others to use ([a0617ab](https://github.com/agung2001/agung2001.github.io/commit/a0617abd72006d9d072810c64da4c441f13df714))
+* set default ports via .env var docker-compose.yml ([4f56d92](https://github.com/agung2001/agung2001.github.io/commit/4f56d925aae0ef7dfaab74465d5326cf53d67faa))
+
 ## [1.4.1](https://github.com/agung2001/agung2001.github.io/compare/v1.4.0...v1.4.1) (2022-12-28)
 
 
