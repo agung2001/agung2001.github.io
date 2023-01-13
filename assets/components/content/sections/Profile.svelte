@@ -19,13 +19,13 @@
 		<a href="https://github.com/{username}" target="_blank">
 			<img
 				alt="{name} GitHub Stats"
-				src="https://github-readme-stats.vercel.app/api?username={username}&show_icons=true&hide_border=false"
+				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app?username={username}&show_icons=true&hide_border=false"
 			/>
 		</a>
 		<a href="https://github.com/{username}" target="_blank">
 			<img
 				alt="{name} Top Languages"
-				src="https://github-readme-stats.vercel.app/api/top-langs/?username={username}&langs_count=8&layout=compact&hide_border=false"
+				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username={username}&langs_count=8&layout=compact&hide_border=false"
 				width="100%"
 			/>
 		</a>
