@@ -19,7 +19,7 @@
 		<a href="https://github.com/{username}" target="_blank">
 			<img
 				alt="{name} GitHub Stats"
-				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app?username={username}&show_icons=true&hide_border=false"
+				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={username}&show_icons=true&hide_border=false"
 			/>
 		</a>
 		<a href="https://github.com/{username}" target="_blank">
