@@ -1,5 +1,7 @@
 # 📟 Changelog
 
+## [1.5.2](https://github.com/agung2001/agung2001.github.io/compare/v1.5.1...v1.5.2) (2023-01-13)
+
 ## [1.5.1](https://github.com/agung2001/agung2001.github.io/compare/v1.5.0...v1.5.1) (2023-01-13)
 
 

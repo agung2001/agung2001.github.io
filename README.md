@@ -106,4 +106,4 @@ This repo comes with livereload module, to learn more please goto [gruntjs/grunt
 - Help support me by giving a 🌟 or [donate][website]
 - Please refer to [CONTRIBUTING](CONTRIBUTING.md) to see a way to contribute to this repo
 
-[website]: https://agung2001.github.io
+[website]: https://agungsundoro.ddns.net
