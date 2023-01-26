@@ -288,6 +288,9 @@
     "mazipan": [
       "auto-commit"
     ],
+    "redis": [
+      "node-redis"
+    ],
     "Scattercatt": [
       "Slippi-stats"
     ],
