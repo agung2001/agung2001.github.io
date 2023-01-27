@@ -95,6 +95,6 @@ module.exports = function (grunt) {
 		'build-css',
 		'build-js',
 		'shell:node_nodesandedges',
-		'shell:node_pages',
+		// 'shell:node_pages', // @deprecated
 	])
 }
