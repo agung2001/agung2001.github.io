@@ -13,6 +13,7 @@
 			await fetch('./nodes.json')
 				.then((response) => response.json())
 				.then((data) => {
+					console.log(data)
 					nodes = data
 				})
 			await fetch('./edges.json')
