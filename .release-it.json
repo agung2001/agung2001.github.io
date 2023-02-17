@@ -11,8 +11,8 @@
   },
   "plugins": {
     "@release-it/bumper": {
-      "in": "config.json",
-      "out": "config.json"
+      "in": "src/config.js",
+      "out": "src/config.js"
     },
     "@release-it/conventional-changelog": {
       "header": "# 📟 Changelog",

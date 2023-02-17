@@ -31,10 +31,6 @@ module.exports = function (grunt) {
 
 		/** Configure watch task */
 		watch: {
-			config: {
-				files: ['config.json'],
-				tasks: ['build'],
-			},
 			src: {
 				files: [
 					'./src/**/*.html',
