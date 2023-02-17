@@ -1,6 +1,6 @@
 /** Libraries */
 import {Octokit} from "octokit";
-import config from './src/config.js'
+import experiences from "./src/experiences.js";
 import github from './src/github.js'
 import fs from 'fs'
 
@@ -124,7 +124,6 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
 	/** Experience Graph */
 	const ExperienceGraph = async (data) => {
 		let { nodes, edges } = data
-		let { experiences } = config
 		edges.push({ from: 0, to: nodes.length })
 		let portfolioIndex = nodes.length
 		nodes.push({
