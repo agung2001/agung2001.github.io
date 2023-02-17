@@ -14,6 +14,10 @@ services:
     command: ["yarn", "dev", "--host", "0.0.0.0"]
     ports:
       - ${FRONTEND_PORT-80}:3000
+    depends_on:
+      - backend
+    networks:
+      - agung2001.github.io
 
   backend:
     container_name: agung2001.github.io_backend
@@ -21,6 +25,23 @@ services:
     restart: always
     volumes:
       - ./bin:/app/bin
-    command: [ "/app/bin/cakrawala", "--api", "--run", "--port", "3000" ]
+    command: [ "/app/bin/cakrawala/linux-arm64", "--api", "--run", "--port", "3000" ]
     ports:
       - ${BACKEND_PORT-81}:3000
+    depends_on:
+      - redis
+    networks:
+      - agung2001.github.io
+
+  redis:
+    image: redis
+    container_name: agung2001.github.io_redis
+    restart: always
+    ports:
+      - ${REDIS_PORT-6379}:6379
+    volumes:
+      - ./data/redis:/data
+    command: redis-server --appendonly yes
+    networks:
+      - agung2001.github.io
+

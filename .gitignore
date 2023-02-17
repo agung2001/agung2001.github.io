@@ -2,6 +2,9 @@
 /.idea
 /.vscode
 
+# Data
+/data
+
 # Vendords
 /vendors
 /node_modules
