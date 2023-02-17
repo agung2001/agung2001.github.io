@@ -10,6 +10,25 @@
 .env
 
 # Builds
-assets/build
 nodes.json
 edges.json
+/assets/build
+/build
+/static/css/style.min.css
+/static/css/tailwind.min.css
+/static/contributor/list.json
+/static/plugin/list.json
+/static/theme/list.json
+/static/*.css.map
+/static/*.js.map
+
+# Svelte
+.DS_Store
+/.svelte-kit
+/package
+.env
+.env.*
+.development
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
