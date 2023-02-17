@@ -1,11 +1,16 @@
 {
   "name": "agung2001.github.io",
-  "description": "Agung Sundoro Github Public Page",
-  "main": "Gruntfile.js",
+  "description": "Agung Sundoro Website",
+  "type": "module",
   "author": "Agung Sundoro",
   "license": "ISC",
   "version": "1.5.2",
   "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "release": "dotenv release-it --"
   },
   "devDependencies": {
@@ -16,6 +21,9 @@
     "@release-it/conventional-changelog": "^5.1.1",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-node": "^1.2.0",
+    "@sveltejs/kit": "^1.5.0",
     "dotenv-cli": "^6.0.0",
     "eslint": "^8.30.0",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -34,12 +42,15 @@
     "rollup-plugin-terser": "^7.0.0",
     "shelljs": "^0.8.5",
     "svelte": "^3.0.0",
-    "tailwindcss": "^3.2.4"
+    "svelte-check": "^3.0.1",
+    "tailwindcss": "^3.2.4",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "octokit": "^2.0.10",
-    "vis-network": "^9.1.2"
+    "octokit": "^2.0.10"
   },
   "lint-staged": {
     "assets/components/**/*.{js,svelte}": [

@@ -1,6 +1,9 @@
 const fs = require('fs');
 
-/** Include Assets for GH Pages Build */
+/**
+ * Include Assets for GH Pages Build
+ * @deprecated
+ * */
 fs.readFile('.gitignore', 'utf8', (err, data) => {
 	if (err) {
 		throw err;

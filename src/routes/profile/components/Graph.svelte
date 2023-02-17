@@ -1,37 +1,15 @@
 <script>
-	import vis from 'vis-network'
+	import { onMount } from 'svelte';
 
-	export let config
+	import config from "../../../config.js";
+	import edges from "../../../edges.json";
+	import nodes from "../../../nodes.json";
 	let graph
 	let errorMessage = 'Loading...'
 
 	/** Draw Repo */
-	async function draw() {
-		let { production } = config
+	onMount(() => {
 		try {
-			let nodes, edges
-			await fetch('./nodes.json')
-				.then((response) => response.json())
-				.then((data) => {
-					nodes = data
-				})
-			await fetch('./edges.json')
-				.then((response) => response.json())
-				.then((data) => {
-					edges = data
-				})
-
-			/** DEPRECATED - PUBLIC GITHUB API */
-			if (!production) {
-				let INFO = `
-                    (◔_◔) This method has been obsolete in the latest version of the website!
-                    Please refers to : https://github.com/agung2001/agung2001.github.io/releases/tag/1.0.2 if you still want to use it.
-                    The newer version has support GitHub tokens to bypass rate limit, to learn more please refer to https://github.com/agung2001/agung2001.github.io
-                `.replace(/  +/g, '')
-				console.log(INFO)
-			}
-			/** DEPRECATED - PUBLIC GITHUB API */
-
 			setTimeout(function () {
 				let container = document.getElementById('github-network')
 				let data = {
@@ -56,6 +34,7 @@
 					},
 				}
 
+				// Initialize vis.js network, it uses cdn to load the assets
 				graph = new vis.Network(container, data, options)
 				graph.on('click', function (params) {
 					if (params.nodes.length === 1) {
@@ -69,9 +48,7 @@
 		} catch (e) {
 			errorMessage = 'Rate Limit Reached!'
 		}
-	}
-
-	document.onload = draw()
+	});
 </script>
 
 <div class="bg-white shadow-xl rounded-lg mb-4">
