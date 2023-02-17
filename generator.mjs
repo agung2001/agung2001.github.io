@@ -1,10 +1,10 @@
 /** Libraries */
 import {Octokit} from "octokit";
 import config from './src/config.js'
+import github from './src/github.js'
 import fs from 'fs'
 
 /** Config and Environment Variables */
-// const config = JSON.parse(fs.readFileSync('config.json'))
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
 const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the GitHub API
 
@@ -37,11 +37,11 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
 	const UserGraph = async () => {
 		let nodes = [],
 			edges = []
-		let { username } = config
+		let { username } = github
 		let { data } = await octokit.request('GET /users/{username}/repos', {
 			username,
 		})
-		nodes.push({ id: 0, label: config.username, group: 1 })
+		nodes.push({ id: 0, label: github.username, group: 1 })
 		edges.push({ from: 0, to: nodes.length })
 		data = GenerateEdgesandNodes(
 			data,
@@ -65,7 +65,7 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
 	 * */
 	const OrganizationsGraph = async (data) => {
 		let { nodes, edges } = data
-		let { organizations } = config
+		let { organizations } = github
 		for (let i = 0; i < organizations.length; i++) {
 			let org = organizations[i]
 			let { data } = await octokit.request('GET /orgs/{org}/repos', { org })
@@ -91,7 +91,7 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
 	/** Contribution Graph */
 	const ContributionsGraph = async (data) => {
 		let { nodes, edges } = data
-		let { contributions } = config
+		let { contributions } = github
 		for (const [owner, repos] of Object.entries(contributions)) {
 			let RepoData = []
 			for (let i = 0; i < repos.length; i++) {

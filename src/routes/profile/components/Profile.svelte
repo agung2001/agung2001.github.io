@@ -1,6 +1,8 @@
 <script>
 	import config from "../../../config.js";
-	let { name, tagline, username, codeEnvironment } = config
+	import github from "../../../github.js";
+	let { name, tagline, codeEnvironment } = config
+	let { username } = github
 </script>
 
 <div

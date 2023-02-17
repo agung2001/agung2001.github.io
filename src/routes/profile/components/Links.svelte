@@ -1,9 +1,8 @@
 <script>
-	import config from "../../../config.js";
-	let { socialButtons } = config
+	import socials from "../../../socials.js";
 
 	/** Transform data add animation state */
-	socialButtons.map((buttonGroup) => {
+	socials.map((buttonGroup) => {
 		buttonGroup.buttons = buttonGroup.buttons.map((button) => {
 			return { ...button, animate: false }
 		})
@@ -13,7 +12,7 @@
 
 <div class="bg-white shadow-xl rounded-lg">
 	<div class="p-6">
-		{#each socialButtons as buttonGroup}
+		{#each socials as buttonGroup}
 			<div class="mb-4">
 				<h2 class="mb-2 text-lg border-b border-gray-200">
 					{buttonGroup.label}
