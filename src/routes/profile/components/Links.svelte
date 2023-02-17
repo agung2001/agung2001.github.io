@@ -1,5 +1,5 @@
 <script>
-	export let config
+	import config from "../../../config.js";
 	let { socialButtons } = config
 
 	/** Transform data add animation state */

@@ -1,14 +1,14 @@
 <script>
-	export let config
+	import config from "../../../config.js";
 	let { name, tagline, username, codeEnvironment } = config
 </script>
 
 <div
 	class="sm:rounded-t-xl h-44 bg-cover bg-center bg-no-repeat"
-	style="background-image: url('assets/img/cover.jpg');"
+	style="background-image: url('img/cover.jpg');"
 />
 <img
-	src="assets/img/avatar.jpg"
+	src="img/avatar.jpg"
 	class="w-44 h-44 -mt-32 mx-auto ring-4 ring-white shadow-xl rounded-full z-99"
 	alt={name}
 />

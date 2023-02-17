@@ -1,5 +1,5 @@
 export default {
-	"title": "Agung Sundoro",
+	"name": "Agung Sundoro",
 	"tagline": "Let's connect and change the world!",
 	"username": "agung2001",
 	"production": true,

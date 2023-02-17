@@ -49,8 +49,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "octokit": "^2.0.10",
-    "vis-network": "^9.1.2"
+    "octokit": "^2.0.10"
   },
   "lint-staged": {
     "assets/components/**/*.{js,svelte}": [
