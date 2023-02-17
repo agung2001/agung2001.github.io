@@ -1,7 +1,6 @@
 /** Libraries */
-const { Octokit } = require('octokit')
+const { Octokit } = require('@octokit/rest')
 const fs = require('fs')
-require('dotenv').config()
 
 /** Config and Environment Variables */
 const config = JSON.parse(fs.readFileSync('config.json'))
@@ -160,8 +159,8 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
 
 	/** Write to File */
 	try {
-		fs.writeFileSync('nodes.json', JSON.stringify(data.nodes))
-		fs.writeFileSync('edges.json', JSON.stringify(data.edges))
+		fs.writeFileSync('src/nodes.json', JSON.stringify(data.nodes))
+		fs.writeFileSync('src/edges.json', JSON.stringify(data.edges))
 		console.log('✅ The file has been saved!')
 	} catch (e) {
 		console.log(e)
