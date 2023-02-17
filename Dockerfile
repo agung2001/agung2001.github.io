@@ -9,14 +9,12 @@ RUN apt-get update && apt-get install -yq \
 # Set the working directory to /app
 # TODO: git clone still refers to feature/sveltekit branch change it when release
 WORKDIR /app
-RUN git clone -b feature/sveltekit https://github.com/agung2001/agung2001.github.io.git /app
+# RUN git clone -b feature/sveltekit https://github.com/agung2001/agung2001.github.io.git /app
+COPY . .
 
 # Build the application
 RUN npm i --force
-RUN npx grunt
+# RUN npx grunt
 
 # Expose the default SvelteKit port
-EXPOSE 5173
-
-# Start the application
-CMD ["npm", "run", "dev"]
+EXPOSE 3000

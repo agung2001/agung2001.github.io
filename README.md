@@ -32,10 +32,10 @@ See  the live [🌐 website][website].
 ```
 docker run -d -p 80:80 \
   --name agung2001.github.io \
-  -v /path/to/.env:/usr/share/nginx/html/.env \
-  -v /path/to/config.json:/usr/share/nginx/html/config.json \
-  -v /path/to/nodes.json:/usr/share/nginx/html/nodes.json \
-  -v /path/to/edges.json:/usr/share/nginx/html/edges.json \
+  -v /path/to/.env:/app/.env \
+  -v /path/to/config.json:/app/src/config.js \
+  -v /path/to/nodes.json:/app/src/nodes.json \
+  -v /path/to/edges.json:/app/src/edges.json \
   agung2001/agung2001.github.io:latest
 ```
 
