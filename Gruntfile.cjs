@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 
 		/** Shell Script Command */
 		shell: {
-			node_nodesandedges: { command: 'node generator.js' },
+			node_nodesandedges: { command: 'node generator.cjs' },
 			node_pages: { command: 'node pages.js' },
 			npm_tailwind: { command:
 				`npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
@@ -66,6 +66,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', [
 		'build-css',
 		'build-js',
-		'shell:node_nodesandedges',
+		// 'shell:node_nodesandedges',
 	])
 }
