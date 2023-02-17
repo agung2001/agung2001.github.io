@@ -7,13 +7,14 @@ services:
     build: .
     restart: always
     volumes:
-      - ./nodes.json:/usr/share/nginx/html/nodes.json
-      - ./edges.json:/usr/share/nginx/html/edges.json
-      - ./assets/build:/usr/share/nginx/html/assets/build
-      - ./.env:/usr/share/nginx/html/.env
-      - ./package.json:/usr/share/nginx/html/package.json
-      - ./config.json:/usr/share/nginx/html/config.json
-      - ./assets/img/avatar.jpg:/usr/share/nginx/html/assets/img/avatar.jpg
-      - ./assets/img/cover.jpg:/usr/share/nginx/html/assets/img/cover.jpg
+      - ${PWD}:/app
+#      - ./nodes.json:/usr/share/nginx/html/nodes.json
+#      - ./edges.json:/usr/share/nginx/html/edges.json
+#      - ./assets/build:/usr/share/nginx/html/assets/build
+#      - ./.env:/usr/share/nginx/html/.env
+#      - ./package.json:/usr/share/nginx/html/package.json
+#      - ./config.json:/usr/share/nginx/html/config.json
+#      - ./assets/img/avatar.jpg:/usr/share/nginx/html/assets/img/avatar.jpg
+#      - ./assets/img/cover.jpg:/usr/share/nginx/html/assets/img/cover.jpg
     ports:
-      - ${WEBSERVER_PORT-80}:80
+      - ${WEBSERVER_PORT-80}:5173

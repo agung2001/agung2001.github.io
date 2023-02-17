@@ -1,26 +1,22 @@
-FROM nginx:latest
+# Use Node.js 16 as the base image
+FROM node:16
 
 # Packages
 RUN apt-get update && apt-get install -yq \
     git \
     curl
 
-# Install NodeJS
-RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
-      && apt-get install -y nodejs
+# Set the working directory to /app
+# TODO: git clone still refers to feature/sveltekit branch change it when release
+WORKDIR /app
+RUN git clone -b feature/sveltekit https://github.com/agung2001/agung2001.github.io.git /app
 
-# fix npm - not the latest version installed by apt-get
-RUN npm install -g npm
-
-# Directories and Files
-RUN rm -rf /usr/share/nginx/html/*
-RUN git clone https://github.com/agung2001/agung2001.github.io.git /usr/share/nginx/html
-WORKDIR /usr/share/nginx/html
-
-# NPM Install
+# Build the application
 RUN npm i --force
-RUN node generator.js
 RUN npx grunt
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Expose the default SvelteKit port
+EXPOSE 5173
+
+# Start the application
+CMD ["npm", "run", "dev"]

@@ -1,7 +1,6 @@
 /** Libraries */
-const { Octokit } = require('octokit')
-const fs = require('fs')
-require('dotenv').config()
+import { Octokit } from '@octokit/rest'
+import fs from 'fs'
 
 /** Config and Environment Variables */
 const config = JSON.parse(fs.readFileSync('config.json'))
