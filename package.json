@@ -1,7 +1,6 @@
 {
   "name": "agung2001.github.io",
   "description": "Agung Sundoro Website",
-  "main": "Gruntfile.js",
   "type": "module",
   "author": "Agung Sundoro",
   "license": "ISC",
