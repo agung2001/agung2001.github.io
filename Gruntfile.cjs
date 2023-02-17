@@ -66,6 +66,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', [
 		'build-css',
 		'build-js',
-		// 'shell:node_nodesandedges', // TODO: Uncomment this line to generate nodes and edges
+		'shell:node_nodesandedges',
 	])
 }
