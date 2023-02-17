@@ -17,7 +17,7 @@ See  the live [🌐 website][website].
 
 ### 🌐 via any local Web Server
 1. Install node package `npm install`
-2. Generate `nodes.json` and `edges.json` by running `node generator.js`
+2. Generate `nodes.json` and `edges.json` by running `node generator.cjs`
 3. Then open it :
    - PHP Server : `php -S 127.0.0.1:80`
    - XAMPP, LAMP, MAMP, WAMP Server
