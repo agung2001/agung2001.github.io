@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 
 		/** Shell Script Command */
 		shell: {
-			node_nodesandedges: { command: 'node generator.cjs' },
+			node_nodesandedges: { command: 'node generator.mjs' },
 			node_pages: { command: 'node pages.js' },
 			npm_tailwind: { command:
 				`npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
