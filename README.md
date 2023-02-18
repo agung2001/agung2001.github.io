@@ -80,6 +80,7 @@ You can change the code with your own, if you also want to track the visitors co
 - [Release-It](https://www.npmjs.com/package/release-it)
   - [Bumper](https://github.com/release-it/bumper)
   - [Conventional Changelog](https://github.com/release-it/conventional-changelog)
+- [Sticky JS](https://sticksy.js.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)
 
