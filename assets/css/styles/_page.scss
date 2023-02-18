@@ -1,3 +1,19 @@
+/**
+* @page Knowledge
+* @section Knowledge Content
+*/
 #knowledge-content {
 	min-height: 40vh;
+	@media screen and (display-mode: fullscreen) {
+		.content {
+			padding: 1vh 0;
+			width: 50vw;
+			margin: 0 auto;
+		}
+	}
+}
+#knowledge-content-navigation {
+	.sections {
+		min-height: 20vh;
+	}
 }
