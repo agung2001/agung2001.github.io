@@ -22,6 +22,7 @@
 			<img
 				alt="{name} GitHub Stats"
 				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={username}&show_icons=true&hide_border=false"
+				width="100%"
 			/>
 		</a>
 		<a href="https://github.com/{username}" target="_blank">
