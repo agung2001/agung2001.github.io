@@ -8,9 +8,10 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     restart: always
+    working_dir: /app
     volumes:
-      - ./src:/app/src
-      - ./static:/app/static
+      - ${PWD}/src:/app/src
+      - ${PWD}/static:/app/static
     command: ["yarn", "dev", "--host", "0.0.0.0"]
     ports:
       - ${FRONTEND_PORT-80}:3000
@@ -23,11 +24,12 @@ services:
     container_name: agung2001.github.io_backend
     image: alpine:latest
     restart: always
+    working_dir: /app
     volumes:
-      - ./bin:/app/bin
-    command: [ "/app/bin/cakrawala/linux-arm64", "--api", "--run", "--port", "3000" ]
+      - ${PWD}:/app
+    command: [ "/app/bin/cakrawala/linux-arm64", "--api", "--run", "--port", "${BACKEND_PORT-81}" ]
     ports:
-      - ${BACKEND_PORT-81}:3000
+      - ${BACKEND_PORT-81}:${BACKEND_PORT-81}
     depends_on:
       - redis
     networks:
@@ -40,8 +42,10 @@ services:
     ports:
       - ${REDIS_PORT-6379}:6379
     volumes:
-      - ./data/redis:/data
+      - ${PWD}/data/redis:/data
     command: redis-server --appendonly yes
     networks:
       - agung2001.github.io
 
+networks:
+    agung2001.github.io:

@@ -4,13 +4,12 @@
 
 # Data
 /data
+/vaults/*
+!/vaults/vaults-sample.json
 
 # Vendords
 /vendors
 /node_modules
-
-# Extras
-.env
 
 # Builds
 nodes.json
