@@ -1,15 +1,13 @@
 <script>
-	import { capitalizeFirstLetter } from "../../../lib/strings.ts";
-	import {page} from "$app/stores";
 	import config from "../../../config.js";
-	import {Data} from "../../../stores/Data.js";
-
-	console.log($Data)
+	import ListTreeMenu from "./ListTreeMenu.svelte";
 
 	const { name } = config
-	const { params } = $page;
 </script>
 
-<div class="bg-white shadow-xl rounded">
-	{$Data}
+<div id="knowledge-directory" class="bg-white shadow-xl rounded py-4">
+	<ul id="list-tree">
+		<ListTreeMenu />
+	</ul>
 </div>
+

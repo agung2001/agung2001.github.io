@@ -2,6 +2,7 @@
 	import {onMount} from "svelte";
 	import { requestFullscreen } from "../../../lib/navigation.ts";
 	import Sticky from "sticky-js"
+	import { fade } from 'svelte/transition';
 	export let navigations;
 
 	/** Lifecycle  onMount */
@@ -28,4 +29,25 @@
 			</button>
 		</div>
 	</div>
+
+	{ #if navigations.graph.visible }
+		<div id="section-graph" class="flex justify-between p-4 rounded border-b border-gray-200 bg-white" in:fade out:fade>
+			<h3 class="text-lg">Graph</h3>
+			<div class="flex items-center gap-x-4">
+				<button on:click={() => { navigations.graph.visible = !navigations.graph.visible }}>
+					<i class="fas fa-xmark"></i>
+				</button>
+			</div>
+		</div>
+	{/if}
+	{ #if navigations.tableofcontents.visible }
+		<div id="section-tableofcontents" class="flex justify-between p-4 rounded border-b border-gray-200 bg-white" in:fade out:fade>
+			<h3 class="text-lg">Table of Contents</h3>
+			<div class="flex items-center gap-x-4">
+				<button on:click={() => { navigations.tableofcontents.visible = !navigations.tableofcontents.visible }}>
+					<i class="fas fa-xmark"></i>
+				</button>
+			</div>
+		</div>
+	{/if}
 </div>

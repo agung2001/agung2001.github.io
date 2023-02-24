@@ -3,7 +3,6 @@
 	import ContentNavigation from "../components/ContentNavigation.svelte";
 	import Knowledge from "../components/Knowledge.svelte";
 	import KnowledgeDirectory from "../components/KnowledgeDirectory.svelte";
-	import { fade } from 'svelte/transition';
 	import {Data} from "../../../stores/Data.js";
 	export let data;
 
@@ -27,32 +26,6 @@
 		<KnowledgeDirectory />
 	</div>
 	<div class="md:col-span-4">
-
-		{ #if navigations.graph.visible }
-			<div class="bg-white shadow-xl rounded-lg mb-4">
-				<div id="section-graph" class="flex justify-between p-4 rounded border-b border-gray-200 bg-white" in:fade out:fade>
-					<h3 class="text-lg">Graph</h3>
-					<div class="flex items-center gap-x-4">
-						<button on:click={() => { navigations.graph.visible = !navigations.graph.visible }}>
-							<i class="fas fa-xmark"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		{/if}
-		{ #if navigations.tableofcontents.visible }
-			<div class="bg-white shadow-xl rounded-lg mb-4">
-				<div id="section-tableofcontents" class="flex justify-between p-4 rounded border-b border-gray-200 bg-white" in:fade out:fade>
-					<h3 class="text-lg">Table of Contents</h3>
-					<div class="flex items-center gap-x-4">
-						<button on:click={() => { navigations.tableofcontents.visible = !navigations.tableofcontents.visible }}>
-							<i class="fas fa-xmark"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		{/if}
-
 		<div class="bg-white shadow-xl rounded-lg mb-4">
 			<ContentNavigation bind:navigations />
 			<Content />
