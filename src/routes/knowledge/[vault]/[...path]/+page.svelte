@@ -1,7 +1,7 @@
 <script>
-	import Knowledge from "./components/Knowledge.svelte";
-	import Content from "./components/Content.svelte";
-	import ContentNavigation from "./components/ContentNavigation.svelte";
+	import Knowledge from "../../components/Knowledge.svelte";
+	import Content from "../../components/Content.svelte";
+	import ContentNavigation from "../../components/ContentNavigation.svelte";
 	import { fade } from 'svelte/transition';
 
 	/** Navigation State */
