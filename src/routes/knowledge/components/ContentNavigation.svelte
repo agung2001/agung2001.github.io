@@ -1,6 +1,6 @@
 <script>
 	import {onMount} from "svelte";
-	import { requestFullscreen } from "../../../helpers/navigation.ts";
+	import { requestFullscreen } from "../../../lib/navigation.ts";
 	import Sticky from "sticky-js"
 	export let navigations;
 
