@@ -29,7 +29,11 @@
 		}
 	}
 }
-
+#knowledge-content-navigation {
+	@media only screen and (min-width: 1024px) {
+		margin-top: 60px; /* This is needed to give a gap for #main-nav */
+	}
+}
 #knowledge-directory {
 	#list-tree {
 		margin: 0;

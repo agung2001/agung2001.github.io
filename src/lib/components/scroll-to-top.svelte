@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
-	export let showOnPx = 150;
+	export let showOnPx = 20;
 	let hidden = true;
 
 	function goTop() {
@@ -18,8 +18,10 @@
 
 		if (scrollContainer().scrollTop > showOnPx) {
 			hidden = false;
+			document.querySelector('#knowledge-content-navigation').style.marginTop = 0; // TODO: additional code needs to be seperated
 		} else {
 			hidden = true;
+			document.querySelector('#knowledge-content-navigation').style.marginTop = '60px'; // TODO: additional code needs to be seperated
 		}
 	}
 </script>

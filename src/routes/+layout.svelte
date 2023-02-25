@@ -1,6 +1,7 @@
 <script>
 	import config from '../config.js';
 	import {DocTitle} from "../stores/Layout.js";
+	import Navigation from "$lib/components/navigation.svelte";
 	let { name } = config;
 
 	/** Welcome Terminal ASCII */
@@ -11,4 +12,5 @@
 	<title>{name}{($DocTitle) ? ` | ${$DocTitle}` : ``}</title>
 </svelte:head>
 
+<Navigation />
 <slot />
