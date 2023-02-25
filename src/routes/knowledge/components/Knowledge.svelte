@@ -1,5 +1,5 @@
 <script>
-	import { capitalizeFirstLetter } from "../../../lib/strings.ts";
+	import { capitalizeFirstLetter } from "$lib/strings.ts";
 	import {page} from "$app/stores";
 	import {Data} from "../../../stores/Data.js";
 	import config from "../../../config.js";
@@ -8,9 +8,9 @@
 	const { environment, vault } = $Data
 </script>
 
-<div>
+<div class="bg-white border-b border-gray-300">
 	{#if vault.assets.cover}
-		<div class="sm:rounded-t-xl h-44 bg-cover bg-center bg-no-repeat"
+		<div class="h-44 bg-cover bg-center bg-no-repeat"
 			style="background-image: url({`${environment.API_URL}/asset/${params.vault}?path=${vault.assets.cover}`});"
 		/>
 	{/if}

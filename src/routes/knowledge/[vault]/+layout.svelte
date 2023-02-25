@@ -1,13 +1,21 @@
 <script>
+	import { capitalizeFirstLetter } from "$lib/strings.ts";
 	import Content from "../components/Content.svelte";
 	import ContentNavigation from "../components/ContentNavigation.svelte";
 	import Knowledge from "../components/Knowledge.svelte";
 	import KnowledgeDirectory from "../components/KnowledgeDirectory.svelte";
+	import {page} from "$app/stores";
 	import {Data} from "../../../stores/Data.js";
+	import {DocTitle} from "../../../stores/Layout.js";
 	export let data = {};
 
 	/** Set the data */
 	Data.set(data)
+
+	/** set Document Title */
+	const { params } = $page;
+	const { filename } = $Data;
+	DocTitle.set(`${capitalizeFirstLetter(params.vault)} Knowledge - ${filename}`)
 
 	/** Navigation State */
 	let navigations = {
@@ -20,17 +28,17 @@
 	}
 </script>
 
-<div class="relative sm:mx-auto md:w-5/6 grid sm:grid-rows-1 md:grid-cols-12 gap-4">
-	<div class="md:col-span-3 resize">
-		<div class="bg-white shadow-xl rounded mb-4">
+<div class="relative">
+	<div class="grid sm:grid-rows-1 md:grid-cols-12 min-h-screen">
+		<div class="md:col-span-3 bg-white border-r border-gray-300 flex flex-col justify-center">
 			<Knowledge />
 			<KnowledgeDirectory />
 		</div>
-	</div>
-	<div class="md:col-span-9">
-		<div class="bg-white shadow-xl rounded-lg mb-4">
-			<ContentNavigation bind:navigations />
-			<Content content={data.content} />
+		<div class="md:col-span-9 border-r border-gray-300">
+			<div class="bg-white">
+				<ContentNavigation bind:navigations />
+				<Content content={data.content} />
+			</div>
 		</div>
 	</div>
 </div>

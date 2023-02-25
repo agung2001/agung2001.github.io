@@ -5,7 +5,7 @@
 	const { name } = config
 </script>
 
-<div id="knowledge-directory">
+<div id="knowledge-directory" class="flex-grow bg-gray-50">
 	<ul id="list-tree">
 		<ListTreeMenu />
 	</ul>

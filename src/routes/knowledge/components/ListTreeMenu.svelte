@@ -19,9 +19,9 @@
 {#if children.length}
 	{#if types.dir.length}
 		{#each types.dir as child, index}
-			<li class="mx-4 rounded-md my-2 py-2.5 px-4 border border-gray-300 hover:shadow-md">
+			<li class="py-2.5 px-4 border-l border-gray-300">
 				<span
-					class="caret"
+					class="caret hover:font-bold"
 					class:caret-down={child.active}
 					on:click={(event) => {
 					let index = event.target.dataset.index
@@ -38,7 +38,7 @@
 	{/if}
 	{#if types.file.length}
 		{#each types.file as child}
-			<li class="mx-4 my-2 rounded-md py-2.5 px-4 flex items-center justify-between border border-gray-300 hover:shadow-md">
+			<li class="py-2.5 px-4 flex items-center justify-between border-l border-gray-300 hover:font-bold">
 				<a data-sveltekit-reload href="/knowledge/{params.vault}/{child.RelPath}" class="flex items-center">
 					<span>{child.Name}</span>
 				</a>
