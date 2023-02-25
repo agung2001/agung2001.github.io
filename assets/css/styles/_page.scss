@@ -12,7 +12,6 @@
 		}
 	}
 }
-
 #knowledge-directory {
 	#list-tree {
 		margin: 0;
@@ -25,24 +24,14 @@
 			-ms-user-select: none; /* IE 10+ */
 			user-select: none;
 		}
-
 		.caret::before {
 			content: '\25B6';
 			color: black;
 			display: inline-block;
 			margin-right: 6px;
 		}
-
 		.caret-down::before {
 			transform: rotate(90deg);
-		}
-
-		.nested {
-			display: none;
-		}
-
-		.active {
-			display: block;
 		}
 	}
 }
