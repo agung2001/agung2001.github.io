@@ -33,9 +33,16 @@
 	onMount(() => {
 		var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
 		if(width > 1024){
-			Split(['#split-1', '#split-2'], { gutterSize: 2 })
-			document.querySelector('#split-1').style.width = '20%'
-			document.querySelector('#split-2').style.width = '80%'
+			Split(['#split-1', '#split-2'], {
+				gutterSize: 2,
+				sizes: [20, 80],
+				minSize: [300, 300],
+				onDrag: function (sizes) {
+					let [ split1, split2 ] = sizes
+					let sticky = document.querySelector('#knowledge-content-navigation');
+					sticky.style.width = `${split2}%`;
+				},
+			})
 		}
 	})
 </script>

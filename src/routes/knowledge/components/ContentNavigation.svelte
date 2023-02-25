@@ -1,21 +1,24 @@
 <script>
 	import {onMount} from "svelte";
 	import ScrolltoTop from "$lib/components/scroll-to-top.svelte";
-	import Sticky from "sticky-js"
 	import {Data} from "../../../stores/Data.js";
 	import { fade } from 'svelte/transition';
 	export let navigations;
 
+	/** Local Variables */
 	const { filename } = $Data;
 
 	/** Lifecycle  onMount */
 	onMount(() => {
-		// TODO: Find new way to put a sticky action
-		// new Sticky('#knowledge-content-navigation'); // Sticky Content Navigation
+		setTimeout(() => {
+			let sticky = document.querySelector('#knowledge-content-navigation');
+			sticky.style.width = sticky.offsetWidth + 'px';
+			sticky.classList.add('fixed')
+		}, 100)
 	})
 </script>
 
-<div id="knowledge-content-navigation">
+<div id="knowledge-content-navigation" class="top-0 right-0">
 	<div class="flex justify-between px-6 py-4 border border-gray-200 bg-white">
 		<h2 class="text-lg">{filename}</h2>
 		<div class="flex items-center gap-x-4">
