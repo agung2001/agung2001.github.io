@@ -19,7 +19,7 @@
 {#if children.length}
 	{#if types.dir.length}
 		{#each types.dir as child, index}
-			<li class="py-2 px-4">
+			<li class="py-2.5 px-4">
 				<span
 					class="caret"
 					class:caret-down={child.active}
@@ -38,7 +38,7 @@
 	{/if}
 	{#if types.file.length}
 		{#each types.file as child}
-			<li class="py-2 px-4 flex items-center justify-between">
+			<li class="py-2.5 px-4 flex items-center justify-between">
 				<a href="/knowledge/{params.vault}/{child.RelPath}" class="flex items-center">
 					<span>{child.Name}</span>
 				</a>

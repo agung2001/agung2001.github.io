@@ -5,7 +5,7 @@
 	const { name } = config
 </script>
 
-<div id="knowledge-directory" class="py-2">
+<div id="knowledge-directory">
 	<ul id="list-tree">
 		<ListTreeMenu />
 	</ul>
