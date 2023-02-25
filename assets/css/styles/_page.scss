@@ -3,12 +3,12 @@
 * @section Knowledge Content
 */
 #knowledge-content {
-	min-height: 40vh;
-	@media screen and (display-mode: fullscreen) {
-		.content {
-			padding: 1vh 0;
-			width: 50vw;
-			margin: 0 auto;
+	.content {
+		max-width: 100%;
+		iframe {
+			width: 100%;
+			min-height: 40vh;
+			padding: 0.5rem 0;
 		}
 	}
 }
@@ -26,7 +26,7 @@
 		}
 		.caret::before {
 			content: '\25B6';
-			color: black;
+			color: rgb(100 116 139);
 			display: inline-block;
 			margin-right: 6px;
 		}

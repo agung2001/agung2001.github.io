@@ -1,6 +1,7 @@
 <script>
 	import {onMount} from "svelte";
-	import { requestFullscreen } from "../../../lib/navigation.ts";
+	import { requestFullscreen } from "$lib/navigation.ts";
+	import ScrolltoTop from "$lib/components/scroll-to-top.svelte";
 	import Sticky from "sticky-js"
 	import {Data} from "../../../stores/Data.js";
 	import { fade } from 'svelte/transition';
@@ -10,7 +11,8 @@
 
 	/** Lifecycle  onMount */
 	onMount(() => {
-		new Sticky('#knowledge-content-navigation'); // Sticky Content Navigation
+		let sticky = new Sticky('#knowledge-content-navigation'); // Sticky Content Navigation
+		console.log(sticky);
 	})
 </script>
 
@@ -24,12 +26,7 @@
 			<button on:click={() => { navigations.tableofcontents.visible = !navigations.tableofcontents.visible }}>
 				<i class="fas fa-chart-bar"></i>
 			</button>
-			<button class="hidden md:block" on:click={() => { window.scrollTo({top: 0, behavior: 'smooth'}); }}>
-				<i class="fas fa-arrow-up"></i>
-			</button>
-			<button class="hidden md:block" on:click={() => {requestFullscreen("knowledge-content")}}>
-				<i class="fas fa-expand"></i>
-			</button>
+			<ScrolltoTop />
 		</div>
 	</div>
 

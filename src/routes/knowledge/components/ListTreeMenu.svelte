@@ -39,7 +39,7 @@
 	{#if types.file.length}
 		{#each types.file as child}
 			<li class="py-2.5 px-4 flex items-center justify-between">
-				<a href="/knowledge/{params.vault}/{child.RelPath}" class="flex items-center">
+				<a data-sveltekit-reload href="/knowledge/{params.vault}/{child.RelPath}" class="flex items-center">
 					<span>{child.Name}</span>
 				</a>
 			</li>

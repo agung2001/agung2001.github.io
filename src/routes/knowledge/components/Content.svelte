@@ -3,7 +3,7 @@
 </script>
 
 <div id="knowledge-content" class="p-4">
-	<div class="content prose">
+	<div class="prose content">
 		{ @html content }
 	</div>
 </div>
