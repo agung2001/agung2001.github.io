@@ -19,16 +19,6 @@
 	const { filename } = $Data;
 	DocTitle.set(`${capitalizeFirstLetter(params.vault)} Knowledge - ${filename}`)
 
-	/** Navigation State */
-	let navigations = {
-		graph: {
-			visible: false
-		},
-		tableofcontents: {
-			visible: false
-		},
-	}
-
 	/** onMount */
 	onMount(() => {
 		var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
@@ -50,7 +40,7 @@
 		</div>
 		<div id="split-2" class="md:col-span-10 bg-white">
 			<div class="bg-white">
-				<ContentNavigation bind:navigations />
+				<ContentNavigation />
 				<Content content={data.content} />
 			</div>
 		</div>
