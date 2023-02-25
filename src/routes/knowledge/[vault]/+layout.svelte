@@ -47,16 +47,20 @@
 	})
 </script>
 
-<div class="split relative min-h-screen">
-	<div id="split-1" class="md:col-span-2 bg-white border-r border-gray-300 flex flex-col justify-center">
-		<Knowledge />
-		<KnowledgeDirectory />
-	</div>
-	<div id="split-2" class="md:col-span-10">
-		<div class="bg-white">
-			<ContentNavigation bind:navigations />
-			<Content content={data.content} />
+<div class="md:w-5/6 mx-auto my-4 bg-white rounded-lg border border-gray-300">
+
+
+	<div class="split relative min-h-screen">
+		<div id="split-1" class="md:col-span-2 bg-white">
+			<Knowledge />
+			<KnowledgeDirectory />
+		</div>
+		<div id="split-2" class="md:col-span-10 bg-white">
+			<div class="bg-white">
+				<ContentNavigation bind:navigations />
+				<Content content={data.content} />
+			</div>
 		</div>
 	</div>
+	<slot />
 </div>
-<slot />
