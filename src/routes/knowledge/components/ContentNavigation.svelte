@@ -18,7 +18,7 @@
 	})
 </script>
 
-<div id="knowledge-content-navigation" class="top-0 right-0">
+<div id="knowledge-content-navigation" class="bottom-0 md:top-0 right-0">
 	<div class="flex justify-between px-6 py-4 border border-gray-200 bg-white">
 		<h2 class="text-lg">{filename}</h2>
 		<div class="flex items-center gap-x-4">
