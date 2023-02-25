@@ -21,7 +21,7 @@
 </script>
 
 <div class="relative sm:mx-auto md:w-5/6 grid sm:grid-rows-1 md:grid-cols-12 gap-4">
-	<div class="md:col-span-3">
+	<div class="md:col-span-3 resize">
 		<div class="bg-white shadow-xl rounded mb-4">
 			<Knowledge />
 			<KnowledgeDirectory />

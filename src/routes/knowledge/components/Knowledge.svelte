@@ -8,7 +8,7 @@
 	const { environment, vault } = $Data
 </script>
 
-<div class="border-b border-gray-200">
+<div>
 	{#if vault.assets.cover}
 		<div class="sm:rounded-t-xl h-44 bg-cover bg-center bg-no-repeat"
 			style="background-image: url({`${environment.API_URL}/asset/${params.vault}?path=${vault.assets.cover}`});"
