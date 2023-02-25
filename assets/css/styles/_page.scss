@@ -29,6 +29,7 @@
 		}
 	}
 }
+
 #knowledge-directory {
 	#list-tree {
 		margin: 0;
@@ -50,5 +51,29 @@
 		.caret-down::before {
 			transform: rotate(90deg);
 		}
+	}
+}
+
+/** Split.js */
+@media only screen and (min-width: 1024px) {
+	.split {
+		display: flex;
+		flex-direction: row;
+	}
+	#split-1 {
+		min-width: 15%;
+	}
+	#split-2 {
+		min-width: 20%;
+	}
+
+	.gutter {
+		background-color: rgb(229 231 235);
+		background-repeat: no-repeat;
+		background-position: 50%;
+	}
+
+	.gutter.gutter-horizontal {
+		cursor: col-resize;
 	}
 }

@@ -1,6 +1,5 @@
 <script>
 	import {onMount} from "svelte";
-	import { requestFullscreen } from "$lib/navigation.ts";
 	import ScrolltoTop from "$lib/components/scroll-to-top.svelte";
 	import Sticky from "sticky-js"
 	import {Data} from "../../../stores/Data.js";
@@ -11,13 +10,13 @@
 
 	/** Lifecycle  onMount */
 	onMount(() => {
-		let sticky = new Sticky('#knowledge-content-navigation'); // Sticky Content Navigation
-		console.log(sticky);
+		// TODO: Find new way to put a sticky action
+		// new Sticky('#knowledge-content-navigation'); // Sticky Content Navigation
 	})
 </script>
 
 <div id="knowledge-content-navigation">
-	<div class="flex justify-between px-6 py-4 rounded border border-gray-200 bg-white">
+	<div class="flex justify-between px-6 py-4 border border-gray-200 bg-white">
 		<h2 class="text-lg">{filename}</h2>
 		<div class="flex items-center gap-x-4">
 			<button on:click={() => { navigations.graph.visible = !navigations.graph.visible }}>

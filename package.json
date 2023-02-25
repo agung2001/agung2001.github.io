@@ -52,7 +52,8 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "octokit": "^2.0.10"
+    "octokit": "^2.0.10",
+    "split.js": "^1.6.5"
   },
   "lint-staged": {
     "assets/components/**/*.{js,svelte}": [
