@@ -4,7 +4,7 @@
 	import Knowledge from "../components/Knowledge.svelte";
 	import KnowledgeDirectory from "../components/KnowledgeDirectory.svelte";
 	import {Data} from "../../../stores/Data.js";
-	export let data;
+	export let data = {};
 
 	/** Set the data */
 	Data.set(data)
@@ -30,7 +30,7 @@
 	<div class="md:col-span-4">
 		<div class="bg-white shadow-xl rounded-lg mb-4">
 			<ContentNavigation bind:navigations />
-			<Content />
+			<Content content={data.content} />
 		</div>
 	</div>
 </div>

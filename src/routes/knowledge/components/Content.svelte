@@ -1,10 +1,9 @@
 <script>
-	import {Data} from "../../../stores/Data.js";
-	const { readme } = $Data
+	export let content = '';
 </script>
 
 <div id="knowledge-content" class="p-4">
 	<div class="content prose">
-		{ @html readme }
+		{ @html content }
 	</div>
 </div>

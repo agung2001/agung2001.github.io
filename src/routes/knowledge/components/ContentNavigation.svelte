@@ -2,8 +2,11 @@
 	import {onMount} from "svelte";
 	import { requestFullscreen } from "../../../lib/navigation.ts";
 	import Sticky from "sticky-js"
+	import {Data} from "../../../stores/Data.js";
 	import { fade } from 'svelte/transition';
 	export let navigations;
+
+	const { filename } = $Data;
 
 	/** Lifecycle  onMount */
 	onMount(() => {
@@ -13,7 +16,7 @@
 
 <div id="knowledge-content-navigation">
 	<div class="flex justify-between p-4 rounded border-b border-gray-200 bg-white">
-		<h2 class="text-lg">Navigation</h2>
+		<h2 class="text-lg">{filename}</h2>
 		<div class="flex items-center gap-x-4">
 			<button on:click={() => { navigations.graph.visible = !navigations.graph.visible }}>
 				<i class="fas fa-diagram-project"></i>
