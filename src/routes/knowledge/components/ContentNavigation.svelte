@@ -1,24 +1,13 @@
 <script>
-	import {onMount} from "svelte";
-	import ScrolltoTop from "$lib/components/scroll-to-top.svelte";
 	import {Data} from "../../../stores/Data.js";
 	import { fade } from 'svelte/transition';
 	export let navigations;
 
 	/** Local Variables */
 	const { filename } = $Data;
-
-	/** Lifecycle  onMount */
-	onMount(() => {
-		setTimeout(() => {
-			let sticky = document.querySelector('#knowledge-content-navigation');
-			sticky.style.width = sticky.offsetWidth + 'px';
-			sticky.classList.add('fixed')
-		}, 100)
-	})
 </script>
 
-<div id="knowledge-content-navigation" class="bottom-0 md:top-0 right-0">
+<div id="knowledge-content-navigation">
 	<div class="flex justify-between px-6 py-4 border border-gray-200 bg-white">
 		<h2 class="text-lg">{filename}</h2>
 		<div class="flex items-center gap-x-4">
@@ -28,7 +17,6 @@
 			<button on:click={() => { navigations.tableofcontents.visible = !navigations.tableofcontents.visible }}>
 				<i class="fas fa-chart-bar"></i>
 			</button>
-			<ScrolltoTop />
 		</div>
 	</div>
 

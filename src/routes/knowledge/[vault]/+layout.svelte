@@ -37,21 +37,14 @@
 				gutterSize: 2,
 				sizes: [20, 80],
 				minSize: [300, 300],
-				onDrag: function (sizes) {
-					let [ split1, split2 ] = sizes
-					let sticky = document.querySelector('#knowledge-content-navigation');
-					sticky.style.width = `${split2}%`;
-				},
 			})
 		}
 	})
 </script>
 
-<div class="md:w-5/6 mx-auto my-4 bg-white rounded-lg border border-gray-300">
-
-
+<div class="md:w-5/6 mx-auto bg-white border border-gray-300">
 	<div class="split relative min-h-screen">
-		<div id="split-1" class="md:col-span-2 bg-white">
+		<div id="split-1" class="md:col-span-2 bg-white flex flex-col">
 			<Knowledge />
 			<KnowledgeDirectory />
 		</div>
