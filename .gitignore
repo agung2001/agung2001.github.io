@@ -4,6 +4,7 @@
 
 # Data
 /data
+/static/vaults/*
 /vaults/*
 !/vaults/vaults-sample.json
 

@@ -1,10 +1,5 @@
 # Use Node.js 16 as the base image
-FROM node:16
-
-# Packages
-RUN apt-get update && apt-get install -yq \
-    git \
-    curl
+FROM node:16-alpine
 
 # Set the working directory to /app
 WORKDIR /app

@@ -6,16 +6,16 @@
 	const { name } = config
 	const { params } = $page;
 	const { environment, vault } = $Data
+	let cover = `background-image: url('/vaults/${params.vault}/cover.jpg')`
 </script>
 
 <div class="bg-white">
 	{#if vault.assets.cover}
-		<div class="h-44 bg-cover bg-center bg-no-repeat"
-		/>
+		<div class="h-44 bg-cover bg-center bg-no-repeat" style="{cover}" />
 	{/if}
 	{#if vault.assets.logo}
 		<img
-			src={`${environment.API_URL}/asset/${params.vault}?path=${vault.assets.logo}`}
+			src={`/vaults/${params.vault}/logo.jpg`}
 			class="w-44 h-44 -mt-32 mx-auto ring-4 ring-white shadow-xl rounded-full z-99"
 			alt={name}
 		/>
