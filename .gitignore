@@ -10,6 +10,7 @@
 # Vendords
 /vendors
 /node_modules
+/bin/cakrawala
 
 # Builds
 nodes.json

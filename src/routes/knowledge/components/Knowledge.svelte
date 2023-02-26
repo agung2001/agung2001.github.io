@@ -11,7 +11,6 @@
 <div class="bg-white">
 	{#if vault.assets.cover}
 		<div class="h-44 bg-cover bg-center bg-no-repeat"
-			style="background-image: url({`${environment.API_URL}/asset/${params.vault}?path=${vault.assets.cover}`});"
 		/>
 	{/if}
 	{#if vault.assets.logo}

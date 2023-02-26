@@ -1,7 +1,5 @@
 <script>
 	import {Data} from "../../../stores/Data.js";
-	import { fade } from 'svelte/transition';
-	export let navigations;
 
 	/** Local Variables */
 	const { filename } = $Data;

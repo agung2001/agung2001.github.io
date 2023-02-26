@@ -12,26 +12,10 @@ services:
     volumes:
       - ${PWD}/src:/app/src
       - ${PWD}/static:/app/static
-    command: ["yarn", "dev", "--host", "0.0.0.0"]
+    command: ["yarn", "serve"]
     ports:
       - ${FRONTEND_PORT-80}:3000
-    depends_on:
-      - backend
-    networks:
-      - agung2001.github.io
-
-  backend:
-    container_name: agung2001.github.io_backend
-    image: alpine:latest
-    restart: always
-    working_dir: /app
-    volumes:
-      - ${PWD}:/app
-    command: [ "/app/bin/cakrawala/linux-arm64", "--api", "--run", "--port", "${BACKEND_PORT-81}" ]
-    ports:
-      - ${BACKEND_PORT-81}:${BACKEND_PORT-81}
-    depends_on:
-      - redis
+      - ${BACKEND_PORT-81}:3001
     networks:
       - agung2001.github.io
 

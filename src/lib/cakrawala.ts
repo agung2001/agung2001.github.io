@@ -30,7 +30,13 @@ export default {
 
 	/** Render */
 	render(vault: string, path: string){
-		return fetch(API_URL + '/cakrawala/' + vault + '?path=' + path)
+		return fetch(API_URL + '/cakrawala/' + vault, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ path })
+		})
 			.then(response => response.text())
 	},
 
