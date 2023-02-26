@@ -8,19 +8,28 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     restart: always
+    working_dir: /app
     volumes:
-      - ./src:/app/src
-      - ./static:/app/static
-    command: ["yarn", "dev", "--host", "0.0.0.0"]
+      - ${PWD}/src:/app/src
+      - ${PWD}/static:/app/static
+    command: ["yarn", "serve"]
     ports:
       - ${FRONTEND_PORT-80}:3000
+      - ${BACKEND_PORT-81}:3001
+    networks:
+      - agung2001.github.io
 
-  backend:
-    container_name: agung2001.github.io_backend
-    image: alpine:latest
+  redis:
+    image: redis
+    container_name: agung2001.github.io_redis
     restart: always
-    volumes:
-      - ./bin:/app/bin
-    command: [ "/app/bin/cakrawala", "--api", "--run", "--port", "3000" ]
     ports:
-      - ${BACKEND_PORT-81}:3000
+      - ${REDIS_PORT-6379}:6379
+    volumes:
+      - ${PWD}/data/redis:/data
+    command: redis-server --appendonly yes
+    networks:
+      - agung2001.github.io
+
+networks:
+    agung2001.github.io:

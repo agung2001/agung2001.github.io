@@ -1,0 +1,10 @@
+{
+  "vault-name": {
+    "access": "public",
+    "readme": "README.md",
+    "assets": {
+      "cover": "cover.jpg",
+      "logo": "logo.jpg"
+    }
+  }
+}

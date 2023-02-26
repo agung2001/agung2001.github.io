@@ -2,12 +2,15 @@
 /.idea
 /.vscode
 
+# Data
+/data
+/vaults/*
+!/vaults/vaults-sample.json
+
 # Vendords
 /vendors
 /node_modules
-
-# Extras
-.env
+/bin/cakrawala
 
 # Builds
 nodes.json

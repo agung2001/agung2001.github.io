@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { requestFullscreen } from "../../../helpers/screen.ts";
+	import { requestFullscreen } from "../../../lib/navigation.ts";
 
 	import edges from "../../../edges.json";
 	import nodes from "../../../nodes.json";
