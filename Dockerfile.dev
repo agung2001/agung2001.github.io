@@ -7,7 +7,7 @@ COPY . .
 
 # Build the application
 RUN npm i --force
-# RUN npx grunt
+RUN npx grunt
 
 # Expose the default SvelteKit port
 EXPOSE 3000
