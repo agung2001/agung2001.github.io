@@ -12,7 +12,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "release": "dotenv release-it --",
-    "serve": "/app/bin/cakrawala/linux-386 & vite dev --host 0.0.0.0"
+    "serve": "/app/bin/cakrawala/linux-amd64 & vite dev --host 0.0.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
+    "mermaid": "^10.0.2",
     "octokit": "^2.0.10",
     "split.js": "^1.6.5"
   },
