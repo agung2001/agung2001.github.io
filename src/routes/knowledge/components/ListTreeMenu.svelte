@@ -4,16 +4,41 @@
 	import {Data} from "../../../stores/Data.js";
 	import { fade } from 'svelte/transition';
 	export let children = [];
+	export let filepath = [];
 
+	// Local Variables
 	const { params } = $page;
 	const { directory } = $Data;
-	const types = ((children) => {
+	const types = ((children, filepath) => {
 		if(children.length == 0) return []
-		return {
+		let data = {
 			dir: children.filter(child => child.Type == 'dir').map(child => ({...child, active: false})),
 			file: children.filter(child => child.Type == 'file').map(child => ({...child, active: false})),
 		}
-	})(children)
+
+		// Auto open requested filepath
+		let path = filepath[0]
+		if(path){
+			if( path.includes('.md') ) {
+				data.file = data.file.map(child => {
+					if(child.Name == path) {
+						child.active = true
+					}
+					return child
+				})
+			} else {
+				data.dir = data.dir.map(child => {
+					if(child.Name == path) {
+						child.active = true
+					}
+					return child
+				})
+			}
+		}
+
+		return data
+	})(children, filepath)
+	if(filepath.length>1) filepath.shift() // Nested auto open requested filepath
 </script>
 
 {#if children.length}
@@ -30,7 +55,10 @@
 				>{child.Name}</span>
 				{#if child.Children.length && child.active}
 					<ul in:fade out:fade>
-						<ListTreeMenu children={child.Children} />
+						<ListTreeMenu
+							children={child.Children}
+							filepath={filepath}
+						/>
 					</ul>
 				{/if}
 			</li>
@@ -47,6 +75,9 @@
 	{/if}
 {:else}
 	{#if directory.length}
-		<ListTreeMenu children={directory[0].Children} />
+		<ListTreeMenu
+			children={directory[0].Children}
+			filepath={params.path.split('/')}
+		/>
 	{/if}
 {/if}
