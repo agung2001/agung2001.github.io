@@ -4,7 +4,7 @@
 	</div>
 	<div class="flex gap-x-4">
 		<a href="/profile">🤩 Profile</a>
-		<a href="/knowledge/technical">🧠 Knowledge</a>
+		<a href="/knowledge">🧠 Knowledge</a>
 	</div>
 </div>
 

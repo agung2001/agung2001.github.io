@@ -6,8 +6,8 @@ export default {
 	async data(params: any){
 		let vault = await this.vault(params.vault);
 		return {
-			content: (params.path) ? await this.render(params.vault, params.path) : (vault.readme) ? await this.render(params.vault, vault.readme) : '',
-			filename: (params.path) ? params.path.replace(/^.*[\\\/]/, '') : (vault.readme) ? vault.readme : '',
+			content: (params.path) ? await this.render(params.vault, params.path) : await this.render(params.vault, 'README.md'),
+			filename: (params.path) ? params.path.replace(/^.*[\\\/]/, '') : 'README.md',
 			directory: await this.directory(params.vault),
 			environment: await this.environment(),
 			vault
