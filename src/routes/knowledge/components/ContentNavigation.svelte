@@ -6,7 +6,7 @@
 </script>
 
 <div id="knowledge-content-navigation">
-	<div class="flex justify-between px-6 py-4 border border-gray-200 bg-white">
+	<div class="flex justify-between px-6 py-4 border-b border-gray-200 bg-white">
 		<h2 class="text-lg">{filename}</h2>
 	</div>
 </div>
