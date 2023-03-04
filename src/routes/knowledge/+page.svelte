@@ -1,5 +1,5 @@
 <script>
-	export let data;
+	export let data = {};
 	const { vaults } = data;
 </script>
 
@@ -11,9 +11,9 @@
 					<h2 class="text-2xl font-bold mb-4">{name}</h2>
 				</a>
 				{#each Object.entries(attribute) as [key, value]}
-					<span class="bg-gray-200 rounded-full px-4 py-2 mr-2 text-sm">
-						<b>{key}</b>: {value}
-					</span>
+                    <span class="bg-gray-200 rounded-full px-4 py-2 mr-2 text-sm">
+                        <b>{key}</b>: {value}
+                    </span>
 				{/each}
 			</div>
 		{/each}

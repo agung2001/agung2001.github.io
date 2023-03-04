@@ -10,6 +10,7 @@ services:
     restart: always
     working_dir: /app
     volumes:
+      - ${PWD}/bin:/app/bin
       - ${PWD}/src:/app/src
       - ${PWD}/static:/app/static
       - ${PWD}/vaults:/app/vaults

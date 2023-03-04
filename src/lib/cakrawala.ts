@@ -44,7 +44,10 @@ export default {
 	vault(vault: string){
 		return fetch(API_URL + '/vault/' + vault)
 			.then(response => response.json())
-			.then(data => data)
+			.then(data => {
+				console.log(data);
+				return data;
+			})
 	}
 
 }
