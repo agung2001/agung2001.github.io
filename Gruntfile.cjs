@@ -62,6 +62,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', [
 		'build-css',
 		'build-js',
-		// 'shell:node_nodesandedges',
+		'shell:node_nodesandedges',
 	])
 }
