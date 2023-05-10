@@ -4,7 +4,7 @@ export default [
 		"buttons": [
 			{
 				"label": "Goodreads",
-				"caption": "Reading a book together",
+				"caption": "Let's read a book together",
 				"link": "https://goodreads.com/agungsundoro",
 				"icon": "fas fa-book",
 				"color": "#7d5024"
@@ -102,7 +102,7 @@ export default [
 			{
 				"label": "Website",
 				"caption": "WordPress Developer Expert",
-				"link": "https://github.com/orgs/artistudioxyz",
+				"link": "https://artistudio.xyz",
 				"icon": "fa-solid fa-globe",
 				"color": "#000"
 			},

@@ -8,6 +8,7 @@
 		})
 		return buttonGroup
 	})
+	console.log(socials)
 </script>
 
 <div class="bg-white shadow-xl rounded-lg">
