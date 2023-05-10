@@ -32,7 +32,7 @@
 	})
 </script>
 
-<div class="md:w-5/6 mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+<div class="md:w-5/6 mx-auto bg-white shadow-xl overflow-hidden border border-gray-300">
 	<div class="split relative min-h-screen">
 		<div id="split-1" class="md:col-span-2 bg-white flex flex-col">
 			<Knowledge />

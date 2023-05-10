@@ -1,5 +1,5 @@
 <script>
-	import { capitalizeFirstLetter } from "$lib/strings.ts";
+	import { capitalize } from "$lib/strings.ts";
 	import {page} from "$app/stores";
 	import {Data} from "../../../stores/Data.js";
 	import config from "../../../config.js";
@@ -18,6 +18,6 @@
 	/>
 	<div class="px-6 pt-4 pb-4 sm:px-10">
 		<h1 class="mt-2 text-2xl text-center font-bold">{name}</h1>
-		<p class="mt-2 text-center text-base font-normal text-gray-500">{ capitalizeFirstLetter(params.vault) } Knowledge</p>
+		<p class="mt-2 text-center text-base font-normal text-gray-500">{ capitalize(params.vault) } Knowledge</p>
 	</div>
 </div>
