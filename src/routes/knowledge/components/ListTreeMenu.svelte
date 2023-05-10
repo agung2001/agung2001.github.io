@@ -4,41 +4,25 @@
 	import {Data} from "../../../stores/Data.js";
 	import { fade } from 'svelte/transition';
 	export let children = [];
-	export let filepath = [];
 
 	// Local Variables
 	const { params } = $page;
 	const { directory } = $Data;
-	const types = ((children, filepath) => {
+	const types = ((children) => {
 		if(children.length == 0) return []
 		let data = {
-			dir: children.filter(child => child.Type == 'dir').map(child => ({...child, active: false})),
-			file: children.filter(child => child.Type == 'file').map(child => ({...child, active: false})),
-		}
-
-		// Auto open requested filepath
-		let path = filepath[0]
-		if(path){
-			if( path.includes('.md') ) {
-				data.file = data.file.map(child => {
-					if(child.Name == path) {
-						child.active = true
-					}
-					return child
-				})
-			} else {
-				data.dir = data.dir.map(child => {
-					if(child.Name == path) {
-						child.active = true
-					}
-					return child
-				})
-			}
+			dir: children.filter(child => child.Type == 'dir').map(child => ({
+				...child,
+				active: (params.path.includes(child.Slug)) ? true : false
+			})),
+			file: children.filter(child => child.Type == 'file').map(child => ({
+				...child,
+				active: (params.path.includes(child.Slug)) ? true : false
+			})),
 		}
 
 		return data
-	})(children, filepath)
-	if(filepath.length>1) filepath.shift() // Nested auto open requested filepath
+	})(children)
 </script>
 
 {#if children.length}
@@ -55,10 +39,7 @@
 				>{child.Name}</span>
 				{#if child.Children.length && child.active}
 					<ul in:fade out:fade>
-						<ListTreeMenu
-							children={child.Children}
-							filepath={filepath}
-						/>
+						<ListTreeMenu children={child.Children} />
 					</ul>
 				{/if}
 			</li>
@@ -66,8 +47,11 @@
 	{/if}
 	{#if types.file.length}
 		{#each types.file as child}
-			<li class="py-2.5 px-4 flex items-center justify-between border-l border-gray-300 hover:font-bold">
-				<a data-sveltekit-reload href="/knowledge/{params.vault}/{child.RelPath}" class="flex items-center">
+			<li
+				class="py-2.5 px-4 flex items-center justify-between border-l border-gray-300 hover:font-bold"
+				class:font-bold={child.active}
+			>
+				<a data-sveltekit-reload href="/knowledge/{params.vault}/{child.Slug}" class="flex items-center">
 					<span>{child.Name}</span>
 				</a>
 			</li>
@@ -75,9 +59,6 @@
 	{/if}
 {:else}
 	{#if directory.length}
-		<ListTreeMenu
-			children={directory[0].Children}
-			filepath={params.path.split('/')}
-		/>
+		<ListTreeMenu children={directory[0].Children} />
 	{/if}
 {/if}

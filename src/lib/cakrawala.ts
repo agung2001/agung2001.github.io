@@ -1,13 +1,16 @@
-import { API_URL } from '$env/static/private'
+import { BASE_URL, API_URL } from '$env/static/private'
 
 export default {
 
 	/** Get Data */
 	async data(params: any){
 		let vault = await this.vault(params.vault);
+		let render = (params.path) ?
+			await this.render(params.vault, params.path) :
+			await this.render(params.vault, 'readme.md');
 		return {
-			content: (params.path) ? await this.render(params.vault, params.path) : await this.render(params.vault, 'README.md'),
-			filename: (params.path) ? params.path.replace(/^.*[\\\/]/, '') : 'README.md',
+			content: render.text(),
+			filename: render.headers.get('x-filename'),
 			directory: await this.directory(params.vault),
 			environment: await this.environment(),
 			vault
@@ -24,6 +27,7 @@ export default {
 	/** Get Environment Variables */
 	environment(){
 		return {
+			BASE_URL,
 			API_URL
 		}
 	},
@@ -37,7 +41,7 @@ export default {
 			},
 			body: JSON.stringify({ path })
 		})
-			.then(response => response.text())
+			.then(response => response)
 	},
 
 	/** Get Vault Configuration */
