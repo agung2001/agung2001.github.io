@@ -4,7 +4,7 @@ export default [
 		"buttons": [
 			{
 				"label": "Goodreads",
-				"caption": "Let's read a book together",
+				"caption": "Let's read together",
 				"link": "https://goodreads.com/agungsundoro",
 				"icon": "fas fa-book",
 				"color": "#7d5024"
@@ -50,6 +50,13 @@ export default [
 				"link": "https://agungsundoro.blogspot.com/",
 				"icon": "fab fa-blogger",
 				"color": "#f06a35"
+			},
+			{
+				"label": "TikTok",
+				"caption": "I'm not a dancer",
+				"link": "https://www.tiktok.com/@agung20012",
+				"icon": "fab fa-tiktok",
+				"color": "#fe2c55"
 			},
 			{
 				"label": "Dribbble",
