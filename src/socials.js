@@ -3,18 +3,18 @@ export default [
 		"label": "Social",
 		"buttons": [
 			{
-				"label": "Goodreads",
-				"caption": "Let's read together",
-				"link": "https://goodreads.com/agungsundoro",
-				"icon": "fas fa-book",
-				"color": "#7d5024"
-			},
-			{
 				"label": "Instagram",
 				"caption": "Follow me or I call a police",
 				"link": "https://instagram.com/agung2001",
 				"icon": "fab fa-instagram",
 				"color": "#ff008c"
+			},
+			{
+				"label": "Goodreads",
+				"caption": "Let's read together",
+				"link": "https://goodreads.com/agungsundoro",
+				"icon": "fas fa-book",
+				"color": "#7d5024"
 			},
 			{
 				"label": "Twitter",
