@@ -3,6 +3,13 @@ export default [
 		"label": "Social",
 		"buttons": [
 			{
+				"label": "YouTube",
+				"caption": "Having fun doing music and research",
+				"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
+				"icon": "fab fa-youtube",
+				"color": "#fe0000"
+			},
+			{
 				"label": "Instagram",
 				"caption": "Follow me or I call a police",
 				"link": "https://instagram.com/agung2001",
@@ -29,13 +36,6 @@ export default [
 				"link": "https://www.linkedin.com/in/agungsundoro",
 				"icon": "fab fa-linkedin",
 				"color": "#0a66c2"
-			},
-			{
-				"label": "YouTube",
-				"caption": "Having fun doing music and research",
-				"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
-				"icon": "fab fa-youtube",
-				"color": "#fe0000"
 			},
 			{
 				"label": "Spotify",
