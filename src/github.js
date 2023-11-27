@@ -23,6 +23,9 @@ export default {
 		],
 		"VectorChi": [
 			"worldpresidents"
+		],
+		"woocommerce": [
+			"woocommerce-blocks"
 		]
 	},
 }
