@@ -88,4 +88,4 @@ You can change the code with your own, if you also want to track the visitors co
 - Help support me by giving a 🌟 or [donate][website]
 - Please refer to [CONTRIBUTING](CONTRIBUTING.md) to see a way to contribute to this repo
 
-[website]: https://agungsundoro.ddns.net
+[website]: https://agungsundoro.com
