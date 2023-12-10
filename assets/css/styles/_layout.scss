@@ -1,0 +1,10 @@
+/** Main Navigation */
+#main-nav {
+	height: 60px;
+}
+
+/** Fullscreen */
+:fullscreen,
+::backdrop {
+	background-color: rgba(255, 255, 255, 1);
+}

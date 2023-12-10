@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
+	import { requestFullscreen } from "../../../lib/navigation.ts";
 
-	import config from "../../../config.js";
 	import edges from "../../../edges.json";
 	import nodes from "../../../nodes.json";
 	let graph
@@ -54,6 +54,9 @@
 <div class="bg-white shadow-xl rounded-lg mb-4">
 	<div class="flex justify-between p-4 border-b border-gray-200">
 		<h2 class="text-lg">Experience Graph</h2>
+		<button class="request-fullscreen" on:click={() => {requestFullscreen("github-network")}}>
+			<i class="fas fa-expand"></i>
+		</button>
 	</div>
 	<div id="github-network">{errorMessage}</div>
 </div>

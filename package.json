@@ -11,7 +11,9 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "release": "dotenv release-it --"
+    "release": "dotenv release-it --",
+    "serve": "/app/bin/cakrawala/linux-386 & vite dev --host 0.0.0.0",
+    "serve-mac": "/app/bin/cakrawala/linux-amd64 & vite dev --host 0.0.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
@@ -24,6 +26,9 @@
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/adapter-node": "^1.2.0",
     "@sveltejs/kit": "^1.5.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/marked": "^4.0.8",
+    "@types/node": "^18.14.1",
     "dotenv-cli": "^6.0.0",
     "eslint": "^8.30.0",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -50,7 +55,9 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "octokit": "^2.0.10"
+    "mermaid": "^10.0.2",
+    "octokit": "^2.0.10",
+    "split.js": "^1.6.5"
   },
   "lint-staged": {
     "assets/components/**/*.{js,svelte}": [

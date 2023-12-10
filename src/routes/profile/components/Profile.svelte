@@ -1,14 +1,13 @@
 <script>
 	import config from "../../../config.js";
-	let { name, tagline, username, codeEnvironment } = config
+	import github from "../../../github.js";
+	let { name, tagline, codeEnvironment } = config
+	let { username } = github
 </script>
 
-<div
-	class="sm:rounded-t-xl h-44 bg-cover bg-center bg-no-repeat"
-	style="background-image: url('img/cover.jpg');"
-/>
+<div class="sm:rounded-t-xl h-44 bg-cover bg-center bg-no-repeat bg-[url(/img/cover.jpg)]" />
 <img
-	src="img/avatar.jpg"
+	src="/img/avatar.jpg"
 	class="w-44 h-44 -mt-32 mx-auto ring-4 ring-white shadow-xl rounded-full z-99"
 	alt={name}
 />
@@ -16,13 +15,14 @@
 	<h1 class="mt-2 text-2xl text-center font-bold">{name}</h1>
 	<p class="mt-2 text-center text-base font-normal text-gray-500">{tagline}</p>
 	<div class="my-4 items-center w-full">
-		<a href="https://github.com/{username}" target="_blank">
+		<a href="https://github.com/{username}" target="_blank" rel="noreferrer">
 			<img
 				alt="{name} GitHub Stats"
 				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={username}&show_icons=true&hide_border=false"
+				width="100%"
 			/>
 		</a>
-		<a href="https://github.com/{username}" target="_blank">
+		<a href="https://github.com/{username}" target="_blank" rel="noreferrer">
 			<img
 				alt="{name} Top Languages"
 				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username={username}&langs_count=8&layout=compact&hide_border=false"

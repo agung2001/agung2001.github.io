@@ -32,11 +32,12 @@ docker run agung2001/agung2001.github.io:latest npx grunt build
 docker run -d -p 80:80 \
   --name agung2001.github.io \
   -v /path/to/.env:/app/.env \
-  -v /path/to/config.json:/app/src/config.js \
+  -v /path/to/config.js:/app/src/config.js \
+  -v /path/to/experiences.js:/app/src/experiences.js \
+  -v /path/to/github.js:/app/src/github.js \
+  -v /path/to/socials.js:/app/src/socials.js \
   -v /path/to/avatar.jpg:/app/static/img/avatar.jpg \
   -v /path/to/cover.jpg:/app/static/img/cover.jpg \
-  -v /path/to/nodes.json:/app/src/nodes.json \
-  -v /path/to/edges.json:/app/srtc/edges.json \
   agung2001/agung2001.github.io:latest
 ```
 - NOTE: Don't forget to change the `/path/to/` accordingly
@@ -79,6 +80,7 @@ You can change the code with your own, if you also want to track the visitors co
 - [Release-It](https://www.npmjs.com/package/release-it)
   - [Bumper](https://github.com/release-it/bumper)
   - [Conventional Changelog](https://github.com/release-it/conventional-changelog)
+- [Sticky JS](https://sticksy.js.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Vis JS](https://visjs.org/)
 
@@ -86,4 +88,4 @@ You can change the code with your own, if you also want to track the visitors co
 - Help support me by giving a 🌟 or [donate][website]
 - Please refer to [CONTRIBUTING](CONTRIBUTING.md) to see a way to contribute to this repo
 
-[website]: https://agungsundoro.ddns.net
+[website]: https://agungsundoro.com
