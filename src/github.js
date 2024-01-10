@@ -25,6 +25,7 @@ export default {
 			"worldpresidents"
 		],
 		"woocommerce": [
+			"woocommerce",
 			"woocommerce-blocks"
 		]
 	},
