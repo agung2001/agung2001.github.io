@@ -3,6 +3,12 @@
 	import Links from "./components/Links.svelte";
 	import Graph from "./components/Graph.svelte";
 	import Navigation from "$lib/components/Navigation.svelte";
+	import {DocTitle} from "../../stores/Layout.js";
+	import config from "../../config.js";
+
+	// Set Data
+	const { name } = config
+	DocTitle.set(name);
 </script>
 
 <div class="relative overflow-hidden min-h-screen bg-gray-50">
