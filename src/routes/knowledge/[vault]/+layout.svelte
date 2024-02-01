@@ -9,6 +9,7 @@
 	import {DocTitle} from "../../../stores/Layout.js";
 	import {onMount} from "svelte";
 	import Split from 'split.js'
+	import Navigation from "$lib/components/Navigation.svelte";
 	export let data = {};
 
 	/** Set the data */
@@ -16,8 +17,8 @@
 
 	/** set Document Title */
 	const { params } = $page;
-	const { filename } = $Data;
-	DocTitle.set(`${capitalizeFirstLetter(params.vault)} Knowledge - ${filename}`)
+	const { filename, title } = $Data;
+	DocTitle.set(`${title ? title : filename}`)
 
 	/** onMount */
 	onMount(() => {
@@ -32,7 +33,9 @@
 	})
 </script>
 
-<div class="md:w-5/6 mx-auto bg-white shadow-xl overflow-hidden border border-gray-300">
+<Navigation />
+
+<div class="bg-white overflow-hidden">
 	<div class="split relative min-h-screen">
 		<div id="split-1" class="md:col-span-2 bg-white flex flex-col">
 			<Knowledge />

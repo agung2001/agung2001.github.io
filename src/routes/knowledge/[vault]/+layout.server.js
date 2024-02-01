@@ -2,5 +2,6 @@ import cakrawala from "$lib/cakrawala";
 
 // @ts-ignore
 export async function load({ params }) {
-	return cakrawala.data(params);
+	let data = await cakrawala.data(params);
+	return data;
 }
