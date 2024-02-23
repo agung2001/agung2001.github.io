@@ -71,7 +71,7 @@ export default {
 			"tools": [
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg",
-				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
 				"https://cdn.worldvectorlogo.com/logos/aws-ec2.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
