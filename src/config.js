@@ -24,7 +24,7 @@ export default {
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain.svg",
+				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
 			]
