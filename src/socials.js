@@ -141,6 +141,13 @@ export default [
 				"icon": "https://github.com/npm/logos/raw/master/npm%20logo/classic/npm-2009.png",
 				"color": "#333333",
 				"textColor": "#fff"
+			},
+			{
+				"label": "Open Collective",
+				"caption": "Giving back to the community",
+				"link": "https://opencollective.com/agung-sundoro",
+				"icon": "fas fa-circle-notch",
+				"color": "#97b3e7"
 			}
 		]
 	},
@@ -167,6 +174,13 @@ export default [
 		"label": "Support",
 		"buttons": [
 			{
+				"label": "Trakteer",
+				"caption": "My Espresso Escape",
+				"link": "https://trakteer.id/agung2001/tip",
+				"icon": "fas fa-heart",
+				"color": "#c53030",
+			},
+			{
 				"label": "Buy Me a Coffee",
 				"caption": "Enough to keep me awake",
 				"link": "https://www.buymeacoffee.com/agung2001",
@@ -181,13 +195,6 @@ export default [
 				"icon": "fab fa-paypal",
 				"color": "#0070e0"
 			},
-			{
-				"label": "Open Collective",
-				"caption": "Giving back to the community",
-				"link": "https://opencollective.com/agung-sundoro",
-				"icon": "fas fa-circle-notch",
-				"color": "#97b3e7"
-			}
 		]
 	}
 ]
