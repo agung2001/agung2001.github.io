@@ -184,7 +184,7 @@ export default [
 			{
 				"label": "Open Collective",
 				"caption": "Giving back to the community",
-				"link": "https://opencollective.com/muhammad-agung-sundoro",
+				"link": "https://opencollective.com/agung-sundoro",
 				"icon": "fas fa-circle-notch",
 				"color": "#97b3e7"
 			}
