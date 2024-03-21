@@ -180,6 +180,13 @@ export default [
 				"link": "https://www.paypal.com/paypalme/agungsundoro",
 				"icon": "fab fa-paypal",
 				"color": "#0070e0"
+			},
+			{
+				"label": "Open Collective",
+				"caption": "Giving back to the community",
+				"link": "https://opencollective.com/muhammad-agung-sundoro",
+				"icon": "fas fa-circle-notch",
+				"color": "#97b3e7"
 			}
 		]
 	}
