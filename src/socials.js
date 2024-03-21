@@ -100,6 +100,13 @@ export default [
 				"icon": "https://github.com/npm/logos/raw/master/npm%20logo/classic/npm-2009.png",
 				"color": "#333333",
 				"textColor": "#fff"
+			},
+			{
+				"label": "Open Collective",
+				"caption": "Giving back to the community",
+				"link": "https://opencollective.com/agung-sundoro",
+				"icon": "fas fa-circle-notch",
+				"color": "#97b3e7"
 			}
 		]
 	},
@@ -141,13 +148,6 @@ export default [
 				"icon": "https://github.com/npm/logos/raw/master/npm%20logo/classic/npm-2009.png",
 				"color": "#333333",
 				"textColor": "#fff"
-			},
-			{
-				"label": "Open Collective",
-				"caption": "Giving back to the community",
-				"link": "https://opencollective.com/agung-sundoro",
-				"icon": "fas fa-circle-notch",
-				"color": "#97b3e7"
 			}
 		]
 	},
