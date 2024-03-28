@@ -111,47 +111,6 @@ export default [
 		]
 	},
 	{
-		"label": "ArtiStudio",
-		"buttons": [
-			{
-				"label": "Website",
-				"caption": "WordPress Developer Expert",
-				"link": "https://artistudio.xyz",
-				"icon": "fa-solid fa-globe",
-				"color": "#000"
-			},
-			{
-				"label": "GitHub",
-				"caption": "Collection of open source code",
-				"link": "https://github.com/orgs/artistudioxyz",
-				"icon": "fab fa-github",
-				"color": "#24292f"
-			},
-			{
-				"label": "Go Packages",
-				"caption": "Collection of go packages",
-				"link": "https://pkg.go.dev/search?q=artistudioxyz&m=package",
-				"icon": "fa-brands fa-golang",
-				"color": "#007d9c"
-			},
-			{
-				"label": "Packagist",
-				"caption": "Collection of composer package",
-				"link": "https://packagist.org/packages/artistudioxyz",
-				"icon": "https://packagist.org/img/logo-small.png",
-				"color": "#f28d1a"
-			},
-			{
-				"label": "NPM",
-				"caption": "Node Package Manager",
-				"link": "https://www.npmjs.com/org/artistudioxyz",
-				"icon": "https://github.com/npm/logos/raw/master/npm%20logo/classic/npm-2009.png",
-				"color": "#333333",
-				"textColor": "#fff"
-			}
-		]
-	},
-	{
 		"label": "Contact",
 		"buttons": [
 			{

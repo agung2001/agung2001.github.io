@@ -1,8 +1,9 @@
 <script>
+	import Graph from "./components/Graph.svelte";
 	import Profile from "./components/Profile.svelte";
 	import Links from "./components/Links.svelte";
-	import Graph from "./components/Graph.svelte";
 	import Navigation from "$lib/components/Navigation.svelte";
+	import Repositories from "./components/Repositories.svelte";
 	import {DocTitle} from "../../stores/Layout.js";
 	import config from "../../config.js";
 
@@ -25,6 +26,7 @@
 		</div>
 		<div class="md:col-span-4">
 			<Graph />
+			<Repositories />
 			<Links />
 		</div>
 	</div>
