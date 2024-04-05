@@ -1,6 +1,6 @@
-import cakrawala from "$lib/cakrawala";
+import {redirect} from "@sveltejs/kit";
 
 // @ts-ignore
 export async function load() {
-	return { vaults: cakrawala.vault('') }
+	throw redirect(302,  'https://brain.agungsundoro.com/');
 }

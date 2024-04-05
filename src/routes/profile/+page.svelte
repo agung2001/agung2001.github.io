@@ -4,13 +4,15 @@
 	import Links from "./components/Links.svelte";
 	import Navigation from "$lib/components/Navigation.svelte";
 	import Repositories from "./components/Repositories.svelte";
-	import {DocTitle} from "../../stores/Layout.js";
 	import config from "../../config.js";
-
-	// Set Data
-	const { name } = config
-	DocTitle.set(name);
 </script>
+
+<svelte:head>
+	<title>{config.name}</title>
+
+	<meta property="og:title" content="{config.name}" />
+	<meta name="twitter:title" content="{config.name}">
+</svelte:head>
 
 <div class="relative overflow-hidden min-h-screen bg-gray-50">
 	<Navigation />
