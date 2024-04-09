@@ -17,6 +17,8 @@
 nodes.json
 edges.json
 /build
+/assets/css/tailwind/style.css
+/assets/css/tailwind/style.css.map
 /static/css/style.min.css
 /static/css/tailwind.min.css
 /static/contributor/list.json

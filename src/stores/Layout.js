@@ -1,3 +1,4 @@
 import { writable } from "svelte/store";
 
-export const DocTitle = writable('');
+// ThemeMode : Light, Dark
+export const ThemeMode = writable('');

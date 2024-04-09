@@ -1,8 +1,10 @@
 <script>
+	import {ThemeMode} from "../../../stores/Layout.js";
 	import config from "../../../config.js";
 	import github from "../../../github.js";
 	let { name, tagline, codeEnvironment } = config
 	let { username } = github
+
 </script>
 
 <div class="sm:rounded-t-xl h-44 bg-cover bg-center bg-no-repeat bg-[url(/img/cover.jpg)]" />
@@ -13,19 +15,19 @@
 />
 <div class="px-6 pt-4 pb-8 sm:px-10">
 	<h1 class="mt-2 text-2xl text-center font-bold">{name}</h1>
-	<p class="mt-2 text-center text-base font-normal text-gray-500">{tagline}</p>
+	<p class="profile-tagline mt-2 text-center text-base font-normal text-gray-500">{tagline}</p>
 	<div class="my-4 items-center w-full">
 		<a href="https://github.com/{username}" target="_blank" rel="noreferrer">
 			<img
 				alt="{name} GitHub Stats"
-				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={username}&show_icons=true&hide_border=false"
+				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={username}&show_icons=true&hide_border=false&theme={$ThemeMode === 'dark' ? 'transparent' : 'default'}"
 				width="100%"
 			/>
 		</a>
 		<a href="https://github.com/{username}" target="_blank" rel="noreferrer">
 			<img
 				alt="{name} Top Languages"
-				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username={username}&langs_count=8&layout=compact&hide_border=false"
+				src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username={username}&langs_count=8&layout=compact&hide_border=false&theme={$ThemeMode === 'dark' ? 'transparent' : 'default'}"
 				width="100%"
 			/>
 		</a>
@@ -57,7 +59,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="mt-4 text-center text-xs text-gray-400">
+	<div class="profile-footer mt-4 text-center text-xs">
 		Build with 💖, explore the <a
 			href="https://github.com/agung2001/agung2001.github.io">code</a
 		>.

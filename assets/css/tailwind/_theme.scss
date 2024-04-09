@@ -1,0 +1,19 @@
+.light {
+	.card {
+		@apply bg-white;
+		.profile-tagline,
+		.profile-footer {
+			@apply text-gray-400;
+		}
+	}
+}
+
+.dark {
+	.card {
+		@apply bg-slate-800 text-white;
+		.profile-tagline,
+		.profile-footer {
+			@apply text-gray-400;
+		}
+	}
+}

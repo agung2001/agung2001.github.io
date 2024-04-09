@@ -11,8 +11,13 @@ module.exports = function (grunt) {
 				`npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
 				`node tailwindcsssupport.js`
 			},
-			sass: { command:
-				`npx sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
+			sass: { command: (() => {
+					return [
+						`npx sass assets/css/styles/style.scss static/css/style.min.css --style compressed`,
+						`npx sass assets/css/tailwind/style.scss assets/css/tailwind/style.css --style expanded`,
+					].join(' && ')
+				})()
+
 			}
 		},
 
@@ -56,7 +61,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin')
 
 	/** Register Tasks */
-	grunt.registerTask('build-css', ['shell:npm_tailwind', 'cssmin', 'shell:sass'])
+	grunt.registerTask('build-css', ['shell:sass', 'shell:npm_tailwind', 'cssmin'])
 	grunt.registerTask('build-js', [])
 	grunt.registerTask('build', ['build-css', 'build-js'])
 	grunt.registerTask('default', [
