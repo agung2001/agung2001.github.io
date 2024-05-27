@@ -107,6 +107,13 @@ export default [
 				"link": "https://opencollective.com/agung-sundoro",
 				"icon": "fas fa-circle-notch",
 				"color": "#97b3e7"
+			},
+			{
+				"label": "Ko-Fi",
+				"caption": "Small cup of coffee for everyone",
+				"link": "https://ko-fi.com/agungsundoro",
+				"icon": "fa-solid fa-mug-saucer",
+				"color": "#ff5f5f"
 			}
 		]
 	},
@@ -154,6 +161,39 @@ export default [
 				"icon": "fab fa-paypal",
 				"color": "#0070e0"
 			},
+		]
+	},
+	{
+		"label": "Contribution",
+		"buttons": [
+			{
+				"label": "Github - Syncthing",
+				"caption": "Open Source File Synchronization",
+				"link": "https://github.com/syncthing",
+				"icon": "fab fa-github",
+				"color": "#24292f"
+			},
+			{
+				"label": "Ko-Fi - Keep-Presence",
+				"caption": "A simple library to keep your app awake",
+				"link": "https://ko-fi.com/agungsundoro",
+				"icon": "fa-solid fa-mug-saucer",
+				"color": "#ff5f5f"
+			},
+			{
+				"label": "Open Collective - OpenSID",
+				"caption": "Open Source Information System for Government",
+				"link": "https://opencollective.com/opensid",
+				"icon": "fas fa-circle-notch",
+				"color": "#97b3e7"
+			},
+			{
+				"label": "Open Collective - Svelte",
+				"caption": "Cybernetically enhanced web apps",
+				"link": "https://opencollective.com/svelte",
+				"icon": "fas fa-circle-notch",
+				"color": "#97b3e7"
+			}
 		]
 	}
 ]
