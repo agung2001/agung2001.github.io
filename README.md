@@ -42,19 +42,6 @@ docker run -d -p 80:80 \
 ```
 - NOTE: Don't forget to change the `/path/to/` accordingly
 
-## 📝 Notes
-
-### Distro
-I made [DISTRO](DISTRO.md) to list a profile and customization you made to this repo.
-
-### Google Analytics
-To easily track visitors I use Google Analytics and put the code inside [+layout.svelte](src/routes/+layout.svelte).
-You can change the code with your own, if you also want to track the visitors coming to the website.
-
-### How to Generate GitHub Tokens
-- Please refer to [GitHub Docs - Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create personal access token.
-- Please set the expiration to `no expiration` and enable : `Repo` and `User`
-
 ## 📚 Resources
 - [🌟 Official Repo](https://github.com/agung2001/agung2001.github.io)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0)

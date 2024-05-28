@@ -12,8 +12,8 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "release": "dotenv release-it --",
-    "serve": "/app/bin/cakrawala/linux-386 & vite dev --host 0.0.0.0",
-    "serve-mac": "/app/bin/cakrawala/linux-amd64 & vite dev --host 0.0.0.0"
+    "serve": "vite dev --host 0.0.0.0",
+    "serve-mac": "vite dev --host 0.0.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
