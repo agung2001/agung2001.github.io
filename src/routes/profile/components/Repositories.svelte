@@ -10,7 +10,7 @@
 
 	<div class="grid md:grid-cols-3 gap-1 px-2 pb-2">
 		{#each repositories as repository}
-			<div>
+			<div class="border border-gray-100">
 				<a href="{repository.link}" target="_blank">
 					<img src="{repository.src}">
 				</a>
