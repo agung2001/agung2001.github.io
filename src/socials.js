@@ -102,6 +102,14 @@ export default [
 				"textColor": "#fff"
 			},
 			{
+				"label": "Tokopedia",
+				"caption": "Buy and Sell Online",
+				"link": "https://www.tokopedia.com/agungsundoro",
+				"icon": "fa-solid fa-store",
+				"color": "#03ac0e",
+				"textColor": "#fff"
+			},
+			{
 				"label": "Open Collective",
 				"caption": "Giving back to the community",
 				"link": "https://opencollective.com/agung-sundoro",
