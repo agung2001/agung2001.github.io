@@ -66,6 +66,13 @@ export default [
 				"color": "#ea4c89"
 			},
 			{
+				"label": "CivitAI",
+				"caption": "AI and Machine Learning",
+				"link": "https://civitai.com/user/agung2001",
+				"icon": "fa-solid fa-brain",
+				"color": "#1971c2"
+			},
+			{
 				"label": "Facebook",
 				"caption": "Meet the community",
 				"link": "https://www.facebook.com/cotothepong/",
