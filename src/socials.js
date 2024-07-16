@@ -122,18 +122,11 @@ export default [
 				"link": "https://opencollective.com/agung-sundoro",
 				"icon": "fas fa-circle-notch",
 				"color": "#97b3e7"
-			},
-			{
-				"label": "Ko-Fi",
-				"caption": "Small cup of coffee for everyone",
-				"link": "https://ko-fi.com/agungsundoro",
-				"icon": "fa-solid fa-mug-saucer",
-				"color": "#ff5f5f"
 			}
 		]
 	},
 	{
-		"label": "Contribution",
+		"label": "Community Contribution",
 		"buttons": [
 			{
 				"label": "Github - Syncthing",
@@ -185,14 +178,14 @@ export default [
 		]
 	},
 	{
-		"label": "Support",
+		"label": "Support Me",
 		"buttons": [
 			{
-				"label": "Trakteer",
+				"label": "Ko-Fi",
 				"caption": "My Espresso Escape",
-				"link": "https://trakteer.id/agung2001/tip",
-				"icon": "fas fa-heart",
-				"color": "#c53030",
+				"link": "https://ko-fi.com/agungsundoro",
+				"icon": "fa-solid fa-mug-saucer",
+				"color": "#ff5f5f"
 			},
 			{
 				"label": "Buy Me a Coffee",
@@ -201,6 +194,13 @@ export default [
 				"icon": "fa-solid fa-mug-saucer",
 				"color": "#ffdd00",
 				"textColor": "#000"
+			},
+			{
+				"label": "Trakteer",
+				"caption": "Support me with a tip",
+				"link": "https://trakteer.id/agung2001/tip",
+				"icon": "fas fa-heart",
+				"color": "#c53030",
 			},
 			{
 				"label": "Paypal",
