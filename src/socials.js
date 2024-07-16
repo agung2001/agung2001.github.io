@@ -145,7 +145,7 @@ export default [
 			{
 				"label": "Ko-Fi - Keep-Presence",
 				"caption": "A simple library to keep your app awake",
-				"link": "https://ko-fi.com/agungsundoro",
+				"link": "https://ko-fi.com/keep_presence",
 				"icon": "fa-solid fa-mug-saucer",
 				"color": "#ff5f5f"
 			},
