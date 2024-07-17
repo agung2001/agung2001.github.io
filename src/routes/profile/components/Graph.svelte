@@ -53,7 +53,7 @@
 
 <div class="bg-white shadow-xl rounded-lg mb-4">
 	<div class="flex justify-between p-4 border-b border-gray-200">
-		<h2 class="text-lg">Experience Graph</h2>
+		<h2 class="text-lg">💼 Experience Graph</h2>
 		<button class="request-fullscreen" on:click={() => {requestFullscreen("github-network")}}>
 			<i class="fas fa-expand"></i>
 		</button>
