@@ -32,6 +32,13 @@ export default [
 				"color": "#97b3e7"
 			},
 			{
+				"label": "Open Collective - UAParser.js",
+				"caption": "JS library to detect user's agent",
+				"link": "https://opencollective.com/ua-parser-js",
+				"icon": "fas fa-circle-notch",
+				"color": "#97b3e7"
+			},
+			{
 				"label": "YouTube - Programmer Zaman Now",
 				"caption": "Programming Tutorial in Bahasa Indonesia",
 				"link": "https://www.youtube.com/@ProgrammerZamanNow",
