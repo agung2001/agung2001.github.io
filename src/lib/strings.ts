@@ -16,3 +16,16 @@ export function capitalizeFirstLetter(string: string) {
 export function getWordStr(str: string, n: number) {
 	return str.split(/\s+/).slice(0, n).join(" ");
 }
+
+// Get random string of length
+export function generateRandomString(length: number) {
+	const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+	let result = '';
+	const charactersLength = characters.length;
+
+	for (let i = 0; i < length; i++) {
+		result += characters.charAt(Math.floor(Math.random() * charactersLength));
+	}
+
+	return result;
+}

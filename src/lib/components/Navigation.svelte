@@ -7,8 +7,8 @@
 		<a href="/">😎 <span class="pl-2">{config.name}</span></a>
 	</div>
 	<div class="flex gap-x-4 md:gap-x-8">
-		<a href="/contribution">🌟 Contribution</a>
 		<a href="/knowledge">🧠 Knowledge</a>
+		<a href="/contribution">🌟 Contribution</a>
 		<a href="https://store.agungsundoro.com">🛒 Store</a>
 	</div>
 </div>

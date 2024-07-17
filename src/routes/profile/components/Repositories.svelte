@@ -1,5 +1,8 @@
 <script>
 	import repositories from "../../../repositories.js";
+	import {generateRandomString} from "$lib/strings.ts";
+
+	let random = `https://opengraph.githubassets.com/${generateRandomString(10)}/`;
 </script>
 
 <div class="bg-white shadow-xl rounded-lg mb-4">
@@ -12,7 +15,7 @@
 		{#each repositories as repository}
 			<div class="border border-gray-100">
 				<a href="{repository.link}" target="_blank">
-					<img src="{repository.src}">
+					<img src="{repository.link.replace('https://github.com/',random)}">
 				</a>
 			</div>
 		{/each}
