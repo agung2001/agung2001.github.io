@@ -25,6 +25,7 @@ edges.json
 /static/theme/list.json
 /static/**/*.css.map
 /static/**/*.js.map
+playlist.md
 
 # Svelte
 .DS_Store
