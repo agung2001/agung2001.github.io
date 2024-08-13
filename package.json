@@ -54,7 +54,9 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "axios": "^1.7.3",
     "dotenv": "^16.0.3",
+    "fs": "0.0.1-security",
     "mermaid": "^10.0.2",
     "octokit": "^2.0.10",
     "split.js": "^1.6.5"
