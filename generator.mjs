@@ -1,6 +1,7 @@
 /** Libraries */
 import {Octokit} from "octokit";
 import experiences from "./src/experiences.js";
+import youtube from "./src/youtube.js";
 import github from './src/github.js'
 import fs from 'fs'
 
@@ -151,11 +152,42 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN }) // Official clients for the 
 		return { nodes, edges }
 	}
 
+	// YouTube Graph
+	const YouTubeGraph = async (data) => {
+		let { nodes, edges } = data
+		edges.push({ from: 0, to: nodes.length })
+		let portfolioIndex = nodes.length
+		nodes.push({
+			id: nodes.length,
+			label: `YouTube`,
+			group: nodes.length,
+		})
+		youtube.map((playlist) => {
+			let data = GenerateEdgesandNodes(
+				playlist.videos,
+				[
+					{
+						id: nodes.length,
+						label: playlist.name,
+						url: playlist.url,
+						group: nodes.length,
+					},
+				],
+				[]
+			)
+			edges.push({ from: portfolioIndex, to: nodes.length })
+			nodes.push(...data.nodes)
+			edges.push(...data.edges)
+		})
+		return { nodes, edges }
+	}
+
 	/** Generate Data */
 	let data = await UserGraph()
 	data = await OrganizationsGraph(data)
 	data = await ContributionsGraph(data)
 	data = await ExperienceGraph(data)
+	data = await YouTubeGraph(data)
 
 	/** Write to File */
 	try {
