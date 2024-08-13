@@ -1,7 +1,7 @@
 <script>
 	import contributions from "../../../contribution.js";
 	import LinkGeneral from "$lib/components/LinkGeneral.svelte";
-	import LinkOpenGraph from "$lib/components/LinkOpenGraph.svelte";
+	import LinkOpenGraphLocal from "$lib/components/LinkOpenGraphLocal.svelte";
 
 	/** Transform data add animation state */
 	contributions.map((buttonGroup) => {
@@ -23,7 +23,7 @@
 		<div class="grid sm:grid-rows-1 md:grid-cols-4 gap-2">
 			{#each buttonGroup.buttons as button}
 				{#if button.type ==='opengraph' }
-					<LinkOpenGraph {button} />
+					<LinkOpenGraphLocal {button} />
 				{:else}
 					<LinkGeneral {button} />
 				{/if}

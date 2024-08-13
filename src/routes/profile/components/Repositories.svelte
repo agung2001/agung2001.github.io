@@ -1,8 +1,7 @@
 <script>
 	import repositories from "../../../repositories.js";
-	import {generateRandomString} from "$lib/strings.ts";
-
-	let random = `https://opengraph.githubassets.com/${generateRandomString(10)}/`;
+	import {getRepositoryImageUrl} from "$lib/url.ts";
+	import LinkOpenGraphLocal from "$lib/components/LinkOpenGraphLocal.svelte";
 </script>
 
 <div class="bg-white shadow-xl rounded-lg mb-4">
@@ -13,11 +12,7 @@
 
 	<div class="grid md:grid-cols-3 gap-1 px-2 pb-2">
 		{#each repositories as repository}
-			<div class="border border-gray-100">
-				<a href="{repository.link}" target="_blank">
-					<img src="{repository.link.replace('https://github.com/',random)}">
-				</a>
-			</div>
+			<LinkOpenGraphLocal button={repository} />
 		{/each}
 	</div>
 
