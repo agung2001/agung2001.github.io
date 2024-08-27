@@ -39,6 +39,10 @@ export default [
 				name: 'Stable Diffusion: Teknologi AI Gratis untuk Menciptakan Gambar Menakjubkan',
 				url: 'https://www.youtube.com/watch?v=I4OLR94CHCo',
 			},
+			{
+				name: 'Prompt Engineering: Seni Berkomunikasi dengan AI Secara Efektif',
+				url: 'https://youtu.be/B-5vC523llM',
+			},
 		],
 	},
 	{
