@@ -4,7 +4,7 @@ export default [
 		"buttons": [
 			{
 				"label": "YouTube",
-				"caption": "Having fun doing music and research",
+				"caption": "Educate and Research",
 				"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
 				"icon": "fab fa-youtube",
 				"color": "#fe0000"
