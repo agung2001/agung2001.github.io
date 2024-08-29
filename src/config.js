@@ -72,7 +72,6 @@ export default {
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-				"https://cdn.worldvectorlogo.com/logos/aws-ec2.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain.svg",
