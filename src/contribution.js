@@ -18,6 +18,13 @@ export default [
 				"color": "#ff5f5f"
 			},
 			{
+				"label": "Open Collective - Asciidoctor",
+				"caption": "user-friendly publishing toolchain for converting AsciiDoc",
+				"link": "https://opencollective.com/asciidoctor",
+				"icon": "fas fa-circle-notch",
+				"color": "#97b3e7"
+			},
+			{
 				"label": "Open Collective - OpenSID",
 				"caption": "Open Source Information System for Government",
 				"link": "https://opencollective.com/opensid",
