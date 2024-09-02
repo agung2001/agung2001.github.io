@@ -21,7 +21,6 @@
 			total: p.videos.length,
 		}
 	})
-	console.log(playlist)
 </script>
 
 <Navbar class="top-0 px-4 w-full bg-white border-b border-gray-300 relative z-50">
