@@ -38,7 +38,7 @@
 			<Badge rounded color="red">{totalVideos}</Badge>
 		</NavLi>
 		<MegaMenu full items={playlist} let:item style="margin:0px;">
-			<a href="/{item.slug}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 h-full">
+			<a data-sveltekit-reload href="/{item.slug}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 h-full">
 				<div class="font-semibold dark:text-white">
 					{item.name}
 					<Indicator color="red" border size="xl">

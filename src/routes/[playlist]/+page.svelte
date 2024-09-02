@@ -20,7 +20,7 @@
 		slug = slugify(slug)
 		return data.playlist === slug;
 	});
-	let video = playlist.videos[0];
+	$: video = playlist.videos[0]
 </script>
 
 <svelte:head>
@@ -44,13 +44,16 @@
 			<p>
 				{playlist.about}
 			</p>
-			<iframe style="width:100%; min-height:600px;" src="1234{GetYouTubeURL(video.url)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe style="width:100%; min-height:600px;" src="{GetYouTubeURL(video.url)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<div class="pt-4 grid sm:grid-rows-1 md:grid-cols-4 gap-2 cursor-pointer">
-				{#each playlist.videos as video, number}
-					<div on:click={() => { console.log(number) }}>
+				{#each playlist.videos as playlist_video, number}
+					<div on:click={() => {
+						video = playlist.videos[number]
+						console.log(video)
+					}}>
 						<Episode button={{
-							label: `Episode ${++number}`,
-							caption: video.name,
+							label: `Episode ${number+1}`,
+							caption: playlist_video.name,
 							icon: 'fa-solid fa-play',
 							color: '#393939',
 							textColor: '#fff',
