@@ -1,6 +1,22 @@
 /** Main Navigation */
 #main-nav {
 	height: 60px;
+
+	.responsive {
+		top: 3.5rem;
+		left: 0;
+		width: 100%;
+		position: absolute;
+		background-color: white;
+		border-width: 1px 0;
+		border-style: solid;
+		border-color: rgb(203 213 225);
+	}
+	.responsive a {
+		display: block;
+		padding: 0.75rem 1rem;
+		background: rgb(243 244 246);
+	}
 }
 
 /** Fullscreen */

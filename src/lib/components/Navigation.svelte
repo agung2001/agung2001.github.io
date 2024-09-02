@@ -2,9 +2,6 @@
 	import config from "../../config.js";
 
 	let isMenuOpen = false;
-	function toggleMenu() {
-		isMenuOpen = !isMenuOpen;
-	}
 </script>
 
 <nav id="main-nav" class="top-0 px-6 py-4 w-full bg-white border-b border-gray-300 relative z-50">
@@ -15,7 +12,7 @@
 		</a>
 
 		<!-- Menu Button for Mobile -->
-		<button on:click={toggleMenu} class="md:hidden focus:outline-none">
+		<button on:click={() => { isMenuOpen = !isMenuOpen; }} class="md:hidden focus:outline-none">
 			<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
 			</svg>
@@ -33,21 +30,3 @@
 		</div>
 	</div>
 </nav>
-
-<style>
-	.responsive {
-		top: 3.5rem;
-		left: 0;
-		width: 100%;
-		position: absolute;
-		background-color: white;
-		border-width: 1px 0;
-		border-style: solid;
-		border-color: rgb(203 213 225);
-	}
-	.responsive a {
-		display: block;
-		padding: .75rem 1rem;
-		background: rgb(243 244 246);
-	}
-</style>
