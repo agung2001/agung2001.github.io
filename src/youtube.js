@@ -1,7 +1,7 @@
 export default [
 	{
 		name: '🧑‍💻 CERMAT',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar teknologi.',
+		about: 'This playlist contains tutorials, tips, and tricks about technology in general.',
 		url: 'https://www.youtube.com/watch?v=5T19hs4S8Z8&list=PLc4H2My9zgNV7agwL72OCsl0cidduls0O',
 		videos: [
 			{
@@ -48,7 +48,7 @@ export default [
 	},
 	{
 		name: '🤖 KATA',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar pemrograman.',
+		about: 'This playlist contains tutorials, tips, and tricks about programming.',
 		url: 'https://www.youtube.com/watch?v=oe5a-2OVUco&list=PLc4H2My9zgNVWe2apGHnUmWpsAKBaAvVo',
 		videos: [
 			{
@@ -75,7 +75,7 @@ export default [
 	},
 	{
 		name: '🤖 KATA INFRA',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar infrastruktur.',
+		about: 'This playlist contains tutorials, tips, and tricks about infrastructure.',
 		url: 'https://www.youtube.com/watch?v=OmPf5SkxW98&list=PLc4H2My9zgNWb3TEw28o-MFP04ryjisLk',
 		videos: [
 			{
@@ -90,7 +90,7 @@ export default [
 	},
 	{
 		name: '🤖 KATA WordPress',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar pemrograman WordPress.',
+		about: 'This playlist contains tutorials, tips, and tricks about Programming in WordPress.',
 		url: 'https://www.youtube.com/watch?v=VImZA0DjUbk&list=PLc4H2My9zgNXpnhG1JO5eM-WmZ2Sa4O95',
 		videos: [
 			{
@@ -121,7 +121,7 @@ export default [
 	},
 	{
 		name: '🤖 KATA WordPress Plugin',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar pemrograman WordPress Plugin.',
+		about: 'This playlist contains tutorials, tips, and tricks about Programming a WordPress Plugin.',
 		url: 'https://www.youtube.com/watch?v=xbTiYXXkF-w&list=PLc4H2My9zgNWAVFQiK3nRpnSOLByUh8Wn',
 		videos: [
 			{
@@ -136,7 +136,7 @@ export default [
 	},
 	{
 		name: '🤖 KATA WooCommerce',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar pemrograman WooCommerce.',
+		about: 'This playlist contains tutorials, tips, and tricks about Programming in WooCommerce.',
 		url: 'https://www.youtube.com/watch?v=FE19MuS2-Rg&list=PLc4H2My9zgNV8zIq-rXkSmQcjBTIoMXsh',
 		videos: [
 			{
@@ -147,7 +147,7 @@ export default [
 	},
 	{
 		name: '🧳 PAHAM Manajemen',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar manajemen.',
+		about: 'This playlist contains tutorials, tips, and tricks about management in general.',
 		url: 'https://www.youtube.com/watch?v=_1Dq1kQn29E&list=PLc4H2My9zgNVfHx-wV_vgGCMsDN1nkzuU',
 		videos: [
 			{
@@ -194,7 +194,7 @@ export default [
 	},
 	{
 		name: '🧳 PAHAM Karir',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar karir.',
+		about: 'This playlist contains tutorials, tips, and tricks about career in general.',
 		url: 'https://www.youtube.com/watch?v=9QB2tvtLmfo&list=PLc4H2My9zgNUgsn4LO2cP5wvSc5d7_UcM',
 		videos: [
 			{
@@ -209,7 +209,7 @@ export default [
 	},
 	{
 		name: '💰 TUNAI',
-		about: 'Playlist ini berisi tutorial, tips, dan trik seputar keuangan.',
+		about: 'This playlist contains tutorials, tips, and tricks about finance in general.',
 		url: 'https://www.youtube.com/watch?v=5T19hs4S8Z8&list=PLc4H2My9zgNV7agwL72OCsl0cidduls0O',
 		videos: [
 			{
