@@ -1,4 +1,5 @@
 <script>
+	import { Card } from 'flowbite-svelte';
 	import contributions from "../../../contribution.js";
 	import LinkGeneral from "$lib/components/LinkGeneral.svelte";
 	import LinkOpenGraphLocal from "$lib/components/LinkOpenGraphLocal.svelte";
@@ -13,14 +14,14 @@
 </script>
 
 {#each contributions as buttonGroup}
-	<div class="bg-white shadow-xl rounded-lg mb-4 p-6">
-		<h2 class="mb-2 text-lg border-b border-gray-200">
+	<Card class="max-w-full mb-6">
+		<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 			{buttonGroup.label}
-		</h2>
-		<p class="text-gray-600 pb-2">
+		</h5>
+		<p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">
 			{@html buttonGroup.description}
 		</p>
-		<div class="grid sm:grid-rows-1 md:grid-cols-4 gap-2">
+		<div class="pt-4 grid sm:grid-rows-1 md:grid-cols-4 gap-2">
 			{#each buttonGroup.buttons as button}
 				{#if button.type ==='opengraph' }
 					<LinkOpenGraphLocal {button} />
@@ -29,5 +30,5 @@
 				{/if}
 			{/each}
 		</div>
-	</div>
+	</Card>
 {/each}

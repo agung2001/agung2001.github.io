@@ -29,3 +29,8 @@ export function generateRandomString(length: number) {
 
 	return result;
 }
+
+// Remove emoji and symbols
+export function removeEmojisAndSymbols(text: string) {
+	return text.replace(/[\p{Emoji}\p{Symbol}\p{Punctuation}\p{Mark}\p{Math_Symbol}]+/gu, '');
+}
