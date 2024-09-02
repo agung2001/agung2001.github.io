@@ -13,7 +13,7 @@
 	</NavBrand>
 	<NavHamburger />
 	<NavUl {activeUrl} classUl="pr-0" activeClass="text-amber-500">
-		<NavLi href="/knowledge">Knowledge</NavLi>
+		<NavLi href="https://brain.agungsundoro.com">Knowledge</NavLi>
 		<NavLi href="/contribution">Contribution</NavLi>
 		<NavLi href="https://store.agungsundoro.com">Store</NavLi>
 	</NavUl>
