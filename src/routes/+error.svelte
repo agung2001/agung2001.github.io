@@ -11,6 +11,9 @@
 <div class="relative overflow-hidden min-h-screen flex flex-col justify-between bg-white">
 	<Navigation/>
 
+	<img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
+	<div class="sm:absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+
 	<section id="primary-content" class="bg-animated-rectangle w-full px-6 antialiased">
 
 		<ul class="circles hidden md:block lg:block z-1">
@@ -28,8 +31,8 @@
 
 		<div class="mx-auto max-w-7xl relative z-10">
 			<div class="container max-w-lg px-4 sm:py-12 md:py-12 lg:py-32 text-left md:max-w-none md:text-center flex flex-wrap overflow-hidden">
-				<div class="py-12 md:py-0 w-full overflow-hidden md:order-last md:my-2 md:px-2 md:w-1/2">
-					<img src="/img/error.jpeg" alt="Error">
+				<div class="py-4 md:py-0 w-full overflow-hidden md:order-last md:my-2 md:px-2 md:w-1/2">
+					<img src="/img/error.png" alt="Error">
 				</div>
 				<div class="sm:py-24  w-full overflow-hidden md:my-2 md:px-2 md:w-1/2">
 					<h1 class="text-5xl font-extrabold leading-10 tracking-tight text-left text-gray-900 sm:leading-none md:text-6xl lg:text-7xl">
