@@ -1,6 +1,6 @@
 export default [
 	{
-		name: '🧑‍💻 CERMAT',
+		name: '🧑‍💻CERMAT',
 		about: 'This playlist contains tutorials, tips, and tricks about technology in general.',
 		url: 'https://www.youtube.com/watch?v=5T19hs4S8Z8&list=PLc4H2My9zgNV7agwL72OCsl0cidduls0O',
 		videos: [
