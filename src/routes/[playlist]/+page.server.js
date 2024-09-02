@@ -14,4 +14,8 @@ export async function load({ params }) {
 
 	// Throw error if not
 	if(!exist) throw error(404, { message: 'Not Found' });
+
+	return {
+		playlist: params.playlist
+	}
 }
