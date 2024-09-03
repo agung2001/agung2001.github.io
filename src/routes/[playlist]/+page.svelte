@@ -90,7 +90,7 @@
 			{/if}
 
 			<h2 class="pt-8 text-center text-2xl font-semibold">Sharing is caring, help me spread the knowledge!</h2>
-			<div class="123sharethis-inline-share-buttons py-4"></div>
+			<div class="sharethis-inline-share-buttons py-4"></div>
 		</Card>
 	</div>
 </div>
