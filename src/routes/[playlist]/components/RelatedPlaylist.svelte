@@ -8,7 +8,7 @@
 	}
 </script>
 
-<a href="/{button.link}"
+<a data-sveltekit-reload href="/{button.link}"
 	on:mouseenter={() => {
 		button.animate = true
 	}}
