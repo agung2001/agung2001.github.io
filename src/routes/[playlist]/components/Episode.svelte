@@ -19,6 +19,7 @@
 	on:mouseleave={() => {
 		button.animate = false
 	}}
+	class="h-full"
 >
 	<div
 		class="animate__animated flex items-center py-2 px-4 rounded h-full"

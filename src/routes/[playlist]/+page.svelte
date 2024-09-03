@@ -91,6 +91,9 @@
 
 			<h2 class="pt-8 text-center text-2xl font-semibold">Sharing is caring, help me spread the knowledge!</h2>
 			<div class="sharethis-inline-share-buttons py-4"></div>
+
+			<h2 class="pt-6 pb-4 text-center text-2xl font-semibold">Help me build more content!</h2>
+			<img src="https://brain.agungsundoro.com/img/ko-fi.jpg" class="w-full md:w-2/3 block mx-auto text-center" alt="Ko-Fi Agung Sundoro">
 		</Card>
 	</div>
 </div>
