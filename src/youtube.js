@@ -238,4 +238,15 @@ export default [
 			},
 		],
 	},
+	{
+		name: '🗣️ BICARA',
+		about: 'This playlist contains my talks as speaker or guest.',
+		url: 'https://www.youtube.com/watch?v=5T19hs4S8Z8&list=PLc4H2My9zgNV7agwL72OCsl0cidduls0O',
+		videos: [
+			{
+				name: 'Utilization of Digital Tools To Increase Productivity and Professionalism | JSC Lab Sharing #13',
+				url: 'https://youtu.be/UlLyR23_5hg',
+			},
+		],
+	},
 ]
