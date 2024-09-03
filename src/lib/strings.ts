@@ -1,3 +1,5 @@
+import {slugify} from "$lib/url";
+
 /** Capitalize Entire String */
 export function capitalize(string: string) {
 	string = string.replace(/[^\w\s]/gi, " ")
@@ -33,4 +35,9 @@ export function generateRandomString(length: number) {
 // Remove emoji and symbols
 export function removeEmojisAndSymbols(text: string) {
 	return text.replace(/[\p{Emoji}\p{Symbol}\p{Punctuation}\p{Mark}\p{Math_Symbol}]+/gu, '');
+}
+
+// Slugify and normalize name
+export function SlugifyandNormalizeName(name: string) {
+	return slugify( removeEmojisAndSymbols(name).trimStart() )
 }

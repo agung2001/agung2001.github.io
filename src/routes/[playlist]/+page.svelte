@@ -3,9 +3,9 @@
 	import Episode from "./components/Episode.svelte";
 	import config from "../../config.js";
 	import youtube from "../../youtube.js";
-	import {removeEmojisAndSymbols} from "$lib/strings.ts";
-	import {slugify} from "$lib/url.ts";
+	import {SlugifyandNormalizeName} from "$lib/strings.ts";
 	import {Card} from "flowbite-svelte";
+	import RelatedPlaylist from "./components/RelatedPlaylist.svelte";
 	export let data = {};
 
 	// Get Youtube URL
@@ -16,11 +16,20 @@
 
 	// Playlist
 	let playlist = youtube.find((p) => {
-		let slug = removeEmojisAndSymbols(p.name).trimStart()
-		slug = slugify(slug)
+		let slug = SlugifyandNormalizeName(p.name)
 		return data.playlist === slug;
 	});
 	$: video = playlist.videos[0]
+
+	// Related Playlist
+	let related = youtube.filter((p) => {
+		let slug = SlugifyandNormalizeName(p.name)
+		if (data.playlist === slug) return false;
+
+		// If first word of data.playlist is in slug
+		let firstWord = data.playlist.split('-')[0];
+		if (slug.includes(firstWord)) return true;
+	});
 </script>
 
 <svelte:head>
@@ -28,6 +37,8 @@
 
 	<meta property="og:title" content="{config.name}" />
 	<meta name="twitter:title" content="{config.name}">
+
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6610c1e31494610019440151&product=sop' async='async'></script>
 </svelte:head>
 
 <div class="relative overflow-hidden min-h-screen bg-gray-50">
@@ -49,7 +60,6 @@
 				{#each playlist.videos as playlist_video, number}
 					<div on:click={() => {
 						video = playlist.videos[number]
-						console.log(video)
 					}}>
 						<Episode button={{
 							label: `Episode ${number+1}`,
@@ -64,6 +74,23 @@
 					</div>
 				{/each}
 			</div>
+
+			{#if related.length > 0}
+				<h2 class="pt-8 pb-4 text-center text-2xl font-semibold">Related Playlist</h2>
+				<div class="grid sm:grid-rows-1 md:grid-cols-4 gap-2 cursor-pointer">
+					{#each related as playlist}
+						<RelatedPlaylist button={{
+							label: playlist.name,
+							caption: playlist.about,
+							link: SlugifyandNormalizeName(playlist.name),
+							animate: false
+						}} />
+					{/each}
+				</div>
+			{/if}
+
+			<h2 class="pt-8 text-center text-2xl font-semibold">Sharing is caring, help me spread the knowledge!</h2>
+			<div class="123sharethis-inline-share-buttons py-4"></div>
 		</Card>
 	</div>
 </div>

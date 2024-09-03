@@ -21,14 +21,13 @@
 	}}
 >
 	<div
-		class="animate__animated flex items-center py-2 px-4 rounded"
+		class="animate__animated flex items-center py-2 px-4 rounded h-full"
 		class:text-white={!button.textColor}
 		class:animate__tada={button.animate}
 		style="
 			background-color: {button.color};
 			{button.textColor ? `color: ${button.textColor};` : ''}
 			{button.borderColor ? `border: 1px solid ${button.borderColor};` : ''}
-			height: 90px;
 		"
 	>
 		<i class={button.icon}/>
