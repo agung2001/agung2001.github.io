@@ -44,7 +44,7 @@
 			<p>
 				{playlist.about}
 			</p>
-			<iframe style="width:100%; min-height:600px;" src="{GetYouTubeURL(video.url)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe id="youtube-iframe" src="{GetYouTubeURL(video.url)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<div class="pt-4 grid sm:grid-rows-1 md:grid-cols-4 gap-2 cursor-pointer">
 				{#each playlist.videos as playlist_video, number}
 					<div on:click={() => {
@@ -68,3 +68,10 @@
 	</div>
 </div>
 
+<style>
+	#youtube-iframe {
+		padding-top: .25rem;
+		aspect-ratio: 16 / 9;
+		width: 100% !important;
+	}
+</style>
