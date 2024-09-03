@@ -18,10 +18,11 @@
 	on:mouseleave={() => {
 		button.animate = false
 	}}
+	class="h-full"
 >
 	<a
 		href={button.link}
-		class="animate__animated flex items-center py-2 px-4 rounded"
+		class="animate__animated flex items-center py-2 px-4 rounded h-full"
 		class:text-white={!button.textColor}
 		target="_blank"
 		rel="noreferrer"
@@ -39,7 +40,7 @@
 		{/if}
 		<div class="ml-4">
 			<h5 class="font-bold">{button.label}</h5>
-			<p class="whitespace-nowrap text-xs">{button.caption}</p>
+			<p class="text-xs">{button.caption}</p>
 		</div>
 	</a>
 </div>

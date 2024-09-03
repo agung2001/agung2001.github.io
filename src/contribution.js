@@ -4,54 +4,69 @@ export default [
 		"description": "Help support community by making a financial contribution.",
 		"buttons": [
 			{
-				"label": "Github Sponsor - Syncthing",
-				"caption": "Open Source File Synchronization",
-				"link": "https://github.com/syncthing",
-				"icon": "fab fa-github",
-				"color": "#24292f"
-			},
-			{
-				"label": "Ko-Fi - Keep-Presence",
-				"caption": "A simple library to keep your app awake",
-				"link": "https://ko-fi.com/keep_presence",
-				"icon": "fa-solid fa-mug-saucer",
-				"color": "#ff5f5f"
-			},
-			{
-				"label": "Open Collective - Asciidoctor",
+				"label": "Asciidoctor",
 				"caption": "user-friendly publishing toolchain for converting AsciiDoc",
 				"link": "https://opencollective.com/asciidoctor",
 				"icon": "fas fa-circle-notch",
-				"color": "#97b3e7"
+				"color": "#0069b2",
+				"platform": "Open Collective"
 			},
 			{
-				"label": "Open Collective - OpenSID",
+				"label": "Keep-Presence",
+				"caption": "A simple library to keep your app awake",
+				"link": "https://ko-fi.com/keep_presence",
+				"icon": "fa-solid fa-mug-saucer",
+				"color": "#ff5f5f",
+				"platform": "Ko-Fi"
+			},
+			{
+				"label": "Open Broadcaster Software (OBS)",
+				"caption": "Free and open source software for video recording and live streaming",
+				"link": "https://opencollective.com/opensid",
+				"icon": "fas fa-circle-notch",
+				"color": "#0069b2",
+				"platform": "Open Collective"
+			},
+			{
+				"label": "OpenSID",
 				"caption": "Open Source Information System for Government",
 				"link": "https://opencollective.com/opensid",
 				"icon": "fas fa-circle-notch",
-				"color": "#97b3e7"
+				"color": "#0069b2",
+				"platform": "Open Collective"
 			},
 			{
-				"label": "Open Collective - Svelte",
-				"caption": "Cybernetically enhanced web apps",
-				"link": "https://opencollective.com/svelte",
-				"icon": "fas fa-circle-notch",
-				"color": "#97b3e7"
-			},
-			{
-				"label": "Open Collective - UAParser.js",
-				"caption": "JS library to detect user's agent",
-				"link": "https://opencollective.com/ua-parser-js",
-				"icon": "fas fa-circle-notch",
-				"color": "#97b3e7"
-			},
-			{
-				"label": "YouTube - Programmer Zaman Now",
+				"label": "Programmer Zaman Now",
 				"caption": "Programming Tutorial in Bahasa Indonesia",
 				"link": "https://www.youtube.com/@ProgrammerZamanNow",
 				"icon": "fab fa-youtube",
-				"color": "#ff0000"
-			}
+				"color": "#ff0000",
+				"platform": "YouTube"
+			},
+			{
+				"label": "Svelte",
+				"caption": "Cybernetically enhanced web apps",
+				"link": "https://opencollective.com/svelte",
+				"icon": "fas fa-circle-notch",
+				"color": "#0069b2",
+				"platform": "Open Collective"
+			},
+			{
+				"label": "Syncthing",
+				"caption": "Open Source File Synchronization",
+				"link": "https://github.com/syncthing",
+				"icon": "fab fa-github",
+				"color": "#24292f",
+				"platform": "GitHub Sponsor"
+			},
+			{
+				"label": "UAParser.js",
+				"caption": "JS library to detect user's agent",
+				"link": "https://opencollective.com/ua-parser-js",
+				"icon": "fas fa-circle-notch",
+				"color": "#0069b2",
+				"platform": "Open Collective"
+			},
 		]
 	},
 	{

@@ -121,7 +121,7 @@ export default [
 				"caption": "Giving back to the community",
 				"link": "https://opencollective.com/agung-sundoro",
 				"icon": "fas fa-circle-notch",
-				"color": "#97b3e7"
+				"color": "#0069b2",
 			}
 		]
 	},
