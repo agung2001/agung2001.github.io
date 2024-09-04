@@ -12,17 +12,17 @@ export default [
 				"platform": "Open Collective"
 			},
 			{
-				"label": "Keep-Presence",
-				"caption": "A simple library to keep your app awake",
-				"link": "https://ko-fi.com/keep_presence",
-				"icon": "fa-solid fa-mug-saucer",
-				"color": "#ff5f5f",
-				"platform": "Ko-Fi"
-			},
-			{
 				"label": "Open Broadcaster Software (OBS)",
 				"caption": "Free and open source software for video recording and live streaming",
 				"link": "https://opencollective.com/opensid",
+				"icon": "fas fa-circle-notch",
+				"color": "#0069b2",
+				"platform": "Open Collective"
+			},
+			{
+				"label": "Open Collective",
+				"caption": "Funding platform for open source projects",
+				"link": "https://opencollective.com/opencollective",
 				"icon": "fas fa-circle-notch",
 				"color": "#0069b2",
 				"platform": "Open Collective"
