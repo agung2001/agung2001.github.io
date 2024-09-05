@@ -46,11 +46,13 @@
 							<tr>
 								<td>{environment.label}</td>
 								<td class="grid grid-cols-6">
-									{#each environment.tools as tool}<img
+									{#each environment.tools as tool}
+										<img
 											class="h-12"
 											src={tool}
 											alt={environment.label}
-										/>{/each}
+										/>
+									{/each}
 								</td>
 							</tr>
 						{/each}

@@ -11,17 +11,16 @@
 	})
 </script>
 
-<div class="bg-white shadow-xl rounded-lg p-6">
+<div class="bg-white shadow-xl rounded-lg">
 	{#each socials as buttonGroup}
-		<div class="mb-4">
-			<h2 class="mb-2 text-lg border-b border-gray-200">
-				{buttonGroup.label}
-			</h2>
-			<div class="grid sm:grid-rows-1 md:grid-cols-3 gap-2">
-				{#each buttonGroup.buttons as button}
-					<LinkGeneral {button} />
-				{/each}
-			</div>
+		<div class="flex px-4 py-2 border-b border-gray-200">
+			<h2 class="text-lg">{buttonGroup.label}</h2>
+		</div>
+
+		<div class="grid sm:grid-rows-1 md:grid-cols-3 gap-2 px-4 py-2">
+			{#each buttonGroup.buttons as button}
+				<LinkGeneral {button} />
+			{/each}
 		</div>
 	{/each}
 </div>
