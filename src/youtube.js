@@ -71,6 +71,10 @@ export default [
 				name: 'Cara menulis Commit Message yang baik dengan Conventional Commits',
 				url: 'https://youtu.be/TudmCr2OE2E',
 			},
+			{
+				name: 'AsciiDoc vs Markdown: Mana yang Lebih Baik untuk Buku & Dokumen Teknis?',
+				url: 'https://youtu.be/UOgVr1eO-wo',
+			},
 		],
 	},
 	{
