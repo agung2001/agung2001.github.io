@@ -44,6 +44,10 @@ export default [
 				name: 'Prompt Engineering: Seni Berkomunikasi dengan AI Secara Efektif',
 				url: 'https://youtu.be/B-5vC523llM',
 			},
+			{
+				name: 'Mendanai Kreativitas - Pengaruh Patron dalam Ekosistem Kreatif dan Teknologi di Era Digital',
+				url: 'https://youtu.be/IJzkEVlyY8g',
+			},
 		],
 	},
 	{
