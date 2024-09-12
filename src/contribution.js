@@ -71,7 +71,7 @@ export default [
 	},
 	{
 		"label": "🎮 Code Contribution",
-		"description": "Help support open source project by making a code contribution. <a href='https://github.com/search?q=is%3Apr+author%3Aagung2001&type=pullrequests' target='_blank'>Read More</a>",
+		"description": "Help support open source project by making a code contribution.",
 		"buttons": [
 			{
 				"label": "Github - woocommerce/woocommerce-blocks",
