@@ -38,6 +38,14 @@ export default [
 				"color": "#0a66c2"
 			},
 			{
+				"label": "Wikipedia",
+				"caption": "Free knowledge for everyone",
+				"link": "https://id.wikipedia.org/wiki/Pengguna:Agungsundoro",
+				"icon": "fa-brands fa-wikipedia-w",
+				"color": "#f3f3f4",
+				"textColor": "#312d2e"
+			},
+			{
 				"label": "Spotify",
 				"caption": "Heavy metal never die",
 				"link": "https://open.spotify.com/user/21yip2zhtynpaalfr53tonr5a",
