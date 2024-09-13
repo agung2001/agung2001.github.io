@@ -71,6 +71,11 @@ async function downloadRepositories(repositories, outputDir) {
 			// Ensure the output directory exists
 			fs.mkdirSync(outputDir, { recursive: true });
 
+			// Ignore if image been downloaded
+			if (fs.existsSync(`${outputDir}/${name}.jpg`)) {
+				continue;
+			}
+
 			// Download the image
 			await downloadImage(url, outputDir, `${name}.jpg`);
 			console.log(`✅ ${name} downloaded successfully, ${url}!`);
@@ -93,6 +98,11 @@ async function downloadContributions(contribution, outputDir) {
 
 				// Ensure the output directory exists
 				fs.mkdirSync(outputDir, { recursive: true });
+
+				// Ignore if image been downloaded
+				if (fs.existsSync(`${outputDir}/${name}.jpg`)) {
+					continue;
+				}
 
 				// Download the image
 				await downloadImage(url, outputDir, `${name}.jpg`);

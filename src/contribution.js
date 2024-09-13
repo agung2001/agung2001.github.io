@@ -92,6 +92,12 @@ export default [
 				"type": "opengraph",
 			},
 			{
+				"label": "GitHub - kamikerjaremote/kamikerjaremote.github.io",
+				"caption": "Kami Kerja Remote Website Repository",
+				"link": "https://github.com/kamikerjaremote/kamikerjaremote.github.io/pull/1",
+				"type": "opengraph",
+			},
+			{
 				"label": "GitHub - Scattercatt/Slippi-stats",
 				"caption": "Slippi Stats for Super Smash Bros. Melee",
 				"link": "https://github.com/Scattercatt/Slippi-stats/pull/8",
