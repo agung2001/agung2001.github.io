@@ -5,6 +5,7 @@
 		caption: 'Open Graph Protocol',
 		icon: '/img/opengraph.svg',
 		link: 'https://ogp.me/',
+		src: '',
 		animate: false
 	}
 </script>
@@ -24,7 +25,7 @@
 		class="animate__animated flex rounded"
 		class:animate__bounce={button.animate}
 	>
-		<img src={getRepositoryImageUrl(button.link)}
+		<img src={button.src ? button.src : getRepositoryImageUrl(button.link)}
 			 class="border border-gray-100"
 			 alt={button.label}
 		/>
