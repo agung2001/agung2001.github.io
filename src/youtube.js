@@ -48,6 +48,10 @@ export default [
 				name: 'Mendanai Kreativitas - Pengaruh Patron dalam Ekosistem Kreatif dan Teknologi di Era Digital',
 				url: 'https://youtu.be/IJzkEVlyY8g',
 			},
+			{
+				name: 'Revolusi Open Source: Dari Projek Pribadi ke Skala KORPORASI & LEGISLASI!',
+				url: 'https://youtu.be/UpII8RtrwGc',
+			},
 		],
 	},
 	{
