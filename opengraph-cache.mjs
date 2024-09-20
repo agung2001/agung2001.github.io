@@ -11,6 +11,9 @@ const outputDir = './static/repo';
 // Opengraph sometimes download wrong image or response with 404
 /**************/
 
+// Variable that stores the image that has been downloaded
+let ImageExists = [];
+
 // Sleep function
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
@@ -73,6 +76,7 @@ async function downloadRepositories(repositories, outputDir) {
 
 			// Ignore if image been downloaded
 			if (fs.existsSync(`${outputDir}/${name}.jpg`)) {
+				ImageExists.push(`${name}.jpg`);
 				continue;
 			}
 
@@ -101,6 +105,7 @@ async function downloadContributions(contribution, outputDir) {
 
 				// Ignore if image been downloaded
 				if (fs.existsSync(`${outputDir}/${name}.jpg`)) {
+					ImageExists.push(`${name}.jpg`);
 					continue;
 				}
 
@@ -120,6 +125,8 @@ async function main() {
 	await downloadRepositories(repositories, outputDir);
 	await downloadContributions(contribution, outputDir);
 
+	// console.log(ImageExists);
+
 	// Resize all images in a directory
 	await fs.readdir(outputDir, (err, files) => {
 		if (err) {
@@ -129,8 +136,9 @@ async function main() {
 		files.forEach(file => {
 			const filePath = path.join(outputDir, file);
 
+			// Ignore if image been downloaded
 			// Only process files that are images (you can expand this list as needed)
-			if (file.match(/\.(jpg|jpeg|png|bmp)$/i)) {
+			if (!ImageExists.includes(file) && file.match(/\.(jpg|jpeg|png|bmp)$/i)) {
 				resizeImage(filePath);
 			}
 		});

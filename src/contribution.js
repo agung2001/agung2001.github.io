@@ -102,6 +102,13 @@ export default [
 				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@65e35dec045d2e148f2878116115a44cc715470c/static/repo/kamikerjaremote-kamikerjaremote.github.io-1.jpg",
 			},
 			{
+				"label": "GitHub - dimaszulfa/Programmer-Cheatsheet",
+				"caption": "Programmer Cheatsheet Repository",
+				"link": "https://github.com/dimaszulfa/Programmer-Cheatsheet/pull/3",
+				"type": "opengraph",
+				"src": "",
+			},
+			{
 				"label": "GitHub - Scattercatt/Slippi-stats",
 				"caption": "Slippi Stats for Super Smash Bros. Melee",
 				"link": "https://github.com/Scattercatt/Slippi-stats/pull/8",
