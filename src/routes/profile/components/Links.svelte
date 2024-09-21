@@ -11,7 +11,7 @@
 	})
 </script>
 
-<div class="bg-white shadow-xl rounded-lg">
+<div class="bg-white shadow-xl rounded-lg pb-2">
 	{#each socials as buttonGroup}
 		<div class="flex px-4 py-2 border-b border-gray-200">
 			<h2 class="text-lg">{buttonGroup.label}</h2>

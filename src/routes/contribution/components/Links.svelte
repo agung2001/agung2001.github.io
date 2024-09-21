@@ -1,8 +1,8 @@
 <script>
 	import { Card } from 'flowbite-svelte';
 	import contributions from "../../../contribution.js";
-	import LinkGeneral from "$lib/components/LinkGeneral.svelte";
 	import LinkOpenGraphLocal from "$lib/components/LinkOpenGraphLocal.svelte";
+	import FinanceContribution from "$lib/components/FinanceContribution.svelte";
 
 	/** Transform data add animation state */
 	contributions.map((buttonGroup) => {
@@ -26,7 +26,7 @@
 				{#if button.type ==='opengraph' }
 					<LinkOpenGraphLocal {button} />
 				{:else}
-					<LinkGeneral {button} />
+					<FinanceContribution {button} />
 				{/if}
 			{/each}
 		</div>

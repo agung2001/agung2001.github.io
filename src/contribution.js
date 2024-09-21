@@ -9,7 +9,8 @@ export default [
 				"link": "https://opencollective.com/asciidoctor",
 				"icon": "fas fa-circle-notch",
 				"color": "#0069b2",
-				"platform": "Open Collective"
+				"platform": "Open Collective",
+				"amount": "$1/month",
 			},
 			{
 				"label": "Open Broadcaster Software (OBS)",
@@ -17,7 +18,8 @@ export default [
 				"link": "https://opencollective.com/opensid",
 				"icon": "fas fa-circle-notch",
 				"color": "#0069b2",
-				"platform": "Open Collective"
+				"platform": "Open Collective",
+				"amount": "$1/month",
 			},
 			{
 				"label": "Open Collective",
@@ -25,7 +27,8 @@ export default [
 				"link": "https://opencollective.com/opencollective",
 				"icon": "fas fa-circle-notch",
 				"color": "#0069b2",
-				"platform": "Open Collective"
+				"platform": "Open Collective",
+				"amount": "$1/month",
 			},
 			{
 				"label": "OpenSID",
@@ -33,7 +36,8 @@ export default [
 				"link": "https://opencollective.com/opensid",
 				"icon": "fas fa-circle-notch",
 				"color": "#0069b2",
-				"platform": "Open Collective"
+				"platform": "Open Collective",
+				"amount": "$1/month",
 			},
 			{
 				"label": "Programmer Zaman Now",
@@ -41,7 +45,8 @@ export default [
 				"link": "https://www.youtube.com/@ProgrammerZamanNow",
 				"icon": "fab fa-youtube",
 				"color": "#ff0000",
-				"platform": "YouTube"
+				"platform": "YouTube",
+				"amount": "IDR 4.9K/month",
 			},
 			{
 				"label": "Svelte",
@@ -49,7 +54,8 @@ export default [
 				"link": "https://opencollective.com/svelte",
 				"icon": "fas fa-circle-notch",
 				"color": "#0069b2",
-				"platform": "Open Collective"
+				"platform": "Open Collective",
+				"amount": "$1/month",
 			},
 			{
 				"label": "Syncthing",
@@ -57,7 +63,8 @@ export default [
 				"link": "https://github.com/syncthing",
 				"icon": "fab fa-github",
 				"color": "#24292f",
-				"platform": "GitHub Sponsor"
+				"platform": "GitHub Sponsor",
+				"amount": "$1/month",
 			},
 			{
 				"label": "UAParser.js",
@@ -65,7 +72,8 @@ export default [
 				"link": "https://opencollective.com/ua-parser-js",
 				"icon": "fas fa-circle-notch",
 				"color": "#0069b2",
-				"platform": "Open Collective"
+				"platform": "Open Collective",
+				"amount": "$1/month",
 			},
 		]
 	},
