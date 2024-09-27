@@ -129,6 +129,10 @@ export default [
 				name: 'Cara Bongkar Pasang Content WordPress dengan Shortcode',
 				url: 'https://www.youtube.com/watch?v=QyXq8WTo2bM',
 			},
+			{
+				name: 'WordPress CLI 101: Panduan Lengkap Mengelola Situs Tanpa Dashboard!',
+				url: 'https://www.youtube.com/watch?v=MJ4tQO-XJTA',
+			},
 		],
 	},
 	{
