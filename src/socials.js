@@ -4,7 +4,14 @@ export default [
 		"buttons": [
 			{
 				"label": "YouTube",
-				"caption": "Educate and Research",
+				"caption": "Tech and Gadget Channel",
+				"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
+				"icon": "fab fa-youtube",
+				"color": "#fe0000"
+			},
+			{
+				"label": "YouTube - Tunai",
+				"caption": "Finance and Investment Channel",
 				"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
 				"icon": "fab fa-youtube",
 				"color": "#fe0000"

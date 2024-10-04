@@ -230,27 +230,27 @@ export default [
 		videos: [
 			{
 				name: 'Membuat Personal Spending Tracker (PST) Untuk Pencatatan Keuangan Pribadi',
-				url: 'https://youtu.be/5T19hs4S8Z8',
+				url: 'https://youtu.be/7d39cuyyQGM',
 			},
 			{
 				name: 'Cara Mudah Mengelola Gaji dan Jam Kerja dengan Personal Income Tracker (PIT)',
-				url: 'https://youtu.be/x3gfe3jNt_A',
+				url: 'https://youtu.be/ydZTNcwQQjw',
 			},
 			{
 				name: 'Cara Mudah Mengelola Subscription Service dengan Subscription Management Template (SMT)',
-				url: 'https://youtu.be/Y7o3IPdc1oo',
+				url: 'https://youtu.be/fnzDeMRTYgM',
 			},
 			{
 				name: 'Strategi Membangun Harta Kekayaan: Panduan Investasi dan Pengembangan Portfolio Asset',
-				url: 'https://youtu.be/cfb18CHrLnY',
+				url: 'https://youtu.be/gSlK1-Kq2UI',
 			},
 			{
 				name: 'Cara Mudah Mengelola Personal Asset dengan Personal Asset Management Tracker (PAMT)',
-				url: 'https://www.youtube.com/watch?v=-IK1BElY074',
+				url: 'https://youtu.be/GgnCmSDNaxM',
 			},
 			{
 				name: 'Seni Mengelola Anggaran: Panduan Mengelola Keuangan Pribadi dengan Bijak',
-				url: 'https://youtu.be/Eq6yPlzTt0c',
+				url: 'https://youtu.be/ZrYhaFe2vLY',
 			},
 		],
 	},
