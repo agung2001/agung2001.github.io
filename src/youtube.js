@@ -168,43 +168,43 @@ export default [
 		videos: [
 			{
 				name: 'Cara Mudah Membuat Standard Operating Procedure (SOP) dengan 3S/BDA',
-				url: 'https://youtu.be/_1Dq1kQn29E',
+				url: 'https://youtu.be/QiP2AZgyhqw',
 			},
 			{
 				name: 'Template Balance Scorecard (BSC) Sederhana untuk Mengukur Kinerja UMKM & Korporasi',
-				url: 'https://youtu.be/9nuZKOxAKJg',
+				url: 'https://youtu.be/ZmoLQTJ7j8Y',
 			},
 			{
 				name: 'Cara membangun budaya Kolaborasi & Inovasi di Perusahaan dengan bantuan Otak Kedua',
-				url: 'https://youtu.be/lbKr3ylzCjE',
+				url: 'https://youtu.be/koHizd1ykaU',
 			},
 			{
 				name: 'Cara membangun budaya Disiplin & Kegigihan di Perusahaan dengan Chourei (ちょうれい)  Morning Assembly',
-				url: 'https://youtu.be/rq5SLdgXTZA',
+				url: 'https://youtu.be/Cl5-INSPt1U',
 			},
 			{
 				name: 'YouTrack untuk Pemula: Optimalkan Alur Kerja Tim dengan Modern Project Management Tool',
-				url: 'https://youtu.be/JeV2j7CUsFw',
+				url: 'https://youtu.be/tsKauNuULqQ',
 			},
 			{
 				name: 'Cara Mengidentifikasi dan Memprioritaskan Project/Rock yang Tepat untuk Mendorong Pertumbuhan Bisnis',
-				url: 'https://youtu.be/TOa0GtrvJN0',
+				url: 'https://youtu.be/ACd0NJm4pdw',
 			},
 			{
 				name: 'Membangun Mesin Waktu: Perjalanan Menuju Produktivitas Tanpa Batas dengan Komunikasi Asynchronous',
-				url: 'https://youtu.be/ZV04iaFbl_s',
+				url: 'https://youtu.be/SZgMojwnwcM',
 			},
 			{
 				name: 'Demokratisasi Talenta: Peran Pekerja Remote dalam Pemerataan Ekonomi Indonesia',
-				url: 'https://youtu.be/wX5HJUNHrF8',
+				url: 'https://youtu.be/2X9jascHXM4',
 			},
 			{
 				name: 'Vision Traction Organizer (VTO) : Cara merangkai Visi menjadi Aksi dalam bisnis',
-				url: 'https://youtu.be/S0PRrg4roS8',
+				url: 'https://youtu.be/GEgjG5YDNo8',
 			},
 			{
 				name: 'Memaksimalkan Produktifitas : Seni Mengelola Tugas Kerja bagi Team & Individu',
-				url: 'https://youtu.be/jz4OSrNZ2Dk',
+				url: 'https://youtu.be/qXQgDnn-bZY',
 			},
 		],
 	},
@@ -215,11 +215,11 @@ export default [
 		videos: [
 			{
 				name: 'Lebih dari 10000 Jam - Mengungkap Konsep Kesuksesan dan Strategi Menggapainya Outliers',
-				url: 'https://youtu.be/9QB2tvtLmfo',
+				url: 'https://youtu.be/spYhg1BNfVI',
 			},
 			{
 				name: 'Growth Mindset: Strategi Psikologis Menghadapi Perubahan dan Menggapai Potensi Penuh Individu',
-				url: 'https://youtu.be/Q7_Hnt11gx0',
+				url: 'https://youtu.be/GvWGsHQYXLo',
 			},
 		],
 	},

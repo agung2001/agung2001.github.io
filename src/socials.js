@@ -10,9 +10,16 @@ export default [
 				"color": "#fe0000"
 			},
 			{
+				"label": "YouTube - Paham",
+				"caption": "Career & Management Channel",
+				"link": "https://www.youtube.com/channel/UC5St2VlCl_1k9cNftXCptaw",
+				"icon": "fab fa-youtube",
+				"color": "#fe0000"
+			},
+			{
 				"label": "YouTube - Tunai",
 				"caption": "Finance and Investment Channel",
-				"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
+				"link": "https://www.youtube.com/channel/UC_XBz6WWpVyFqYIx6_T1e0A",
 				"icon": "fab fa-youtube",
 				"color": "#fe0000"
 			},
