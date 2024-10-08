@@ -61,27 +61,27 @@ export default [
 		videos: [
 			{
 				name: 'ASPRI Asisten Pribadi Koleksi Script-Library untuk meningkatkan produktifitas developer',
-				url: 'https://youtu.be/oe5a-2OVUco',
+				url: 'https://youtu.be/Y-wiONwt-t0',
 			},
 			{
 				name: 'Panduan Praktis Memahami dan Mengkonfigurasi Protokol SSH untuk Pemula dan Expert',
-				url: 'https://youtu.be/YeQSwp_AELg',
+				url: 'https://youtu.be/NuiYI6VycVo',
 			},
 			{
 				name: 'Udah Punya Rsync untuk File Transfer - Masih Juga Cari yang Lain?',
-				url: 'https://youtu.be/SgctZG6OEnw',
+				url: 'https://youtu.be/jc-UrmEFrQw',
 			},
 			{
 				name: 'Membedah Konsep Skema Software Versioning untuk Pemula dan Expert',
-				url: 'https://youtu.be/7mtt9OYuH_M',
+				url: 'https://youtu.be/gLXKihofmc8',
 			},
 			{
 				name: 'Cara menulis Commit Message yang baik dengan Conventional Commits',
-				url: 'https://youtu.be/TudmCr2OE2E',
+				url: 'https://youtu.be/2lvW8j7aqH4',
 			},
 			{
 				name: 'AsciiDoc vs Markdown: Mana yang Lebih Baik untuk Buku & Dokumen Teknis?',
-				url: 'https://youtu.be/UOgVr1eO-wo',
+				url: 'https://youtu.be/0O-A2arpbhA',
 			},
 		],
 	},
@@ -92,11 +92,11 @@ export default [
 		videos: [
 			{
 				name: 'Cara Membangun Cloud Storage Alternative Seperti Google Drive untuk BISNIS dan KORPORASI dengan Syncthing!',
-				url: 'https://www.youtube.com/watch?v=OmPf5SkxW98',
+				url: 'https://youtu.be/v723u9Ino6Y',
 			},
 			{
 				name: 'Incremental Backup dengan Duplicati - Simpan Data Pribadi dan Perusahaan di Manapun dengan Aman',
-				url: 'https://youtu.be/piQMaPDcKjQ',
+				url: 'https://youtu.be/CGO8zeGkQH8',
 			},
 		],
 	},
@@ -107,31 +107,31 @@ export default [
 		videos: [
 			{
 				name: 'Cara Install WordPress Local Untuk Pemula dengan Local by Flywheel',
-				url: 'https://youtu.be/VImZA0DjUbk',
+				url: 'https://youtu.be/5WyC5200Rm4',
 			},
 			{
 				name: 'Cara Cepat Memahami WordPress dengan Belajar Struktur File & Directory',
-				url: 'https://www.youtube.com/watch?v=fMiKALXOxC4',
+				url: 'https://youtu.be/FFsGvWpi5e0',
 			},
 			{
 				name: 'Cara Cepat Memahami WordPress dengan Belajar Skema Database',
-				url: 'https://www.youtube.com/watch?v=ANaR0TA0jO0',
+				url: 'https://youtu.be/b8Lm3ueSJHww',
 			},
 			{
 				name: 'Cara Cepat Menjadi Developer WordPress dengan Belajar Hook',
-				url: 'https://www.youtube.com/watch?v=NfT7LvfStbI',
+				url: 'https://youtu.be/ChRQj3Qh6XI',
 			},
 			{
 				name: '10 WordPress Hooks Paling Populer yang Developer Wajib Tau',
-				url: 'https://www.youtube.com/watch?v=9UKf_sDWx6g',
+				url: 'https://youtu.be/yvO6DVPjspw',
 			},
 			{
 				name: 'Cara Bongkar Pasang Content WordPress dengan Shortcode',
-				url: 'https://www.youtube.com/watch?v=QyXq8WTo2bM',
+				url: 'https://youtu.be/XFGNE_LOacA',
 			},
 			{
 				name: 'WordPress CLI 101: Panduan Lengkap Mengelola Situs Tanpa Dashboard!',
-				url: 'https://www.youtube.com/watch?v=MJ4tQO-XJTA',
+				url: 'https://youtu.be/CsAku8kphbs',
 			},
 		],
 	},
@@ -142,11 +142,11 @@ export default [
 		videos: [
 			{
 				name: 'Cara Membuat WordPress Popup:Modal Plugin Sederhana',
-				url: 'https://youtu.be/xbTiYXXkF-w',
+				url: 'https://youtu.be/2LdSJqWgeqU',
 			},
 			{
 				name: 'Dot Framework kerangka mutakhir untuk pembuatan WordPress Plugin dan Theme',
-				url: 'https://youtu.be/kYyBj3_uICE',
+				url: 'https://youtu.be/EnhbW0Cg64Y',
 			},
 		],
 	},
@@ -157,7 +157,7 @@ export default [
 		videos: [
 			{
 				name: 'WooCommerce 101 : Memahami Platform E-Commerce Terpopler di Dunia!',
-				url: 'https://youtu.be/FE19MuS2-Rg',
+				url: 'https://youtu.be/_EV7oolD80I',
 			},
 		],
 	},

@@ -10,6 +10,13 @@ export default [
 				"color": "#fe0000"
 			},
 			{
+				"label": "YouTube - Kata",
+				"caption": "Programming and Software Development Channel",
+				"link": "https://www.youtube.com/channel/UCAeaBrICGHK-xRZ9lmpWoMQ",
+				"icon": "fab fa-youtube",
+				"color": "#fe0000"
+			},
+			{
 				"label": "YouTube - Paham",
 				"caption": "Career & Management Channel",
 				"link": "https://www.youtube.com/channel/UC5St2VlCl_1k9cNftXCptaw",
