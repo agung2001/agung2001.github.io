@@ -52,6 +52,10 @@ export default [
 				name: 'Revolusi Open Source: Dari Projek Pribadi ke Skala KORPORASI & LEGISLASI!',
 				url: 'https://youtu.be/UpII8RtrwGc',
 			},
+			{
+				name: 'Demokratisasi Pengetahuan: Menjelajah Ruang Basis Pengetahuan Terbesar di Dunia',
+				url: 'https://youtu.be/aENlqRkgBR4',
+			},
 		],
 	},
 	{
