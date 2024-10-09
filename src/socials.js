@@ -4,28 +4,28 @@ export default [
 		"buttons": [
 			{
 				"label": "YouTube",
-				"caption": "Tech and Gadget Channel",
+				"caption": "Tech & Gadget",
 				"link": "https://www.youtube.com/channel/UCI1uulkvet06Mm3wfpQvpLg",
 				"icon": "fab fa-youtube",
 				"color": "#fe0000"
 			},
 			{
 				"label": "YouTube - Kata",
-				"caption": "Programming and Software Development Channel",
+				"caption": "Programming & Software Development",
 				"link": "https://www.youtube.com/channel/UCAeaBrICGHK-xRZ9lmpWoMQ",
 				"icon": "fab fa-youtube",
 				"color": "#fe0000"
 			},
 			{
 				"label": "YouTube - Paham",
-				"caption": "Career & Management Channel",
+				"caption": "Career & Management",
 				"link": "https://www.youtube.com/channel/UC5St2VlCl_1k9cNftXCptaw",
 				"icon": "fab fa-youtube",
 				"color": "#fe0000"
 			},
 			{
 				"label": "YouTube - Tunai",
-				"caption": "Finance and Investment Channel",
+				"caption": "Finance & Investment",
 				"link": "https://www.youtube.com/channel/UC_XBz6WWpVyFqYIx6_T1e0A",
 				"icon": "fab fa-youtube",
 				"color": "#fe0000"
