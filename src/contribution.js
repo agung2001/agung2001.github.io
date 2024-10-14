@@ -80,6 +80,28 @@ export default [
 	{
 		"label": "🎮 Code Contribution",
 		"description": "Help support open source project by making a code contribution.",
+		"badges": [
+			{
+				"label": "ISSUE:OPEN",
+				"link": "https://github.com/search?q=is%3Aissue+is%3Aopen+author%3Aagung2001+&type=issues",
+				"color": "#2ecc71",
+			},
+			{
+				"label": "ISSUE:CLOSED",
+				"link": "https://github.com/search?q=is%3Aissue+is%3Aclosed+author%3Aagung2001+&type=issues",
+				"color": "#2ecc71",
+			},
+			{
+				"label": "PR:OPEN",
+				"link": "https://github.com/search?q=is%3Apr+is%3Aopen+author%3Aagung2001+&type=pullrequests",
+				"color": "#3498db",
+			},
+			{
+				"label": "PR:CLOSE",
+				"link": "https://github.com/search?q=is%3Apr+is%3Aclosed+author%3Aagung2001+&type=pullrequests",
+				"color": "#3498db",
+			}
+		],
 		"buttons": [
 			{
 				"label": "Github - woocommerce/woocommerce-blocks",

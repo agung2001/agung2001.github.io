@@ -20,6 +20,13 @@
 		</h5>
 		<p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">
 			{@html buttonGroup.description}
+			{#if buttonGroup.badges }
+				{#each buttonGroup.badges as badge}
+					<a href="{badge.link}" target="_blank" class="text-white text-xs font-semibold me-2 px-2.5 py-1.5 rounded-md" style="background:{badge.color};">
+						{badge.label}
+					</a>
+				{/each}
+			{/if}
 		</p>
 		<div class="pt-4 grid sm:grid-rows-1 md:grid-cols-4 gap-2">
 			{#each buttonGroup.buttons as button}
