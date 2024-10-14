@@ -110,6 +110,20 @@ export default [
 				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@65e35dec045d2e148f2878116115a44cc715470c/static/repo/kamikerjaremote-kamikerjaremote.github.io-1.jpg",
 			},
 			{
+				"label": "GitHub - artistudioxyz/aspri",
+				"caption": "ASPRI Asisten Pribadi Koleksi Script-Library",
+				"link": "https://github.com/artistudioxyz/aspri/pull/9",
+				"type": "opengraph",
+				"src": "",
+			},
+			{
+				"label": "GitHub - artistudioxyz/aspri",
+				"caption": "ASPRI Asisten Pribadi Koleksi Script-Library",
+				"link": "https://github.com/artistudioxyz/aspri/pull/6",
+				"type": "opengraph",
+				"src": "",
+			},
+			{
 				"label": "GitHub - dimaszulfa/Programmer-Cheatsheet",
 				"caption": "Programmer Cheatsheet Repository",
 				"link": "https://github.com/dimaszulfa/Programmer-Cheatsheet/pull/3",
