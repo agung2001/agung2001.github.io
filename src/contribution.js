@@ -122,7 +122,7 @@ export default [
 				"caption": "Documentation Generator for PHP",
 				"link": "https://github.com/phpDocumentor/phpDocumentor/pull/3796",
 				"type": "opengraph",
-				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@29a0d57fac53f02cd53155f90378bf1b0e52fb1e/static/repo/redis-node-redis-2357.jpg",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@a9225482798a949d7cf6a32540d8d135d3bfc0c0/static/repo/phpDocumentor-phpDocumentor-3796.jpg",
 			},
 			{
 				"label": "GitHub - agung2001/agung2001.github.io",
@@ -143,21 +143,21 @@ export default [
 				"caption": "ASPRI Asisten Pribadi Koleksi Script-Library",
 				"link": "https://github.com/artistudioxyz/aspri/pull/9",
 				"type": "opengraph",
-				"src": "",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@f03596feba7a10113046a51ba52176183e71d54e/static/repo/artistudioxyz-aspri-9.jpg",
 			},
 			{
 				"label": "GitHub - artistudioxyz/aspri",
 				"caption": "ASPRI Asisten Pribadi Koleksi Script-Library",
 				"link": "https://github.com/artistudioxyz/aspri/pull/6",
 				"type": "opengraph",
-				"src": "",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@f03596feba7a10113046a51ba52176183e71d54e/static/repo/artistudioxyz-aspri-6.jpg",
 			},
 			{
 				"label": "GitHub - dimaszulfa/Programmer-Cheatsheet",
 				"caption": "Programmer Cheatsheet Repository",
 				"link": "https://github.com/dimaszulfa/Programmer-Cheatsheet/pull/3",
 				"type": "opengraph",
-				"src": "",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@60043fdcf7c9e2f2fce8ec2a2c1f091fbf1baddc/static/repo/dimaszulfa-Programmer-Cheatsheet-3.jpg",
 			},
 			{
 				"label": "GitHub - Scattercatt/Slippi-stats",
