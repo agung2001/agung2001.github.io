@@ -6,6 +6,10 @@
 
 	/** Transform data add animation state */
 	contributions.map((buttonGroup) => {
+		if( !buttonGroup.buttons_featured ) buttonGroup.buttons_featured = []
+		buttonGroup.buttons_featured = buttonGroup.buttons_featured.map((button) => {
+			return { ...button, animate: false }
+		})
 		buttonGroup.buttons = buttonGroup.buttons.map((button) => {
 			return { ...button, animate: false }
 		})
@@ -29,6 +33,13 @@
 			{/if}
 		</p>
 		<div class="pt-4 grid sm:grid-rows-1 md:grid-cols-4 gap-2">
+			{#each buttonGroup.buttons_featured as button}
+				{#if button.type ==='opengraph' }
+					<LinkOpenGraphLocal {button} />
+				{:else}
+					<FinanceContribution {button} />
+				{/if}
+			{/each}
 			{#each buttonGroup.buttons as button}
 				{#if button.type ==='opengraph' }
 					<LinkOpenGraphLocal {button} />

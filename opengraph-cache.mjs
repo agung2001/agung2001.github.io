@@ -90,8 +90,9 @@ async function downloadRepositories(repositories, outputDir) {
 }
 
 async function downloadContributions(contribution, outputDir) {
-	for (const contrib of contribution) {
-		for (const repo of contrib.buttons) {
+	// Download Image
+	const downloadImage = async (buttons) => {
+		for (const repo of buttons) {
 			if (repo.type !== 'opengraph') continue;
 
 			try {
@@ -116,6 +117,12 @@ async function downloadContributions(contribution, outputDir) {
 				console.error(`❌ Error downloading the image for ${repo.link}:`, err);
 			}
 		}
+	}
+
+	// Download all images
+	for (const contrib of contribution) {
+		await downloadImage(contrib.buttons_featured)
+		await downloadImage(contrib.buttons)
 	}
 }
 

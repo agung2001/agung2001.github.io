@@ -102,20 +102,13 @@ export default [
 				"color": "#3498db",
 			}
 		],
-		"buttons": [
+		"buttons_featured": [
 			{
 				"label": "Github - woocommerce/woocommerce-blocks",
 				"caption": "WooCommerce Blocks for the new editor",
 				"link": "https://github.com/woocommerce/woocommerce-blocks/pull/11932",
 				"type": "opengraph",
 				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@29a0d57fac53f02cd53155f90378bf1b0e52fb1e/static/repo/woocommerce-woocommerce-blocks-11932.jpg",
-			},
-			{
-				"label": "GitHub - redis/node-redis",
-				"caption": "Redis client for Node.js",
-				"link": "https://github.com/redis/node-redis/pull/2357",
-				"type": "opengraph",
-				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@29a0d57fac53f02cd53155f90378bf1b0e52fb1e/static/repo/redis-node-redis-2357.jpg",
 			},
 			{
 				"label": "GitHub - phpDocumentor/phpDocumentor",
@@ -125,19 +118,21 @@ export default [
 				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@a9225482798a949d7cf6a32540d8d135d3bfc0c0/static/repo/phpDocumentor-phpDocumentor-3796.jpg",
 			},
 			{
+				"label": "GitHub - redis/node-redis",
+				"caption": "Redis client for Node.js",
+				"link": "https://github.com/redis/node-redis/pull/2357",
+				"type": "opengraph",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@29a0d57fac53f02cd53155f90378bf1b0e52fb1e/static/repo/redis-node-redis-2357.jpg",
+			},
+			{
 				"label": "GitHub - agung2001/agung2001.github.io",
 				"caption": "Personal Website Repository",
 				"link": "https://github.com/agung2001/agung2001.github.io/pull/1",
 				"type": "opengraph",
 				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@29a0d57fac53f02cd53155f90378bf1b0e52fb1e/static/repo/agung2001-agung2001.github.io-1.jpg",
 			},
-			{
-				"label": "GitHub - kamikerjaremote/kamikerjaremote.github.io",
-				"caption": "Kami Kerja Remote Website Repository",
-				"link": "https://github.com/kamikerjaremote/kamikerjaremote.github.io/pull/1",
-				"type": "opengraph",
-				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@65e35dec045d2e148f2878116115a44cc715470c/static/repo/kamikerjaremote-kamikerjaremote.github.io-1.jpg",
-			},
+		],
+		"buttons": [
 			{
 				"label": "GitHub - artistudioxyz/aspri",
 				"caption": "ASPRI Asisten Pribadi Koleksi Script-Library",
@@ -158,6 +153,13 @@ export default [
 				"link": "https://github.com/dimaszulfa/Programmer-Cheatsheet/pull/3",
 				"type": "opengraph",
 				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@60043fdcf7c9e2f2fce8ec2a2c1f091fbf1baddc/static/repo/dimaszulfa-Programmer-Cheatsheet-3.jpg",
+			},
+			{
+				"label": "GitHub - kamikerjaremote/kamikerjaremote.github.io",
+				"caption": "Kami Kerja Remote Website Repository",
+				"link": "https://github.com/kamikerjaremote/kamikerjaremote.github.io/pull/1",
+				"type": "opengraph",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@65e35dec045d2e148f2878116115a44cc715470c/static/repo/kamikerjaremote-kamikerjaremote.github.io-1.jpg",
 			},
 			{
 				"label": "GitHub - Scattercatt/Slippi-stats",
