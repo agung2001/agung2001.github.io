@@ -162,6 +162,13 @@ export default [
 				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@65e35dec045d2e148f2878116115a44cc715470c/static/repo/kamikerjaremote-kamikerjaremote.github.io-1.jpg",
 			},
 			{
+				"label": "GitHub - OpenSID/OpenSID",
+				"caption": "Open Source Information System for Government",
+				"link": "https://github.com/OpenSID/OpenSID/pull/8584",
+				"type": "opengraph",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@65e35dec045d2e148f2878116115a44cc715470c/static/repo/kamikerjaremote-kamikerjaremote.github.io-1.jpg",
+			},
+			{
 				"label": "GitHub - Scattercatt/Slippi-stats",
 				"caption": "Slippi Stats for Super Smash Bros. Melee",
 				"link": "https://github.com/Scattercatt/Slippi-stats/pull/8",

@@ -91,7 +91,7 @@ async function downloadRepositories(repositories, outputDir) {
 
 async function downloadContributions(contribution, outputDir) {
 	// Download Image
-	const downloadImage = async (buttons) => {
+	const downloadContributionImage = async (buttons) => {
 		for (const repo of buttons) {
 			if (repo.type !== 'opengraph') continue;
 
@@ -121,8 +121,8 @@ async function downloadContributions(contribution, outputDir) {
 
 	// Download all images
 	for (const contrib of contribution) {
-		await downloadImage(contrib.buttons_featured)
-		await downloadImage(contrib.buttons)
+		if( contrib.buttons_featured ) await downloadContributionImage(contrib.buttons_featured)
+		await downloadContributionImage(contrib.buttons)
 	}
 }
 
@@ -131,8 +131,6 @@ async function main() {
 	// Download images
 	await downloadRepositories(repositories, outputDir);
 	await downloadContributions(contribution, outputDir);
-
-	// console.log(ImageExists);
 
 	// Resize all images in a directory
 	await fs.readdir(outputDir, (err, files) => {
