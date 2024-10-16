@@ -166,7 +166,7 @@ export default [
 				"caption": "Open Source Information System for Government",
 				"link": "https://github.com/OpenSID/OpenSID/pull/8584",
 				"type": "opengraph",
-				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@65e35dec045d2e148f2878116115a44cc715470c/static/repo/kamikerjaremote-kamikerjaremote.github.io-1.jpg",
+				"src": "https://cdn.jsdelivr.net/gh/agung2001/agung2001.github.io@d105ff3e4ff451271c03266d2b68ec9cc3e94400/static/repo/OpenSID-OpenSID-8584.jpg",
 			},
 			{
 				"label": "GitHub - Scattercatt/Slippi-stats",
