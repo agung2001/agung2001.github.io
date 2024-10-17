@@ -4,7 +4,7 @@
 	import LinkOpenGraphLocal from "$lib/components/LinkOpenGraphLocal.svelte";
 	import FinanceContribution from "$lib/components/FinanceContribution.svelte";
 
-	/** Transform data add animation state */
+	// Transform data add animation state
 	contributions.map((buttonGroup) => {
 		if( !buttonGroup.buttons_featured ) buttonGroup.buttons_featured = []
 		buttonGroup.buttons_featured = buttonGroup.buttons_featured.map((button) => {
@@ -32,7 +32,8 @@
 				{/each}
 			{/if}
 		</p>
-		<div class="pt-4 grid sm:grid-rows-1 md:grid-cols-4 gap-2">
+		<!-- md:grid-cols-2 md:grid-cols-4 -->
+		<div class="pt-4 grid sm:grid-rows-1 md:grid-cols-{buttonGroup.columns} gap-2">
 			{#each buttonGroup.buttons_featured as button}
 				{#if button.type ==='opengraph' }
 					<LinkOpenGraphLocal {button} />

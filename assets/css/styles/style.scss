@@ -1,5 +1,2 @@
-html {
-	scroll-behavior: smooth;
-}
-@import '_layout.scss';
-@import '_page.scss';
+@use '_layout.scss';
+@use '_page.scss';
